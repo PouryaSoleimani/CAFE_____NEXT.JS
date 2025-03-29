@@ -116,7 +116,9 @@ export default function HomePage() {
             <div className="col-lg-6 mb-5">
               <div className="row align-items-center">
                 <div className="col-sm-5">
-                  <Image className="/img-fluid mb-3 mb-sm-0" src="/img/service-1.jpg" alt="pic" width={300} height={300} />
+                  <div className="img-fluid mb-3 mb-sm-0">
+                    <Image src="/img/service-1.jpg" alt="pic" width={300} height={300} />
+                  </div>
                 </div>
                 <div className="col-sm-7">
                   <h4><span className="fa fa-truck service-icon"><FaTruck /></span> Fastest Door Delivery</h4>
