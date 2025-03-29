@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <title>☕Next-Coffee</title>
-      <body className="antialiased font-[family-name:var(--font-geist-sans)]">
+      <body className="antialiased ">
         <Main />
         <NextScript />
       </body>
