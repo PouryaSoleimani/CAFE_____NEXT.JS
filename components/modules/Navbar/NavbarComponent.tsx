@@ -21,18 +21,13 @@ const NavbarComponent = () => {
                     </span>
                 </button>
                 <div className={`navbar-collapse ${isOpen ? 'show' : ''}`}>
-                    <div className="navbar-nav ml-auto p-4 animate__animated  animate__fadeInUp animate__delay-1s">
+                    <div className="navbar-nav ml-auto p-3 animate__animated  animate__fadeInUp animate__delay-1s">
                         <Link href="/" className="nav-item nav-link active">Home</Link>
                         <Link href="/about-us" className="nav-item nav-link">About</Link>
                         <Link href="/services" className="nav-item nav-link">Services</Link>
                         <Link href="/menu" className="nav-item nav-link">Menu</Link>
-                        <div className="nav-item dropdown">
-                            <div className="nav-link dropdown-toggle" onClick={() => setDropdownOpen(!dropdownOpen)} role="button"  > Pages</div>
-                            <div className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
-                                <Link href="/reservation" className="dropdown-item">Reservation</Link>
-                                <Link href="/testimonial" className="dropdown-item">Testimonial</Link>
-                            </div>
-                        </div>
+                        <Link href="/reservation" className="nav-item nav-link">Reservation</Link>
+                        <Link href="/testimonial" className="nav-item nav-link">Testimonial</Link>
                         <Link href="/contact-us" className="nav-item nav-link">Contact</Link>
                     </div>
                 </div>
