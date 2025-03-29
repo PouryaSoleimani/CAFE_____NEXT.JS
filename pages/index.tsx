@@ -431,7 +431,7 @@ export default function HomePage() {
 
 
       {/* <!-- Back to Top --> */}
-      <Link href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top"><i className="fa fa-angle-double-up"></i></Link>
+      <Link href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top"><span className="fa fa-angle-double-up"></span></Link>
     </>
   );
 }
