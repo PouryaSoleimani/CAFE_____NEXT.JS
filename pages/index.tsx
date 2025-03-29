@@ -1,6 +1,8 @@
 // ^ HOME PAGE =================================================================================================================================================
 import Image from "next/image";
 import Link from "next/link";
+import { FaAward, FaCoffee, FaTruck } from "react-icons/fa";
+import { RiCalendarScheduleFill } from "react-icons/ri";
 
 
 
@@ -42,7 +44,7 @@ export default function HomePage() {
         <div id="blog-carousel" className="carousel slide overlay-bottom" data-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <Image className="w-100" src="/img/carousel-1.jpg" alt="Image" width={2000} height={2000} />
+              <Image className="w-100" src="/img/carousel-1.jpg" alt="Image" width={3000} height={3000} />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <h2 className="text-primary font-weight-medium m-0">We Have Been Serving</h2>
                 <h1 className="display-1 text-white m-0">COFFEE</h1>
@@ -50,7 +52,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="carousel-item">
-              <Image className="w-100" src="/img/carousel-2.jpg" alt="Image" width={2000} height={2000} />
+              <Image className="w-100" src="/img/carousel-2.jpg" alt="Image" width={3000} height={3000} />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <h2 className="text-primary font-weight-medium m-0">We Have Been Serving</h2>
                 <h1 className="display-1 text-white m-0">COFFEE</h1>
@@ -85,7 +87,7 @@ export default function HomePage() {
             </div>
             <div className="col-lg-4 py-5 py-lg-0" style={{ minHeight: "500px" }}>
               <div className="position-relative h-100">
-                <Image className="position-absolute w-100 h-100" src="/img/about.png" style={{ objectFit: "cover" }} alt="pic" width={100} height={100} />
+                <Image className="position-absolute w-100 h-100" src="/img/about.png" style={{ objectFit: "cover" }} alt="pic" width={800} height={800} />
               </div>
             </div>
             <div className="col-lg-4 py-0 py-lg-5">
@@ -113,10 +115,10 @@ export default function HomePage() {
             <div className="col-lg-6 mb-5">
               <div className="row align-items-center">
                 <div className="col-sm-5">
-                  <Image className="/img-fluid mb-3 mb-sm-0" src="/img/service-1.jpg" alt="pic" width={100} height={100} />
+                  <Image className="/img-fluid mb-3 mb-sm-0" src="/img/service-1.jpg" alt="pic" width={300} height={300} />
                 </div>
                 <div className="col-sm-7">
-                  <h4><span className="fa fa-truck service-icon"></span> Fastest Door Delivery</h4>
+                  <h4><span className="fa fa-truck service-icon"><FaTruck /></span> Fastest Door Delivery</h4>
                   <p className="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit
                     invidunt, dolore tempor diam ipsum takima erat tempor</p>
                 </div>
@@ -125,10 +127,10 @@ export default function HomePage() {
             <div className="col-lg-6 mb-5">
               <div className="row align-items-center">
                 <div className="col-sm-5">
-                  <Image className="/img-fluid mb-3 mb-sm-0" src="/img/service-2.jpg" alt="pic" width={100} height={100} />
+                  <Image className="/img-fluid mb-3 mb-sm-0" src="/img/service-2.jpg" alt="pic" width={300} height={300} />
                 </div>
                 <div className="col-sm-7">
-                  <h4><span className="fa fa-coffee service-icon"></span> Fresh Coffee Beans</h4>
+                  <h4><span className="fa fa-coffee service-icon"><FaCoffee /></span> Fresh Coffee Beans</h4>
                   <p className="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit
                     invidunt, dolore tempor diam ipsum takima erat tempor</p>
                 </div>
@@ -137,10 +139,10 @@ export default function HomePage() {
             <div className="col-lg-6 mb-5">
               <div className="row align-items-center">
                 <div className="col-sm-5">
-                  <Image className="/img-fluid mb-3 mb-sm-0" src="/img/service-3.jpg" alt="pic" width={100} height={100} />
+                  <Image className="/img-fluid mb-3 mb-sm-0" src="/img/service-3.jpg" alt="pic" width={300} height={300} />
                 </div>
                 <div className="col-sm-7">
-                  <h4><span className="fa fa-award service-icon"></span> Best Quality Coffee</h4>
+                  <h4><span className="fa fa-award service-icon"><FaAward /></span> Best Quality Coffee</h4>
                   <p className="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit
                     invidunt, dolore tempor diam ipsum takima erat tempor</p>
                 </div>
@@ -149,10 +151,10 @@ export default function HomePage() {
             <div className="col-lg-6 mb-5">
               <div className="row align-items-center">
                 <div className="col-sm-5">
-                  <Image className="/img-fluid mb-3 mb-sm-0" src="/img/service-4.jpg" alt="pic" width={100} height={100} />
+                  <Image className="/img-fluid mb-3 mb-sm-0" src="/img/service-4.jpg" alt="pic" width={300} height={300} />
                 </div>
                 <div className="col-sm-7">
-                  <h4><span className="fa fa-table service-icon"></span> Online Table Booking</h4>
+                  <h4><span className="fa fa-table service-icon"><RiCalendarScheduleFill /></span> Online Table Booking</h4>
                   <p className="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit
                     invidunt, dolore tempor diam ipsum takima erat tempor</p>
                 </div>
