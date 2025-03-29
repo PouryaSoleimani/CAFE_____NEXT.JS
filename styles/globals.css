@@ -11018,3 +11018,33 @@ h6,
     @apply bg-background text-foreground;
   }
 }
+.MAINMAIN {
+  width: 100%;
+  height: 100%;
+
+  background: #000000;
+  --gap: 5em;
+  --line: .8px;
+  --color: rgba(255, 255, 255, 0.2);
+
+  background-image: linear-gradient(
+      -90deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      0deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    );
+  background-size: var(--gap) var(--gap);
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-color: #000000;
+  z-index: 0;
+  background-clip: content-box;
+  background-origin: content-box;
+}

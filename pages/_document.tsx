@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en" className="bg-black">
       <Head />
       <title>☕Next-Coffee</title>
-      <body className="antialiased ">
+      <body className="antialiased">
         <Main />
         <NextScript />
       </body>
