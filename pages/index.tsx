@@ -1,7 +1,7 @@
 // ^ HOME PAGE =================================================================================================================================================
 import Image from "next/image";
 import Link from "next/link";
-import { FaAward, FaCoffee, FaTruck } from "react-icons/fa";
+import { FaAward, FaCoffee, FaEnvelope, FaMapMarkerAlt, FaPhone, FaTruck } from "react-icons/fa";
 import { RiCalendarScheduleFill } from "react-icons/ri";
 
 
@@ -387,9 +387,9 @@ export default function HomePage() {
         <div className="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
           <div className="col-lg-3 col-md-6 mb-5">
             <h4 className="text-white text-uppercase mb-4" style={{ letterSpacing: "3px" }}>Get In Touch</h4>
-            <p><span className="fa fa-map-marker-alt mr-2"></span> 123 Street, New York, USA</p>
-            <p><span className="fa fa-phone-alt mr-2"></span> +012 345 67890</p>
-            <p className="m-0"><span className="fa fa-envelope mr-2"></span> info@example.com</p>
+            <p className="flex items-center"><span className="fa fa-map-marker-alt mr-2 "><FaMapMarkerAlt /></span> 123 Street, New York, USA</p>
+            <p className="flex items-center"><span className="fa fa-phone-alt mr-2 "><FaPhone /></span> +012 345 67890</p>
+            <p className="m-0 flex items-center"><span className="fa fa-envelope mr-2 "><FaEnvelope /></span> info@example.com</p>
           </div>
           <div className="col-lg-3 col-md-6 mb-5">
             <h4 className="text-white text-uppercase mb-4" style={{ letterSpacing: "3px" }}>Follow Us</h4>
