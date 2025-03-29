@@ -1,9 +1,9 @@
 import React from 'react'
 
-const index = () => {
+const MenuPage = () => {
     return (
-        <div>index</div>
+        <div>MenuPage</div>
     )
 }
 
-export default index
+export default MenuPage
