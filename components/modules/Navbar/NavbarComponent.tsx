@@ -27,6 +27,7 @@ const NavbarComponent = () => {
                         <Link href="/menu" className="nav-item nav-link">Menu</Link>
                         <div className="nav-item dropdown">
                             <div className="nav-link dropdown-toggle" onClick={() => setDropdownOpen(!dropdownOpen)} role="button"  > Pages</div>
+
                             <div className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
                                 <Link href="/reservation" className="dropdown-item">Reservation</Link>
                                 <Link href="/testimonial" className="dropdown-item">Testimonial</Link>
