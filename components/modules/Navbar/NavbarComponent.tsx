@@ -7,7 +7,8 @@ const NavbarComponent = () => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
     return (
-        <div className="container-fluid p-0 nav-bar">
+        <div className="container-fluid p-0 nav-bar absolute top-0 left-0 z-3">
+            <div className="bg-overlay"></div>
             <nav className="navbar navbar-expand-lg bg-none navbar-dark py-3">
                 <Link href="/" className="navbar-brand px-lg-4 m-0">
                     <h1 className="m-0 display-4 text-uppercase text-white hover:text-[#da9f5b]">Next-Coffee</h1>
