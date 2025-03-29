@@ -1,7 +1,8 @@
 // ^ HOME PAGE =================================================================================================================================================
 import Image from "next/image";
 import Link from "next/link";
-import { FaAward, FaCoffee, FaEnvelope, FaMapMarkerAlt, FaPhone, FaTruck } from "react-icons/fa";
+import { FaAward, FaCoffee, FaEnvelope, FaFacebookSquare, FaLinkedin, FaMapMarkerAlt, FaPhone, FaTruck, FaTwitter } from "react-icons/fa";
+import { FaSquareInstagram } from "react-icons/fa6";
 import { RiCalendarScheduleFill } from "react-icons/ri";
 
 
@@ -395,10 +396,10 @@ export default function HomePage() {
             <h4 className="text-white text-uppercase mb-4" style={{ letterSpacing: "3px" }}>Follow Us</h4>
             <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
             <div className="d-flex justify-content-start">
-              <Link className="btn btn-lg btn-outline-light btn-lg-square mr-2" href="/"><span className="fab fa-twitter"></span> </Link>
-              <Link className="btn btn-lg btn-outline-light btn-lg-square mr-2" href="/"><span className="fab fa-facebook-f"></span> </Link>
-              <Link className="btn btn-lg btn-outline-light btn-lg-square mr-2" href="/"><span className="fab fa-linkedin-in"></span> </Link>
-              <Link className="btn btn-lg btn-outline-light btn-lg-square" href="/"><span className="fab fa-instagram"></span> </Link>
+              <Link href="/"><FaTwitter className="w-12 h-12 mx-4 text-white hover:text-blue-700q" /> </Link>
+              <Link href="/"><FaFacebookSquare className="w-12 h-12 mx-4 text-white" /> </Link>
+              <Link href="/"><FaLinkedin className="w-12 h-12 mx-4 text-white" /> </Link>
+              <Link href="/"><FaSquareInstagram className="w-12 h-12 mx-4 text-white" /> </Link>
             </div>
           </div>
           <div className="col-lg-3 col-md-6 mb-5">
