@@ -112,7 +112,7 @@ export default function HomePage() {
             <h4 className="text-primary text-uppercase" style={{ letterSpacing: "5px" }}>Our Services</h4>
             <h1 className="display-4">Fresh &amp;Organic Beans</h1>
           </div>
-          <div className="row">
+          <div className="row mx-auto">
             <div className="col-lg-6 mb-5">
               <div className="row align-items-center">
                 <div className="col-sm-5">
