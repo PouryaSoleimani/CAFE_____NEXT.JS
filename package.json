@@ -10,12 +10,17 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "framer-motion": "^12.6.2",
+    "lucide-react": "^0.485.0",
     "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
-    "swiper": "^11.2.6"
+    "swiper": "^11.2.6",
+    "tailwind-merge": "^3.0.2",
+    "tw-animate-css": "^1.2.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
