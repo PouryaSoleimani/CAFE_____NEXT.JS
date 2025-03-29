@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className="relative min-h-screen w-full">
       <NavbarComponent />
-      <div className="pt-[80px]"> {/* Add padding-top to account for fixed navbar */}
+      <div className="min:[995px]:pt-[80px]"> {/* Add padding-top to account for fixed navbar */}
         <Component {...pageProps} />
       </div>
     </main>
