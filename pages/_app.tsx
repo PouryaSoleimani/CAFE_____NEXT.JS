@@ -4,9 +4,11 @@ import type { AppProps } from "next/app";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <section className="flex flex-col">
+    <main className="relative min-h-screen w-full">
       <NavbarComponent />
-      <Component {...pageProps} />
-    </section>
+      <div className="pt-[80px]"> {/* Add padding-top to account for fixed navbar */}
+        <Component {...pageProps} />
+      </div>
+    </main>
   )
 }
