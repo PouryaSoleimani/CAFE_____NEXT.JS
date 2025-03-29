@@ -10,13 +10,9 @@ const NavbarComponent = () => {
         <div className="container-fluid p-0 nav-bar">
             <nav className="navbar navbar-expand-lg bg-none navbar-dark py-3">
                 <Link href="/" className="navbar-brand px-lg-4 m-0">
-                    <h1 className="m-0 display-4 text-uppercase text-white">Next-Coffee</h1>
+                    <h1 className="m-0 display-4 text-uppercase text-white hover:text-[#da9f5b]">Next-Coffee</h1>
                 </Link>
-                <button
-                    type="button"
-                    className="navbar-toggler"
-                    onClick={() => setIsOpen(!isOpen)}
-                >
+                <button type="button" className="navbar-toggler" onClick={() => setIsOpen(!isOpen)}>
                     <span className="navbar-toggler-icon">
                         <GiHamburgerMenu className="w-6 h-6 m-auto translate-y-1" />
                     </span>
