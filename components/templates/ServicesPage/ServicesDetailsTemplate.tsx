@@ -6,4 +6,4 @@ const ServicesDetailsPage = () => {
     )
 }
 
-export default ServicesDetailsPage
+export default ServicesDetailsPage 
