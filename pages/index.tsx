@@ -22,16 +22,16 @@ export default function HomePage() {
             <div className="navbar-nav ml-auto p-4">
               <Link href="/" className="nav-item nav-link active">Home</Link>
               <Link href="/about-us" className="nav-item nav-link">About</Link>
-              <Link href="/services" className="nav-item nav-link">Service</Link>
+              <Link href="/services" className="nav-item nav-link">Services</Link>
               <Link href="/menu" className="nav-item nav-link">Menu</Link>
               <div className="nav-item dropdown">
-                <Link href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Pages</Link>
+                <Link href="/" className="nav-link dropdown-toggle" data-toggle="dropdown">Pages</Link>
                 <div className="dropdown-menu text-capitalize">
                   <Link href="/reservation" className="dropdown-item">Reservation</Link>
                   <Link href="/testimonial" className="dropdown-item">Testimonial</Link>
                 </div>
               </div>
-              <Link href="contact-us" className="nav-item nav-link">Contact</Link>
+              <Link href="/contact-us" className="nav-item nav-link">Contact</Link>
             </div>
           </div>
         </nav>
@@ -43,7 +43,7 @@ export default function HomePage() {
         <div id="blog-carousel" className="carousel slide overlay-bottom" data-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img className="w-100" src="img/carousel-1.jpg" alt="Image" />
+              <Image className="w-100" src="/img/carousel-1.jpg" alt="Image" width={2000} height={2000} />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <h2 className="text-primary font-weight-medium m-0">We Have Been Serving</h2>
                 <h1 className="display-1 text-white m-0">COFFEE</h1>
@@ -51,7 +51,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="carousel-item">
-              <img className="w-100" src="img/carousel-2.jpg" alt="Image" />
+              <Image className="w-100" src="/img/carousel-2.jpg" alt="Image" width={2000} height={2000} />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <h2 className="text-primary font-weight-medium m-0">We Have Been Serving</h2>
                 <h1 className="display-1 text-white m-0">COFFEE</h1>
@@ -82,20 +82,20 @@ export default function HomePage() {
               <h1 className="mb-3">Our Story</h1>
               <h5 className="mb-3">Eos kasd eos dolor vero vero, lorem stet diam rebum. Ipsum amet sed vero dolor sea</h5>
               <p>Takimata sed vero vero no sit sed, justo clita duo no duo amet et, nonumy kasd sed dolor eos diam lorem eirmod. Amet sit amet amet no. Est nonumy sed labore eirmod sit magna. Erat at est justo sit ut. Labor diam sed ipsum et eirmod</p>
-              <Link href="" className="btn btn-secondary font-weight-bold py-2 px-4 mt-2">Learn More</Link>
+              <Link href="/" className="btn btn-secondary font-weight-bold py-2 px-4 mt-2">Learn More</Link>
             </div>
             <div className="col-lg-4 py-5 py-lg-0" style={{ minHeight: "500px" }}>
               <div className="position-relative h-100">
-                <img className="position-absolute w-100 h-100" src="img/about.png" style={{ objectFit: "cover" }} />
+                <Image className="position-absolute w-100 h-100" src="/img/about.png" style={{ objectFit: "cover" }} alt="pic" width={100} height={100} />
               </div>
             </div>
             <div className="col-lg-4 py-0 py-lg-5">
               <h1 className="mb-3">Our Vision</h1>
               <p>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est dolor</p>
-              <h5 className="mb-3"><i className="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</h5>
-              <h5 className="mb-3"><i className="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</h5>
-              <h5 className="mb-3"><i className="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</h5>
-              <Link href="" className="btn btn-primary font-weight-bold py-2 px-4 mt-2">Learn More</Link>
+              <h5 className="mb-3"><span className="fa fa-check text-primary mr-3"></span> Lorem ipsum dolor sit amet</h5>
+              <h5 className="mb-3"><span className="fa fa-check text-primary mr-3"></span> Lorem ipsum dolor sit amet</h5>
+              <h5 className="mb-3"><span className="fa fa-check text-primary mr-3"></span> Lorem ipsum dolor sit amet</h5>
+              <Link href="/" className="btn btn-primary font-weight-bold py-2 px-4 mt-2">Learn More</Link>
             </div>
           </div>
         </div>
@@ -114,10 +114,10 @@ export default function HomePage() {
             <div className="col-lg-6 mb-5">
               <div className="row align-items-center">
                 <div className="col-sm-5">
-                  <img className="img-fluid mb-3 mb-sm-0" src="img/service-1.jpg" alt="" />
+                  <Image className="/img-fluid mb-3 mb-sm-0" src="/img/service-1.jpg" alt="pic" width={100} height={100} />
                 </div>
                 <div className="col-sm-7">
-                  <h4><i className="fa fa-truck service-icon"></i>Fastest Door Delivery</h4>
+                  <h4><span className="fa fa-truck service-icon"></span> Fastest Door Delivery</h4>
                   <p className="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit
                     invidunt, dolore tempor diam ipsum takima erat tempor</p>
                 </div>
@@ -126,10 +126,10 @@ export default function HomePage() {
             <div className="col-lg-6 mb-5">
               <div className="row align-items-center">
                 <div className="col-sm-5">
-                  <img className="img-fluid mb-3 mb-sm-0" src="img/service-2.jpg" alt="" />
+                  <Image className="/img-fluid mb-3 mb-sm-0" src="/img/service-2.jpg" alt="pic" width={100} height={100} />
                 </div>
                 <div className="col-sm-7">
-                  <h4><i className="fa fa-coffee service-icon"></i>Fresh Coffee Beans</h4>
+                  <h4><span className="fa fa-coffee service-icon"></span> Fresh Coffee Beans</h4>
                   <p className="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit
                     invidunt, dolore tempor diam ipsum takima erat tempor</p>
                 </div>
@@ -138,10 +138,10 @@ export default function HomePage() {
             <div className="col-lg-6 mb-5">
               <div className="row align-items-center">
                 <div className="col-sm-5">
-                  <img className="img-fluid mb-3 mb-sm-0" src="img/service-3.jpg" alt="" />
+                  <Image className="/img-fluid mb-3 mb-sm-0" src="/img/service-3.jpg" alt="pic" width={100} height={100} />
                 </div>
                 <div className="col-sm-7">
-                  <h4><i className="fa fa-award service-icon"></i>Best Quality Coffee</h4>
+                  <h4><span className="fa fa-award service-icon"></span> Best Quality Coffee</h4>
                   <p className="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit
                     invidunt, dolore tempor diam ipsum takima erat tempor</p>
                 </div>
@@ -150,10 +150,10 @@ export default function HomePage() {
             <div className="col-lg-6 mb-5">
               <div className="row align-items-center">
                 <div className="col-sm-5">
-                  <img className="img-fluid mb-3 mb-sm-0" src="img/service-4.jpg" alt="" />
+                  <Image className="/img-fluid mb-3 mb-sm-0" src="/img/service-4.jpg" alt="pic" width={100} height={100} />
                 </div>
                 <div className="col-sm-7">
-                  <h4><i className="fa fa-table service-icon"></i>Online Table Booking</h4>
+                  <h4><span className="fa fa-table service-icon"></span> Online Table Booking</h4>
                   <p className="m-0">Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit
                     invidunt, dolore tempor diam ipsum takima erat tempor</p>
                 </div>
@@ -196,7 +196,7 @@ export default function HomePage() {
               <h1 className="mb-5">Hot Coffee</h1>
               <div className="row align-items-center mb-5">
                 <div className="col-4 col-sm-3">
-                  <img className="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-1.jpg" alt="" />
+                  <Image className="w-100 rounded-circle mb-3 mb-sm-0" src="/img/menu-1.jpg" alt="pic" width={100} height={100} />
                   <h5 className="menu-price">$5</h5>
                 </div>
                 <div className="col-8 col-sm-9">
@@ -206,7 +206,7 @@ export default function HomePage() {
               </div>
               <div className="row align-items-center mb-5">
                 <div className="col-4 col-sm-3">
-                  <img className="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-2.jpg" alt="" />
+                  <Image className="w-100 rounded-circle mb-3 mb-sm-0" src="/img/menu-2.jpg" alt="pic" width={100} height={100} />
                   <h5 className="menu-price">$7</h5>
                 </div>
                 <div className="col-8 col-sm-9">
@@ -216,7 +216,7 @@ export default function HomePage() {
               </div>
               <div className="row align-items-center mb-5">
                 <div className="col-4 col-sm-3">
-                  <img className="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-3.jpg" alt="" />
+                  <Image className="w-100 rounded-circle mb-3 mb-sm-0" src="/img/menu-3.jpg" alt="pic" width={100} height={100} />
                   <h5 className="menu-price">$9</h5>
                 </div>
                 <div className="col-8 col-sm-9">
@@ -229,7 +229,7 @@ export default function HomePage() {
               <h1 className="mb-5">Cold Coffee</h1>
               <div className="row align-items-center mb-5">
                 <div className="col-4 col-sm-3">
-                  <img className="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-1.jpg" alt="" />
+                  <Image className="w-100 rounded-circle mb-3 mb-sm-0" src="/img/menu-1.jpg" alt="pic" width={100} height={100} />
                   <h5 className="menu-price">$5</h5>
                 </div>
                 <div className="col-8 col-sm-9">
@@ -239,7 +239,7 @@ export default function HomePage() {
               </div>
               <div className="row align-items-center mb-5">
                 <div className="col-4 col-sm-3">
-                  <img className="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-2.jpg" alt="" />
+                  <Image className="w-100 rounded-circle mb-3 mb-sm-0" src="/img/menu-2.jpg" alt="pic" width={100} height={100} />
                   <h5 className="menu-price">$7</h5>
                 </div>
                 <div className="col-8 col-sm-9">
@@ -249,7 +249,7 @@ export default function HomePage() {
               </div>
               <div className="row align-items-center mb-5">
                 <div className="col-4 col-sm-3">
-                  <img className="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-3.jpg" alt="" />
+                  <Image className="w-100 rounded-circle mb-3 mb-sm-0" src="/img/menu-3.jpg" alt="pic" width={100} height={100} />
                   <h5 className="menu-price">$9</h5>
                 </div>
                 <div className="col-8 col-sm-9">
@@ -278,9 +278,9 @@ export default function HomePage() {
                   <p className="text-white">Lorem justo clita erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
                     ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea</p>
                   <ul className="list-inline text-white m-0">
-                    <li className="py-2"><i className="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</li>
-                    <li className="py-2"><i className="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</li>
-                    <li className="py-2"><i className="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</li>
+                    <li className="py-2"><span className="fa fa-check text-primary mr-3"></span> Lorem ipsum dolor sit amet</li>
+                    <li className="py-2"><span className="fa fa-check text-primary mr-3"></span> Lorem ipsum dolor sit amet</li>
+                    <li className="py-2"><span className="fa fa-check text-primary mr-3"></span> Lorem ipsum dolor sit amet</li>
                   </ul>
                 </div>
               </div>
@@ -337,40 +337,40 @@ export default function HomePage() {
           <div className="owl-carousel testimonial-carousel">
             <div className="testimonial-item">
               <div className="d-flex align-items-center mb-3">
-                <img className="img-fluid" src="img/testimonial-1.jpg" alt="" />
+                <Image className="/img-fluid" src="/img/testimonial-1.jpg" alt="pic" width={100} height={100} />
                 <div className="ml-3">
                   <h4>Client Name</h4>
-                  <i>Profession</i>
+                  <span>Profession</span>
                 </div>
               </div>
               <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
             </div>
             <div className="testimonial-item">
               <div className="d-flex align-items-center mb-3">
-                <img className="img-fluid" src="img/testimonial-2.jpg" alt="" />
+                <Image className="/img-fluid" src="/img/testimonial-2.jpg" alt="pic" width={100} height={100} />
                 <div className="ml-3">
                   <h4>Client Name</h4>
-                  <i>Profession</i>
+                  <span>Profession</span>
                 </div>
               </div>
               <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
             </div>
             <div className="testimonial-item">
               <div className="d-flex align-items-center mb-3">
-                <img className="img-fluid" src="img/testimonial-3.jpg" alt="" />
+                <Image className="/img-fluid" src="/img/testimonial-3.jpg" alt="pic" width={100} height={100} />
                 <div className="ml-3">
                   <h4>Client Name</h4>
-                  <i>Profession</i>
+                  <span>Profession</span>
                 </div>
               </div>
               <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
             </div>
             <div className="testimonial-item">
               <div className="d-flex align-items-center mb-3">
-                <img className="img-fluid" src="img/testimonial-4.jpg" alt="" />
+                <Image className="/img-fluid" src="/img/testimonial-4.jpg" alt="pic" width={100} height={100} />
                 <div className="ml-3">
                   <h4>Client Name</h4>
-                  <i>Profession</i>
+                  <span>Profession</span>
                 </div>
               </div>
               <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
@@ -386,18 +386,18 @@ export default function HomePage() {
         <div className="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
           <div className="col-lg-3 col-md-6 mb-5">
             <h4 className="text-white text-uppercase mb-4" style={{ letterSpacing: "3px" }}>Get In Touch</h4>
-            <p><i className="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-            <p><i className="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-            <p className="m-0"><i className="fa fa-envelope mr-2"></i>info@example.com</p>
+            <p><span className="fa fa-map-marker-alt mr-2"></span> 123 Street, New York, USA</p>
+            <p><span className="fa fa-phone-alt mr-2"></span> +012 345 67890</p>
+            <p className="m-0"><span className="fa fa-envelope mr-2"></span> info@example.com</p>
           </div>
           <div className="col-lg-3 col-md-6 mb-5">
             <h4 className="text-white text-uppercase mb-4" style={{ letterSpacing: "3px" }}>Follow Us</h4>
             <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
             <div className="d-flex justify-content-start">
-              <Link className="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i className="fab fa-twitter"></i></Link>
-              <Link className="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i className="fab fa-facebook-f"></i></Link>
-              <Link className="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i className="fab fa-linkedin-in"></i></Link>
-              <Link className="btn btn-lg btn-outline-light btn-lg-square" href="#"><i className="fab fa-instagram"></i></Link>
+              <Link className="btn btn-lg btn-outline-light btn-lg-square mr-2" href="/"><span className="fab fa-twitter"></span> </Link>
+              <Link className="btn btn-lg btn-outline-light btn-lg-square mr-2" href="/"><span className="fab fa-facebook-f"></span> </Link>
+              <Link className="btn btn-lg btn-outline-light btn-lg-square mr-2" href="/"><span className="fab fa-linkedin-in"></span> </Link>
+              <Link className="btn btn-lg btn-outline-light btn-lg-square" href="/"><span className="fab fa-instagram"></span> </Link>
             </div>
           </div>
           <div className="col-lg-3 col-md-6 mb-5">
@@ -423,7 +423,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style={{ borderColor: " rgba(256, 256, 256, .1) !important;" }}>
-          <p className="mb-2 text-white">Copyright &amp;copy; <Link className="font-weight-bold" href="#">Domain</Link> . All Rights Reserved</p>
+          <p className="mb-2 text-white">Copyright &amp;copy; <Link className="font-weight-bold" href="/">Domain</Link> . All Rights Reserved</p>
           <p className="m-0 text-white">Designed by <Link className="font-weight-bold" href="https://htmlcodex.com">HTML Codex</Link> </p>
         </div>
       </div >
@@ -431,7 +431,7 @@ export default function HomePage() {
 
 
       {/* <!-- Back to Top --> */}
-      <Link href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top"><span className="fa fa-angle-double-up"></span></Link>
+      <Link href="/" className="btn btn-lg btn-primary btn-lg-square back-to-top"><span className="fa fa-angle-double-up"></span></Link>
     </>
   );
 }
