@@ -22,13 +22,13 @@ export default function HomePage() {
             <div className="navbar-nav ml-auto p-4">
               <Link href="/" className="nav-item nav-link active">Home</Link>
               <Link href="/about" className="nav-item nav-link">About</Link>
-              <Link href="service.html" className="nav-item nav-link">Service</Link>
-              <Link href="menu.html" className="nav-item nav-link">Menu</Link>
+              <Link href="/services" className="nav-item nav-link">Service</Link>
+              <Link href="/menu" className="nav-item nav-link">Menu</Link>
               <div className="nav-item dropdown">
                 <Link href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Pages</Link>
                 <div className="dropdown-menu text-capitalize">
-                  <Link href="reservation.html" className="dropdown-item">Reservation</Link>
-                  <Link href="testimonial.html" className="dropdown-item">Testimonial</Link>
+                  <Link href="/reservation" className="dropdown-item">Reservation</Link>
+                  <Link href="/testimonial" className="dropdown-item">Testimonial</Link>
                 </div>
               </div>
               <Link href="contact.html" className="nav-item nav-link">Contact</Link>
