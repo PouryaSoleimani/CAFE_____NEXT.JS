@@ -11,7 +11,7 @@ const NavbarComponent = () => {
         <div className="container-fluid p-0 nav-bar fixed top-0 left-0 w-full z-50 bg-[rgba(0,0,0,0.9)]">
             <div className="bg-overlay"></div>
             <nav className="navbar navbar-expand-lg bg-none navbar-dark py-3">
-                <Link href="/" className="navbar-brand px-lg-4 m-0">
+                <Link href="/" className="navbar-brand px-lg-4 m-0 flex">
                     <h1 className="m-0 display-4 text-uppercase text-white hover:text-[#da9f5b]">Next-Coffee</h1>
                 </Link>
                 <button type="button" className="navbar-toggler" onClick={() => setIsOpen(!isOpen)}>
