@@ -396,10 +396,10 @@ export default function HomePage() {
             <h4 className="text-white text-uppercase mb-4" style={{ letterSpacing: "3px" }}>Follow Us</h4>
             <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
             <div className="d-flex justify-content-start">
-              <Link href="/"><FaTwitter className="w-12 h-12 mx-4 text-white hover:text-blue-700q" /> </Link>
-              <Link href="/"><FaFacebookSquare className="w-12 h-12 mx-4 text-white" /> </Link>
-              <Link href="/"><FaLinkedin className="w-12 h-12 mx-4 text-white" /> </Link>
-              <Link href="/"><FaSquareInstagram className="w-12 h-12 mx-4 text-white" /> </Link>
+              <Link href="/"><FaTwitter className="w-12 h-12 mx-2  text-white" /> </Link>
+              <Link href="/"><FaFacebookSquare className="w-12 h-12 mx-2  text-white" /> </Link>
+              <Link href="/"><FaLinkedin className="w-12 h-12 mx-2  text-white" /> </Link>
+              <Link href="/"><FaSquareInstagram className="w-12 h-12 mx-2  text-white" /> </Link>
             </div>
           </div>
           <div className="col-lg-3 col-md-6 mb-5">
