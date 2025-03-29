@@ -12,7 +12,7 @@ import { RiCalendarScheduleFill } from "react-icons/ri";
 export default function HomePage() {
   return (
     <>
-    
+
       {/* <!-- Carousel Start --> */}
       <div className="container-fluid p-0 mb-5">
         <div id="blog-carousel" className="carousel slide overlay-bottom" data-ride="carousel">
