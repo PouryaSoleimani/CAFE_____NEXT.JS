@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.navCollapse {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width:991px) {
+  .navCollapse {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+  }
+  
+  .navCollapse.show {
+    display: block;
+  }
+}
+
+.dropdownMenu {
+  position: absolute;
+  background: white;
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  min-width: 160px;
+}
