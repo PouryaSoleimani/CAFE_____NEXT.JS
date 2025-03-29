@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import 'animate.css';
 
 const NavbarComponent = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ const NavbarComponent = () => {
             <div className="bg-overlay"></div>
             <nav className="navbar navbar-expand-lg bg-none navbar-dark py-3">
                 <Link href="/" className="navbar-brand px-lg-4 m-0 flex">
-                    <h1 className="m-0 display-4 text-uppercase text-white hover:text-[#da9f5b]  ">Next-Coffee</h1>
+                    <h1 className="m-0 display-4 text-uppercase text-white hover:text-[#da9f5b] animate__animated  animate__fadeInUp">Next-Coffee</h1>
                 </Link>
                 <button type="button" className="navbar-toggler" onClick={() => setIsOpen(!isOpen)}>
                     <span className="navbar-toggler-icon">
@@ -20,7 +21,7 @@ const NavbarComponent = () => {
                     </span>
                 </button>
                 <div className={`navbar-collapse ${isOpen ? 'show' : ''}`}>
-                    <div className="navbar-nav ml-auto p-4">
+                    <div className="navbar-nav ml-auto p-4 animate__animated  animate__fadeInUp animate__delay-1s">
                         <Link href="/" className="nav-item nav-link active">Home</Link>
                         <Link href="/about-us" className="nav-item nav-link">About</Link>
                         <Link href="/services" className="nav-item nav-link">Services</Link>
