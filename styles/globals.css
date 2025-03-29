@@ -3540,10 +3540,12 @@ input[type="button"].btn-block {
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #fff;
+  background-color: #000000;
   min-width: 160px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
+  color: white;
+  border: 1.5px solid white;
 }
 
 .dropdown-menu.show {
@@ -3552,12 +3554,12 @@ input[type="button"].btn-block {
 
 .dropdown-item {
   padding: 0.5rem 1rem;
-  color: #212529;
+  color: #f0f0f0 !important;
   text-decoration: none;
 }
 
 .dropdown-item:hover {
-  background-color: #f8f9fa;
+  background-color: #da9f5b52;
 }
 
 .dropdown-menu-left {
@@ -3736,7 +3738,6 @@ input[type="button"].btn-block {
   .dropdown-item:focus {
   color: #16181b;
   text-decoration: none;
-  background-color: #da9f5b;
 }
 
 .dropdown-item.active,
