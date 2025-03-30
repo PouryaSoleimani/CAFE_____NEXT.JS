@@ -280,7 +280,6 @@ export default function HomePage() {
         </div>
         <div className="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style={{ borderColor: " rgba(256, 256, 256, .1) !important;" }}>
           <p className="mb-2 text-white">Copyright &amp;copy; <Link className="font-weight-bold" href="/">Domain</Link> . All Rights Reserved</p>
-          <p className="m-0 text-white">Designed by <Link className="font-weight-bold" href="https://htmlcodex.com">HTML Codex</Link> </p>
         </div>
       </div >
       {/* <!-- Footer End --> */}
