@@ -14,7 +14,7 @@ const ServiceItemCardComponent: React.FC<ServiceItemCardComponentProps> = ({ ima
                             <Image src={imageSRC} alt="pic" width={300} height={300} />
                         </div>
                     </div>
-                    <div className="col-sm-7">
+                    <div className="col-sm-7 align-baseline">
                         <h4><span className="fa fa-truck service-icon">{React.createElement(iconName)}</span> {serviceTitle}</h4>
                         <p className="m-0 text-zinc-500 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iure nam sequi, quaerat ad hic tempore ea culpa quisquam, ab eaque aut voluptas perspiciatis beatae atque sed quibusdam aliquam est?</p>
                     </div>

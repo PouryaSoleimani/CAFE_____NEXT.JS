@@ -10909,13 +10909,13 @@ h6,
 
 .service-icon {
   margin-right: 15px;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   font-size: 18px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 45px;
+  border-radius: 3px;
   color: #33211d;
   background: #da9f5b;
 }
