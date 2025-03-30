@@ -26,7 +26,7 @@ export default function HomePage() {
                 <h2 className="text-white m-0  animate__animated  animate__fadeInUp animate__delay-2s animate__slow">* SINCE 1950 *</h2>
               </div>
             </div>
-            <div className="carousel-item">
+            <div className="carousel-item ">
               <Image className="w-100" src="/img/carousel-2.jpg" alt="Image" width={3000} height={3000} />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <h2 className="text-primary font-weight-medium m-0">We Have Been Serving</h2>
