@@ -11048,17 +11048,20 @@ h6,
   background-origin: content-box;
 }
 
-@keyframes boundeUpAndDown {
-  from {
-    translate: 5% 0;
-    scale: 200% 1;
+@keyframes bounceUpAndDown {
+  0% {
+    transform: translateY(0) scale(1);
   }
-
-  to {
-    translate: 0 0;
-    scale: 100% 1;
+  
+  50% {
+    transform: translateY(-20px) scale(1.1);
+  }
+  
+  100% {
+    transform: translateY(0) scale(1);
   }
 }
-.upAndDown{
-  animation : boundeUpAndDown 10s infinte
+
+.upAndDown {
+  animation: bounceUpAndDown 5s ease-in-out infinite;
 }
