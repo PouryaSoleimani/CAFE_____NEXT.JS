@@ -71,7 +71,7 @@ const SwiperComponent = () => {
                 </SwiperSlide>
             </Swiper>
 
-                <div className="overlay-bottom"></div>
+            <div className="overlay-bottom"></div>
         </div>
     )
 }
