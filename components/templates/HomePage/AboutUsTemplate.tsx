@@ -19,7 +19,7 @@ const AboutUsTemplate = () => {
                     </div>
                     <div className="col-lg-4 py-5 py-lg-0" style={{ minHeight: "500px" }}>
                         <div className="position-relative h-100">
-                            <Image className="position-absolute w-100 h-100" src="/img/about.png" style={{ objectFit: "cover" }} alt="pic" width={800} height={800} />
+                            <Image className="position-absolute w-100 h-100 upAndDown" src="/img/about.png" style={{ objectFit: "cover" }} alt="pic" width={800} height={800} />
                         </div>
                     </div>
                     <div className="col-lg-4 py-0 py-lg-5">
