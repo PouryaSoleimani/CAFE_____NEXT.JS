@@ -1,0 +1,71 @@
+{
+    "menu": [
+        { "id": 1, "name": "Espresso", "imgSRC": "", "price": 2.5, "description": "A strong and bold coffee shot." },
+        {
+            "id": 2,
+            "name": "Latte",
+            "imgSRC": "",
+            "price": 3.5,
+            "description": "A smooth blend of espresso and steamed milk."
+        },
+        {
+            "id": 3,
+            "name": "Cappuccino",
+            "imgSRC": "",
+            "price": 3,
+            "description": "Espresso with steamed milk and a frothy top."
+        },
+        { "id": 4, "name": "Mocha", "imgSRC": "", "price": 4, "description": "A chocolate-flavored variant of a latte." },
+        { "id": 5, "name": "Americano", "imgSRC": "", "price": 2.75, "description": "Espresso diluted with hot water." },
+        {
+            "id": 6,
+            "name": "Macchiato",
+            "imgSRC": "",
+            "price": 3.25,
+            "description": "Espresso with a small amount of steamed milk."
+        },
+        {
+            "id": 7,
+            "name": "Flat White",
+            "imgSRC": "",
+            "price": 3.75,
+            "description": "A velvety blend of espresso and microfoam."
+        },
+        {
+            "id": 8,
+            "name": "Affogato",
+            "imgSRC": "",
+            "price": 4.5,
+            "description": "A scoop of vanilla ice cream topped with a shot of espresso."
+        },
+        { "id": 9, "name": "Iced Coffee", "imgSRC": "", "price": 3.5, "description": "Chilled coffee served over ice." },
+        {
+            "id": 10,
+            "name": "Cold Brew",
+            "imgSRC": "",
+            "price": 4,
+            "description": "Coffee brewed with cold water for a smooth flavor."
+        }
+    ],
+    "services": [
+        {
+            "id": 1,
+            "name": "Free Wi-Fi",
+            "imgSRC": "",
+            "description": "Enjoy complimentary Wi-Fi while you sip your coffee."
+        },
+        { "id": 2, "name": "Outdoor Seating", "imgSRC": "", "description": "Relax in our outdoor seating area." },
+        { "id": 3, "name": "Live Music", "imgSRC": "", "description": "Join us for live music every Friday evening." },
+        {
+            "id": 4,
+            "name": "Loyalty Program",
+            "imgSRC": "",
+            "description": "Earn points with every purchase for discounts."
+        },
+        { "id": 5, "name": "Pet-Friendly", "imgSRC": "", "description": "Bring your furry friends along!" }
+    ],
+    "about": {
+        "title": "About Us",
+        "description": "Welcome to our cafe! We are passionate about serving the best coffee and creating a cozy atmosphere for our customers. Our team is dedicated to providing exceptional service and ensuring that every visit is a delightful experience. Whether you're here for a quick coffee or to relax with friends, we have something for everyone."
+    }
+}
