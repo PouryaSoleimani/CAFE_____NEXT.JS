@@ -14,7 +14,7 @@ const AboutUsTemplate = () => {
                     <div className="col-lg-4 py-0 py-lg-5">
                         <h1 className="mb-3">Our Story</h1>
                         <h5 className="mb-3">Eos kasd eos dolor vero vero, lorem stet diam rebum. Ipsum amet sed vero dolor sea</h5>
-                        <p>Takimata sed vero vero no sit sed, justo clita duo no duo amet et, nonumy kasd sed dolor eos diam lorem eirmod. Amet sit amet amet no. Est nonumy sed labore eirmod sit magna. Erat at est justo sit ut. Labor diam sed ipsum et eirmod</p>
+                        <p className='text-zinc-300 font-semibold'>Takimata sed vero vero no sit sed, justo clita duo no duo amet et, nonumy kasd sed dolor eos diam lorem eirmod. Amet sit amet amet no. Est nonumy sed labore eirmod sit magna. Erat at est justo sit ut. Labor diam sed ipsum et eirmod</p>
                         <Link href="/" className="btn btn-secondary font-weight-bold py-2 px-4 mt-2">Learn More</Link>
                     </div>
                     <div className="col-lg-4 py-5 py-lg-0" style={{ minHeight: "500px" }}>
@@ -24,7 +24,7 @@ const AboutUsTemplate = () => {
                     </div>
                     <div className="col-lg-4 py-0 py-lg-5">
                         <h1 className="mb-3">Our Vision</h1>
-                        <p>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est dolor</p>
+                        <p className='text-zinc-300 font-semibold'>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est dolor</p>
                         <h5 className="mb-3"><span className="fa fa-check text-primary mr-3"></span> Lorem ipsum dolor sit amet</h5>
                         <h5 className="mb-3"><span className="fa fa-check text-primary mr-3"></span> Lorem ipsum dolor sit amet</h5>
                         <h5 className="mb-3"><span className="fa fa-check text-primary mr-3"></span> Lorem ipsum dolor sit amet</h5>
