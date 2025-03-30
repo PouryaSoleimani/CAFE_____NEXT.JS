@@ -4,7 +4,7 @@ import React from 'react'
 
 const AboutUsTemplate = () => {
     return (
-        <div className="container-fluid py-5">
+        <div className="container-fluid2 py-5 lg:px-10 ">
             <div className="container">
                 <div className="section-title">
                     <h4 className="text-primary text-uppercase" style={{ letterSpacing: "5px" }}>About Us</h4>

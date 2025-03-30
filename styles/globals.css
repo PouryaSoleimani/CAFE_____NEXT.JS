@@ -733,6 +733,13 @@ pre code {
   margin-left: auto;
 }
 
+.container-fluid2 {
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media (min-width:576px) {
   .container,
   .container-sm {
