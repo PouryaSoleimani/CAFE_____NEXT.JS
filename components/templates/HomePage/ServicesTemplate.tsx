@@ -12,6 +12,7 @@ const ServicesTemplate = () => {
                     <h1 className="display-4">Fresh &amp;Organic Beans</h1>
                 </div>
                 <div className="row mx-auto">
+
                     <div className="col-lg-6 mb-5">
                         <div className="row align-items-center">
                             <div className="col-sm-5">
@@ -62,6 +63,7 @@ const ServicesTemplate = () => {
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
