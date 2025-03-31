@@ -9,6 +9,7 @@ import AboutUsTemplate from "@/components/templates/HomePage/AboutUsTemplate";
 import SliderTemplate from "@/components/templates/HomePage/SliderTemplate";
 import ServicesTemplate from "@/components/templates/HomePage/ServicesTemplate";
 import { GetStaticProps } from "next";
+import OfferTemplate from "@/components/templates/HomePage/OfferTemplate";
 
 interface ServicesTemplateProps { data: [{ serviceID: number, serviceTitle: string, description: string, imgSRC: string, iconName: React.ElementType }] }
 
@@ -20,25 +21,7 @@ const HomePage: React.FC<ServicesTemplateProps> = ({ data }) => {
       <SliderTemplate />
       <AboutUsTemplate />
       <ServicesTemplate data={data} />
-
-
-      {/* <!-- Offer Start --> */}
-      <div className="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom">
-        <div className="container py-5">
-          <h1 className="display-3 text-primary mt-3">50% OFF</h1>
-          <h1 className="text-white mb-3">Sunday Special Offer</h1>
-          <h4 className="text-white font-weight-normal mb-4 pb-3">Only for Sunday from 1st Jan to 30th Jan 2045</h4>
-          <form className="form-inline justify-content-center mb-4">
-            <div className="input-group">
-              <input type="text" className="form-control p-4" placeholder="Your Email" style={{ height: "60px" }} />
-              <div className="input-group-append">
-                <button className="btn btn-primary font-weight-bold px-4" type="submit">Sign Up</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      {/* <!-- Offer End --> */}
+      <OfferTemplate />
 
 
       {/* <!-- Menu Start --> */}
