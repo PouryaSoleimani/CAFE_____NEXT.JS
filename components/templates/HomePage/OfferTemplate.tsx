@@ -10,6 +10,7 @@ type Inputs = { email: string }
 
 //  COMPONENT =============================================================================================================================================
 const OfferTemplate = () => {
+    
     const schema = yup.object().shape({ email: yup.string().email().required(), }).required();
     const { register, handleSubmit, formState: { errors }, resetField } = useForm<Inputs>({ resolver: yupResolver(schema), })
 
