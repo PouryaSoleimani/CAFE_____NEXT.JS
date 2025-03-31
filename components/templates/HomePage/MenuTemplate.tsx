@@ -18,11 +18,11 @@ const MenuTemplate: React.FC<MenuTemplateProps> = ({ menuData }) => {
                         <div className="menuITemBox hover:scale-105 transition-transform duration-300 ease-in-out">
                             <div className="w-44 h-44 relative mx-auto">
                                 <Image className="w-100 rounded-md shadow-lg hover:shadow-[#da9f5b] transition-shadow duration-300" src={menuItem.imgSRC} alt="pic" width={200} height={200} />
-                                <h5 className="menu-price text-[#da9f5b] font-semibold mt-2 absolute -top-4 -left-10">$7</h5>
+                                <h5 className="menu-price text-[#da9f5b] font-bold mt-2 absolute -top-4 -left-10">${menuItem.price}</h5>
                             </div>
                             <div className="">
-                                <h4 className="text-white font-bold">Chocolate Coffee</h4>
-                                <p className="m-0 text-gray-300 w-fit">
+                                <h4 className="text-white font-bold text-5xl">Chocolate Coffee</h4>
+                                <p className="m-0 text-gray-400 w-fit text-2xl">
                                     Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor
                                 </p>
                             </div>

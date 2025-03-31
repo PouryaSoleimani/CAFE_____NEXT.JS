@@ -10943,13 +10943,14 @@ h6,
   top: -5px;
   right: 10px;
   width: 45px;
-  height: 45px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 45px;
+  border-radius: 5px;
   color: #33211d;
   background: #da9f5b;
+  font-weight: 900;
 }
 
 .testimonial-carousel .owl-dots {
