@@ -297,7 +297,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   const request = await fetch("http://localhost:4000/services")
   const data = await request.json()
 
-  return { props: { data: data }, }
+  return { props: { data: data }, revalidate: 43200 }
 }
 
 export default HomePage
