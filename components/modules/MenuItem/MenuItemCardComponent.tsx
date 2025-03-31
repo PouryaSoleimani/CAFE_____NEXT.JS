@@ -15,7 +15,6 @@ const MenuItemCardComponent: React.FC<MenuItemProps> = ({ id, name, imgSRC, pric
                 <p className="m-0 text-gray-400 w-fit text-2xl font-extralight whitespace-nowrap">
                     {description}
                 </p>
-                <button className='bg-[#da9f5b] text-zinc-900 px-4 py-3 mt-4 text-2xl hover:bg-black hover:text-[#da9f5b] '>ADD TO CART</button>
             </div>
         </div>
     )
