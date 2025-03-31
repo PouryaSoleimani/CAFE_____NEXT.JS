@@ -1,10 +1,10 @@
 // ^ SERVICE ITEM CARD COMPONENT =============================================================================================================
 import Image from 'next/image'
 import React from 'react'
-interface ServiceItemCardComponentProps { imageSRC: string; iconName: React.ElementType; serviceTitle: string; }
+interface ServiceItemCardComponentProps { id: number, title: string, description: string, imageSRC: string, iconName: React.ElementType }
 
 
-const ServiceItemCardComponent: React.FC<ServiceItemCardComponentProps> = ({ imageSRC, iconName, serviceTitle }) => {
+const ServiceItemCardComponent: React.FC<ServiceItemCardComponentProps> = ({  description, imageSRC, iconName, title }) => {
     return (
         <div className="col-lg-6 mb-5 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
             <div className="bg-dark rounded p-4 d-flex flex-column justify-content-center align-items-center h-100">
@@ -15,8 +15,10 @@ const ServiceItemCardComponent: React.FC<ServiceItemCardComponentProps> = ({ ima
                         </div>
                     </div>
                     <div className="col-sm-7 align-baseline">
-                        <h4 className='flex items-center'> <span className="fa fa-truck service-icon">{React.createElement(iconName)}</span> {serviceTitle} </h4>
-                        <p className="m-0 text-zinc-500 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iure nam sequi, quaerat ad hic tempore ea culpa quisquam, ab eaque aut voluptas perspiciatis beatae atque sed quibusdam aliquam est?</p>
+                        <h4 className='flex items-center'> <span className="fa fa-truck service-icon">{React.createElement(iconName)}</span> {title} </h4>
+                        <p className="m-0 text-zinc-500 mt-4">
+                            {description}
+                        </p>
                     </div>
                 </div>
             </div>

@@ -84,33 +84,74 @@
     "services": [
         {
             "id": 1,
-            "name": "Free Wi-Fi",
+            "serviceTitle": "Free Wi-Fi",
             "imgSRC": "",
-            "icon": "",
+            "iconName": "",
             "description": "Enjoy complimentary Wi-Fi while you sip your coffee."
         },
         {
             "id": 2,
-            "name": "Outdoor Seating",
+            "serviceTitle": "Outdoor Seating",
             "imgSRC": "",
-            "icon": "",
+            "iconName": "",
             "description": "Relax in our outdoor seating area."
         },
         {
             "id": 3,
-            "name": "Live Music",
+            "serviceTitle": "Live Music",
             "imgSRC": "",
-            "icon": "",
+            "iconName": "",
             "description": "Join us for live music every Friday evening."
         },
         {
             "id": 4,
-            "name": "Loyalty Program",
+            "serviceTitle": "Loyalty Program",
             "imgSRC": "",
-            "icon": "",
+            "iconName": "",
             "description": "Earn points with every purchase for discounts."
         },
-        { "id": 5, "name": "Pet-Friendly", "imgSRC": "", "icon": "", "description": "Bring your furry friends along!" }
+        {
+            "id": 5,
+            "serviceTitle": "Pet-Friendly",
+            "imgSRC": "",
+            "iconName": "",
+            "description": "Bring your furry friends along!"
+        },
+        {
+            "id": 6,
+            "serviceTitle": "Fastest Door Delivery",
+            "imgSRC": "/img/service-1.jpg",
+            "iconName": "Fa Truck",
+            "description": "Get your favorite drinks delivered to your doorstep."
+        },
+        {
+            "id": 7,
+            "serviceTitle": "Takeaway",
+            "imgSRC": "",
+            "iconName": "",
+            "description": "Order your favorite drinks to go."
+        },
+        {
+            "id": 8,
+            "serviceTitle": "Fresh Coffee Beans",
+            "imgSRC": "/img/service-2.jpg",
+            "iconName": "Fa Coffee",
+            "description": "We sell fresh coffee beans for home brewing."
+        },
+        {
+            "id": 9,
+            "serviceTitle": "Best Quality Coffee",
+            "imgSRC": "/img/service-3.jpg",
+            "iconName": "Fa Award",
+            "description": "We sell fresh coffee beans for home brewing."
+        },
+        {
+            "id": 10,
+            "serviceTitle": " Online Table Booking",
+            "imgSRC": "/img/service-4.jpg",
+            "iconName": "Fa Scheduler",
+            "description": "Book a table online for your convenience."
+        }
     ],
     "about": {
         "title": "About Us",

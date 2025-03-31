@@ -8,17 +8,18 @@ import 'animate.css';
 import AboutUsTemplate from "@/components/templates/HomePage/AboutUsTemplate";
 import SliderTemplate from "@/components/templates/HomePage/SliderTemplate";
 import ServicesTemplate from "@/components/templates/HomePage/ServicesTemplate";
+import { GetStaticProps } from "next";
 
-
+interface ServicesTemplateProps { data: [{ id: number, title: string, description: string, imageSRC: string, iconName: React.ElementType }] }
 
 //  COMPONENT ================================================================================================================================================
-export default function HomePage() {
+const HomePage: React.FC<ServicesTemplateProps> = ({ data }) => {
   return (
     <>
 
       <SliderTemplate />
       <AboutUsTemplate />
-      <ServicesTemplate />
+      <ServicesTemplate data={data} />
 
 
       {/* <!-- Offer Start --> */}
@@ -290,3 +291,14 @@ export default function HomePage() {
     </>
   );
 }
+// GET STATIC PROPS =================================================================================================================
+export const getStaticProps: GetStaticProps = async (ctx) => {
+
+  const request = await fetch("http://localhost:4000/services")
+  const data = await request.json()
+
+  return {
+    props: { data: data },
+  }
+}
+export default HomePage
