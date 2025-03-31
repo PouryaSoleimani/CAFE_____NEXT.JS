@@ -5,9 +5,9 @@ interface MenuItemProps { id: number, name: string, imgSRC: string, price: numbe
 // COMPONENT ==============================================================================================================================================
 const MenuItemCardComponent: React.FC<MenuItemProps> = ({ id, name, imgSRC, price, description }) => {
     return (
-        <div key={id} className="menuITemBox hover:scale-105 transition-transform duration-300 ease-in-out">
+        <div key={id} className="menuITemBox hover:scale-105 transition-all duration-300">
             <div className="w-64 h-52 relative mx-auto">
-                <Image className="rounded-md h-52 shadow-lg hover:shadow-[#da9f5b] transition-shadow duration-300" src={imgSRC} alt="pic" width={200} height={300} />
+                <Image className="rounded-md h-52 shadow-lg hover:shadow-[#da9f5b] transition-all duration-300" src={imgSRC} alt="pic" width={200} height={300} />
                 <h5 className="menu-price text-[#da9f5b] font-extrabold mt-2 absolute -top-4 -left-10">${price}</h5>
             </div>
             <div className="">
@@ -15,6 +15,7 @@ const MenuItemCardComponent: React.FC<MenuItemProps> = ({ id, name, imgSRC, pric
                 <p className="m-0 text-gray-400 w-fit text-2xl font-extralight whitespace-nowrap">
                     {description}
                 </p>
+                <button className='bg-[#da9f5b] text-zinc-900 px-4 py-3 mt-4 text-2xl hover:bg-black hover:text-[#da9f5b]'>ADD TO CART</button>
             </div>
         </div>
     )
