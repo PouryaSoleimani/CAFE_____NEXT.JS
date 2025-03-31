@@ -3,70 +3,70 @@
         {
             "id": "1",
             "name": "Espresso",
-            "imgSRC": "/img/menu-1.jpg",
+            "imgSRC": "/img/menu-1.webp",
             "price": 2.5,
             "description": "A strong and bold coffee shot."
         },
         {
             "id": "2",
             "name": "Latte",
-            "imgSRC": "/img/menu-1.jpg",
+            "imgSRC": "/img/menu-2.webp",
             "price": 3.5,
             "description": "A smooth blend of espresso and steamed milk."
         },
         {
             "id": "3",
             "name": "Cappuccino",
-            "imgSRC": "/img/menu-1.jpg",
+            "imgSRC": "/img/menu-3.webp",
             "price": 3,
             "description": "Espresso with steamed milk and a frothy top."
         },
         {
             "id": "4",
             "name": "Mocha",
-            "imgSRC": "/img/menu-1.jpg",
+            "imgSRC": "/img/menu-4.webp",
             "price": 4,
             "description": "A chocolate-flavored variant of a latte."
         },
         {
             "id": "5",
             "name": "Americano",
-            "imgSRC": "/img/menu-1.jpg",
+            "imgSRC": "/img/menu-5.webp",
             "price": 2.75,
             "description": "Espresso diluted with hot water."
         },
         {
             "id": "6",
             "name": "Macchiato",
-            "imgSRC": "/img/menu-1.jpg",
+            "imgSRC": "/img/menu-6.webp",
             "price": 3.25,
             "description": "Espresso with a small amount of steamed milk."
         },
         {
             "id": "7",
             "name": "Flat White",
-            "imgSRC": "/img/menu-1.jpg",
+            "imgSRC": "/img/menu-7.webp",
             "price": 3.75,
             "description": "A velvety blend of espresso and microfoam."
         },
         {
             "id": "8",
             "name": "Affogato",
-            "imgSRC": "/img/menu-1.jpg",
+            "imgSRC": "/img/menu-8.webp",
             "price": 4.5,
             "description": "A scoop of vanilla ice cream topped with a shot of espresso."
         },
         {
             "id": "9",
             "name": "Iced Coffee",
-            "imgSRC": "/img/menu-1.jpg",
+            "imgSRC": "/img/menu-9.webp",
             "price": 3.5,
             "description": "Chilled coffee served over ice."
         },
         {
             "id": "10",
             "name": "Cold Brew",
-            "imgSRC": "/img/menu-1.jpg",
+            "imgSRC": "/img/menu-10.webp",
             "price": 4,
             "description": "Coffee brewed with cold water for a smooth flavor."
         }
