@@ -163,7 +163,7 @@ const HomePage: React.FC<ServicesTemplateProps> = ({ data }) => {
                     </div>
                     <div className="form-group">
                       <select className="custom-select bg-transparent border-primary px-4" style={{ height: "49px" }}>
-                        <option selected>Person</option>
+                        <option defaultValue={0}> Person</option>
                         <option value="1">Person 1</option>
                         <option value="2">Person 2</option>
                         <option value="3">Person 3</option>
@@ -279,7 +279,7 @@ const HomePage: React.FC<ServicesTemplateProps> = ({ data }) => {
             </div>
           </div>
         </div>
-        <div className="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style={{ borderColor: " rgba(256, 256, 256, .1) !important;" }}>
+        <div className="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style={{ borderColor: " rgba(256, 256, 256, .1) !important" }}>
           <p className="mb-2 text-white">Copyright &amp;copy; <Link className="font-weight-bold" href="/">Domain</Link> . All Rights Reserved</p>
         </div>
       </div >
@@ -299,7 +299,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
   return {
     props: { data: data },
-    revalidate : 432000
+    revalidate: 432000
   }
 }
 
