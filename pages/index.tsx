@@ -202,7 +202,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   const data = await request.json()
 
   const menuReq = await fetch("http://localhost:4000/menu")
-  const menuData = menuReq.json()
+  const menuData = await menuReq.json()
 
   return {
     props: {
