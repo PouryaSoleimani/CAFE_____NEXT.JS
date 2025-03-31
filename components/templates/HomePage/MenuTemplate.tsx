@@ -1,8 +1,8 @@
 import { GetStaticProps } from 'next'
 import Image from 'next/image'
 import React from 'react'
-interface MenuTemplateProps { data: [{ id: number, name: string, imgSRC: string, icon: string, price: number | string, description: string }] }
-const MenuTemplate: React.FC<MenuTemplateProps> = ({ data }) => {
+interface MenuTemplateProps { menuData: [{ id: number, name: string, imgSRC: string, icon: string, price: number | string, description: string }] }
+const MenuTemplate: React.FC<MenuTemplateProps> = ({ menuData }) => {
     return (
         <div className="container-fluid pt-5">
             <div className="container">

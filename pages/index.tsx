@@ -11,10 +11,10 @@ import { GetStaticProps } from "next";
 import OfferTemplate from "@/components/templates/HomePage/OfferTemplate";
 import MenuTemplate from "@/components/templates/HomePage/MenuTemplate";
 
-interface ServicesTemplateProps { data: [{ serviceID: number, serviceTitle: string, description: string, imgSRC: string, iconName: React.ElementType }] }
+interface ServicesTemplateProps { data: [{ serviceID: number, serviceTitle: string, description: string, imgSRC: string, iconName: React.ElementType }], menuData: [{ id: number, name: string, imgSRC: string, icon: string, price: number | string, description: string }] }
 
 //  COMPONENT ================================================================================================================================================
-const HomePage: React.FC<ServicesTemplateProps> = ({ data }) => {
+const HomePage: React.FC<ServicesTemplateProps> = ({ data, menuData }) => {
   return (
     <>
 
@@ -22,7 +22,7 @@ const HomePage: React.FC<ServicesTemplateProps> = ({ data }) => {
       <AboutUsTemplate />
       <ServicesTemplate data={data} />
       <OfferTemplate />
-      <MenuTemplate />
+      <MenuTemplate menuData={menuData} />
 
 
       {/* <!-- Reservation Start --> */}
@@ -201,7 +201,15 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   const request = await fetch("http://localhost:4000/services")
   const data = await request.json()
 
-  return { props: { data: data }, revalidate: 43200 }
+  const menuReq = await fetch("http://localhost:4000/menu")
+  const menuData = menuReq.json()
+
+  return {
+    props: {
+      data: data,
+      menuData: menuData
+    }, revalidate: 43200
+  }
 }
 
 export default HomePage
