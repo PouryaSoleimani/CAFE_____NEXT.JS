@@ -1,276 +1,183 @@
 {
-  "menu": [
-    {
-      "id": 1,
-      "name": "Espresso",
-      "imgSRC": "",
-      "icon": "",
-      "price": 2.5,
-      "description": "A strong and bold coffee shot."
+    "menu": [
+        {
+            "id": 1,
+            "name": "Espresso",
+            "imgSRC": "",
+            "icon": "",
+            "price": 2.5,
+            "description": "A strong and bold coffee shot."
+        },
+        {
+            "id": 2,
+            "name": "Latte",
+            "imgSRC": "",
+            "icon": "",
+            "price": 3.5,
+            "description": "A smooth blend of espresso and steamed milk."
+        },
+        {
+            "id": 3,
+            "name": "Cappuccino",
+            "imgSRC": "",
+            "icon": "",
+            "price": 3,
+            "description": "Espresso with steamed milk and a frothy top."
+        },
+        {
+            "id": 4,
+            "name": "Mocha",
+            "imgSRC": "",
+            "icon": "",
+            "price": 4,
+            "description": "A chocolate-flavored variant of a latte."
+        },
+        {
+            "id": 5,
+            "name": "Americano",
+            "imgSRC": "",
+            "icon": "",
+            "price": 2.75,
+            "description": "Espresso diluted with hot water."
+        },
+        {
+            "id": 6,
+            "name": "Macchiato",
+            "imgSRC": "",
+            "icon": "",
+            "price": 3.25,
+            "description": "Espresso with a small amount of steamed milk."
+        },
+        {
+            "id": 7,
+            "name": "Flat White",
+            "imgSRC": "",
+            "icon": "",
+            "price": 3.75,
+            "description": "A velvety blend of espresso and microfoam."
+        },
+        {
+            "id": 8,
+            "name": "Affogato",
+            "imgSRC": "",
+            "icon": "",
+            "price": 4.5,
+            "description": "A scoop of vanilla ice cream topped with a shot of espresso."
+        },
+        {
+            "id": 9,
+            "name": "Iced Coffee",
+            "imgSRC": "",
+            "icon": "",
+            "price": 3.5,
+            "description": "Chilled coffee served over ice."
+        },
+        {
+            "id": 10,
+            "name": "Cold Brew",
+            "imgSRC": "",
+            "icon": "",
+            "price": 4,
+            "description": "Coffee brewed with cold water for a smooth flavor."
+        }
+    ],
+    "services": [
+        {
+            "serviceID": 1,
+            "serviceTitle": "Free Wi-Fi",
+            "imgSRC": "/img/free-wifi.webp",
+            "iconName": "FaCoffee",
+            "description": "Enjoy complimentary Wi-Fi while you sip your coffee."
+        },
+        {
+            "serviceID": 2,
+            "serviceTitle": "Outdoor Seating",
+            "imgSRC": "/img/outdoor-seating.webp",
+            "iconName": "FaCoffee",
+            "description": "Relax in our outdoor seating area."
+        },
+        {
+            "serviceID": 3,
+            "serviceTitle": "Live Music",
+            "imgSRC": "/img/live-music.webp",
+            "iconName": "FaCoffee",
+            "description": "Join us for live music every Friday evening."
+        },
+        {
+            "serviceID": 4,
+            "serviceTitle": "Loyalty Program",
+            "imgSRC": "/img/loyalty-program.webp",
+            "iconName": "FaCoffee",
+            "description": "Earn points with every purchase for discounts."
+        },
+        {
+            "serviceID": 5,
+            "serviceTitle": "Pet-Friendly",
+            "imgSRC": "/img/pet-friendly.webp",
+            "iconName": "FaCoffee",
+            "description": "Bring your furry friends along!"
+        },
+        {
+            "serviceID": 6,
+            "serviceTitle": "Fastest Door Delivery",
+            "imgSRC": "/img/door-delivery.webp",
+            "iconName": "FaTruck",
+            "description": "Get your favorite drinks delivered to your doorstep."
+        },
+        {
+            "serviceID": 7,
+            "serviceTitle": "Takeaway",
+            "imgSRC": "/img/takeaway.jpg",
+            "iconName": "FaCoffee",
+            "description": "Order your favorite drinks to go."
+        },
+        {
+            "serviceID": 8,
+            "serviceTitle": "Fresh Coffee Beans",
+            "imgSRC": "/img/service-2.jpg",
+            "iconName": "FaCoffee",
+            "description": "We sell fresh coffee beans for home brewing."
+        },
+        {
+            "serviceID": 9,
+            "serviceTitle": "Best Quality Coffee",
+            "imgSRC": "/img/service-3.jpg",
+            "iconName": "FaAward",
+            "description": "We sell fresh coffee beans for home brewing."
+        },
+        {
+            "serviceID": 10,
+            "serviceTitle": "Online Table Booking",
+            "imgSRC": "/img/service-4.jpg",
+            "iconName": "FaScheduler",
+            "description": "Book a table online for your convenience."
+        }
+    ],
+    "about": {
+        "title": "About Us",
+        "description": "Welcome to our cafe! We are passionate about serving the best coffee and creating a cozy atmosphere for our customers. Our team is dedicated to providing exceptional service and ensuring that every visit is a delightful experience. Whether you're here for a quick coffee or to relax with friends, we have something for everyone."
     },
-    {
-      "id": 2,
-      "name": "Latte",
-      "imgSRC": "",
-      "icon": "",
-      "price": 3.5,
-      "description": "A smooth blend of espresso and steamed milk."
-    },
-    {
-      "id": 3,
-      "name": "Cappuccino",
-      "imgSRC": "",
-      "icon": "",
-      "price": 3,
-      "description": "Espresso with steamed milk and a frothy top."
-    },
-    {
-      "id": 4,
-      "name": "Mocha",
-      "imgSRC": "",
-      "icon": "",
-      "price": 4,
-      "description": "A chocolate-flavored variant of a latte."
-    },
-    {
-      "id": 5,
-      "name": "Americano",
-      "imgSRC": "",
-      "icon": "",
-      "price": 2.75,
-      "description": "Espresso diluted with hot water."
-    },
-    {
-      "id": 6,
-      "name": "Macchiato",
-      "imgSRC": "",
-      "icon": "",
-      "price": 3.25,
-      "description": "Espresso with a small amount of steamed milk."
-    },
-    {
-      "id": 7,
-      "name": "Flat White",
-      "imgSRC": "",
-      "icon": "",
-      "price": 3.75,
-      "description": "A velvety blend of espresso and microfoam."
-    },
-    {
-      "id": 8,
-      "name": "Affogato",
-      "imgSRC": "",
-      "icon": "",
-      "price": 4.5,
-      "description": "A scoop of vanilla ice cream topped with a shot of espresso."
-    },
-    {
-      "id": 9,
-      "name": "Iced Coffee",
-      "imgSRC": "",
-      "icon": "",
-      "price": 3.5,
-      "description": "Chilled coffee served over ice."
-    },
-    {
-      "id": 10,
-      "name": "Cold Brew",
-      "imgSRC": "",
-      "icon": "",
-      "price": 4,
-      "description": "Coffee brewed with cold water for a smooth flavor."
-    }
-  ],
-  "services": [
-    {
-      "serviceID": 1,
-      "serviceTitle": "Free Wi-Fi",
-      "imgSRC": "/img/free-wifi.webp",
-      "iconName": "FaCoffee",
-      "description": "Enjoy complimentary Wi-Fi while you sip your coffee."
-    },
-    {
-      "serviceID": 2,
-      "serviceTitle": "Outdoor Seating",
-      "imgSRC": "/img/outdoor-seating.webp",
-      "iconName": "FaCoffee",
-      "description": "Relax in our outdoor seating area."
-    },
-    {
-      "serviceID": 3,
-      "serviceTitle": "Live Music",
-      "imgSRC": "/img/live-music.webp",
-      "iconName": "FaCoffee",
-      "description": "Join us for live music every Friday evening."
-    },
-    {
-      "serviceID": 4,
-      "serviceTitle": "Loyalty Program",
-      "imgSRC": "/img/loyalty-program.webp",
-      "iconName": "FaCoffee",
-      "description": "Earn points with every purchase for discounts."
-    },
-    {
-      "serviceID": 5,
-      "serviceTitle": "Pet-Friendly",
-      "imgSRC": "/img/pet-friendly.webp",
-      "iconName": "FaCoffee",
-      "description": "Bring your furry friends along!"
-    },
-    {
-      "serviceID": 6,
-      "serviceTitle": "Fastest Door Delivery",
-      "imgSRC": "/img/door-delivery.webp",
-      "iconName": "FaTruck",
-      "description": "Get your favorite drinks delivered to your doorstep."
-    },
-    {
-      "serviceID": 7,
-      "serviceTitle": "Takeaway",
-      "imgSRC": "/img/takeaway.jpg",
-      "iconName": "FaCoffee",
-      "description": "Order your favorite drinks to go."
-    },
-    {
-      "serviceID": 8,
-      "serviceTitle": "Fresh Coffee Beans",
-      "imgSRC": "/img/service-2.jpg",
-      "iconName": "FaCoffee",
-      "description": "We sell fresh coffee beans for home brewing."
-    },
-    {
-      "serviceID": 9,
-      "serviceTitle": "Best Quality Coffee",
-      "imgSRC": "/img/service-3.jpg",
-      "iconName": "FaAward",
-      "description": "We sell fresh coffee beans for home brewing."
-    },
-    {
-      "serviceID": 10,
-      "serviceTitle": "Online Table Booking",
-      "imgSRC": "/img/service-4.jpg",
-      "iconName": "FaScheduler",
-      "description": "Book a table online for your convenience."
-    }
-  ],
-  "about": {
-    "title": "About Us",
-    "description": "Welcome to our cafe! We are passionate about serving the best coffee and creating a cozy atmosphere for our customers. Our team is dedicated to providing exceptional service and ensuring that every visit is a delightful experience. Whether you're here for a quick coffee or to relax with friends, we have something for everyone."
-  },
-  "newsLetterUsers": [
-    {
-      "id": 1,
-      "email": "pouryasoleimani@gmail.com"
-    },
-    {
-      "id": "d975",
-      "data": {
-        "email": "pourya@gmail.com"
-      }
-    },
-    {
-      "id": "49a0",
-      "data": {
-        "email": "asdsadsad@dasdsad"
-      }
-    },
-    {
-      "id": "83d8",
-      "data": {
-        "email": "asdsadasdasd@gmial.com"
-      }
-    },
-    {
-      "id": "ecbe",
-      "data": {
-        "email": "pourya12@gmail.com"
-      }
-    },
-    {
-      "id": "0dac",
-      "data": {
-        "email": "asdsadasdasd@gmial.com"
-      }
-    },
-    {
-      "id": "1c15",
-      "data": {
-        "email": "asdsadasdasd@gmial.com"
-      }
-    },
-    {
-      "id": "9e6e",
-      "data": {
-        "email": "pourya@gmail.com"
-      }
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "username": "pouryasoleimani",
-      "body": "Great!",
-      "productID": 1
-    },
-    {
-      "id": 2,
-      "username": "coffeemaster",
-      "body": "Best espresso in town!",
-      "productID": 1
-    },
-    {
-      "id": 3,
-      "username": "lattelover",
-      "body": "Perfect blend of flavors",
-      "productID": 2
-    },
-    {
-      "id": 4,
-      "username": "cafefan",
-      "body": "Love the atmosphere",
-      "productID": 3
-    },
-    {
-      "id": 5,
-      "username": "baristaexpert",
-      "body": "Excellent service",
-      "productID": 4
-    },
-    {
-      "id": 6,
-      "username": "morningcoffee",
-      "body": "My daily go-to drink",
-      "productID": 5
-    },
-    {
-      "id": 7,
-      "username": "chocolateaddict",
-      "body": "Delicious mocha!",
-      "productID": 6
-    },
-    {
-      "id": 8,
-      "username": "smoothcoffee",
-      "body": "Smooth and creamy",
-      "productID": 7
-    },
-    {
-      "id": 9,
-      "username": "icecreamlover",
-      "body": "Perfect summer treat",
-      "productID": 8
-    },
-    {
-      "id": 10,
-      "username": "icedcoffeeenthusiast",
-      "body": "Refreshing and tasty",
-      "productID": 9
-    },
-    {
-      "id": 11,
-      "username": "coldbrewfanatic",
-      "body": "Best cold brew ever!",
-      "productID": 10
-    }
-  ]
+    "newsLetterUsers": [
+        { "id": 1, "email": "pouryasoleimani@gmail.com" },
+        { "id": "d975", "data": { "email": "pourya@gmail.com" }},
+        { "id": "49a0", "data": { "email": "asdsadsad@dasdsad" }},
+        { "id": "83d8", "data": { "email": "asdsadasdasd@gmial.com" }},
+        { "id": "ecbe", "data": { "email": "pourya12@gmail.com" }},
+        { "id": "0dac", "data": { "email": "asdsadasdasd@gmial.com" }},
+        { "id": "1c15", "data": { "email": "asdsadasdasd@gmial.com" }},
+        { "id": "9e6e", "data": { "email": "pourya@gmail.com" }}
+    ],
+    "comments": [
+        { "id": 1, "username": "pouryasoleimani", "body": "Great!", "productID": 1 },
+        { "id": 2, "username": "coffeemaster", "body": "Best espresso in town!", "productID": 1 },
+        { "id": 3, "username": "lattelover", "body": "Perfect blend of flavors", "productID": 2 },
+        { "id": 4, "username": "cafefan", "body": "Love the atmosphere", "productID": 3 },
+        { "id": 5, "username": "baristaexpert", "body": "Excellent service", "productID": 4 },
+        { "id": 6, "username": "morningcoffee", "body": "My daily go-to drink", "productID": 5 },
+        { "id": 7, "username": "chocolateaddict", "body": "Delicious mocha!", "productID": 6 },
+        { "id": 8, "username": "smoothcoffee", "body": "Smooth and creamy", "productID": 7 },
+        { "id": 9, "username": "icecreamlover", "body": "Perfect summer treat", "productID": 8 },
+        { "id": 10, "username": "icedcoffeeenthusiast", "body": "Refreshing and tasty", "productID": 9 },
+        { "id": 11, "username": "coldbrewfanatic", "body": "Best cold brew ever!", "productID": 10 }
+    ]
 }
