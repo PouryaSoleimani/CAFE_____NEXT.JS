@@ -16,11 +16,13 @@ const OfferTemplate = () => {
     const onSubmit: SubmitHandler<Inputs> = (data) => {
         axios.post("http://localhost:4000/newsLetterUsers", { data })
             .then(response => {
-                console.log(response);
-                toast.success('Email Succesfully Signed Up !')
-                setTimeout(() => {
-                    resetField("email")
-                }, 1000);
+                if (response.status == 201) {
+                    console.log(response);
+                    toast.success('Email Succesfully Signed Up !')
+                    setTimeout(() => { resetField("email") }, 1000);
+                } else {
+                    toast.error('Unknown Error !')
+                }
             })
     }
 
