@@ -44,9 +44,9 @@ const ServiceItemCardComponent: React.FC<ServiceItemCardComponentProps> = ({ ser
                         </div>
                     </div>
                     <div className="col-sm-7 align-baseline">
-                        <h4 className="flex items-center gap-3">
-                            <span className="service-icon text-[#da9f5b] text-3xl">
-                                {myICON?.icon && <myICON.icon className='w-9 h-9' />} {/* Render the icon dynamically */}
+                        <h4 className="flex items-center whitespace-nowrap gap-x-2">
+                            <span className="service-icon text-[#da9f5b] text-3xl p-2 m-0">
+                                {myICON?.icon && <myICON.icon className='w-8 h-8' />} {/* Render the icon dynamically */}
                             </span>
                             {serviceTitle}
                         </h4>
