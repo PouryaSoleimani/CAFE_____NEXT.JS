@@ -85,49 +85,49 @@
         {
             "serviceID": 1,
             "serviceTitle": "Free Wi-Fi",
-            "imgSRC": "/img/service-1.jpg",
+            "imgSRC": "/img/free-wifi.webp",
             "iconName": "FaCoffee",
             "description": "Enjoy complimentary Wi-Fi while you sip your coffee."
         },
         {
             "serviceID": 2,
             "serviceTitle": "Outdoor Seating",
-            "imgSRC": "/img/service-1.jpg",
+            "imgSRC": "/img/outdoor-seating.webp",
             "iconName": "FaCoffee",
             "description": "Relax in our outdoor seating area."
         },
         {
             "serviceID": 3,
             "serviceTitle": "Live Music",
-            "imgSRC": "/img/service-1.jpg",
+            "imgSRC": "/img/live-music.webp",
             "iconName": "FaCoffee",
             "description": "Join us for live music every Friday evening."
         },
         {
             "serviceID": 4,
             "serviceTitle": "Loyalty Program",
-            "imgSRC": "/img/service-1.jpg",
+            "imgSRC": "/img/loyalty-program.webp",
             "iconName": "FaCoffee",
             "description": "Earn points with every purchase for discounts."
         },
         {
             "serviceID": 5,
             "serviceTitle": "Pet-Friendly",
-            "imgSRC": "/img/service-1.jpg",
+            "imgSRC": "/img/pet-friendly.webp",
             "iconName": "FaCoffee",
             "description": "Bring your furry friends along!"
         },
         {
             "serviceID": 6,
             "serviceTitle": "Fastest Door Delivery",
-            "imgSRC": "/img/service-1.jpg",
+            "imgSRC": "/img/door-delivery.webp",
             "iconName": "FaTruck",
             "description": "Get your favorite drinks delivered to your doorstep."
         },
         {
             "serviceID": 7,
             "serviceTitle": "Takeaway",
-            "imgSRC": "/img/service-1.jpg",
+            "imgSRC": "/img/takeaway.webp",
             "iconName": "FaCoffee",
             "description": "Order your favorite drinks to go."
         },
