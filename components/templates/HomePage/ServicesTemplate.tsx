@@ -32,9 +32,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
     const data = ctx.params?.data
 
-    return {
-        props: { data },
-    }
+    return { props: { data }, }
 }
 
 
