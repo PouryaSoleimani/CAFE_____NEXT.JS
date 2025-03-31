@@ -4,6 +4,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import axios from 'axios'
+import toast from 'react-hot-toast';
 type Inputs = { email: string }
 
 
@@ -16,7 +17,7 @@ const OfferTemplate = () => {
         axios.post("http://localhost:4000/newsLetterUsers", { data })
             .then(response => {
                 console.log(response);
-                
+                toast.success('Email Succesfully Signed Up !')
                 setTimeout(() => {
                     resetField("email")
                 }, 1000);
@@ -44,3 +45,4 @@ const OfferTemplate = () => {
 }
 
 export default OfferTemplate
+
