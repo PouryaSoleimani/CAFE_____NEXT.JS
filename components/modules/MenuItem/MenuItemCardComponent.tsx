@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-interface MenuItemProps { id: number, name: string, imgSRC: string, icon: string, price: string, description: string }
+interface MenuItemProps { id: number, name: string, imgSRC: string, icon: string, price: number | string, description: string }
 
 // COMPONENT ==============================================================================================================================================
 const MenuItemCardComponent: React.FC<MenuItemProps> = ({ id, name, imgSRC, icon, price, description }) => {

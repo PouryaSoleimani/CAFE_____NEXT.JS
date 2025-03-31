@@ -1,7 +1,8 @@
+import { GetStaticProps } from 'next'
 import Image from 'next/image'
 import React from 'react'
-
-const MenuTemplate = () => {
+interface MenuTemplateProps { data: [{ id: number, name: string, imgSRC: string, icon: string, price: number | string, description: string }] }
+const MenuTemplate: React.FC<MenuTemplateProps> = ({ data }) => {
     return (
         <div className="container-fluid pt-5">
             <div className="container">
@@ -93,5 +94,14 @@ const MenuTemplate = () => {
         </div>
     )
 }
+
+export const getStaticProps: GetStaticProps = async (ctx) => {
+    const req = await fetch("http://localhost:4000/menu")
+    const data = await req.json()
+    return {
+        props: { data },
+    }
+}
+
 
 export default MenuTemplate
