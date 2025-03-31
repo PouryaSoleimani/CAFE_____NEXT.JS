@@ -9,6 +9,7 @@ import SliderTemplate from "@/components/templates/HomePage/SliderTemplate";
 import ServicesTemplate from "@/components/templates/HomePage/ServicesTemplate";
 import { GetStaticProps } from "next";
 import OfferTemplate from "@/components/templates/HomePage/OfferTemplate";
+import MenuTemplate from "@/components/templates/HomePage/MenuTemplate";
 
 interface ServicesTemplateProps { data: [{ serviceID: number, serviceTitle: string, description: string, imgSRC: string, iconName: React.ElementType }] }
 
@@ -21,11 +22,7 @@ const HomePage: React.FC<ServicesTemplateProps> = ({ data }) => {
       <AboutUsTemplate />
       <ServicesTemplate data={data} />
       <OfferTemplate />
-
-
-      {/* <!-- Menu Start --> */}
-
-      {/* <!-- Menu End --> */}
+      <MenuTemplate />
 
 
       {/* <!-- Reservation Start --> */}
