@@ -1,9 +1,9 @@
 {
-    "menu": [ 
+    "menu": [
         {
             "id": "1",
             "name": "Espresso",
-            "imgSRC": "",
+            "imgSRC": "/img/menu-1.jpg",
             "icon": "",
             "price": 2.5,
             "description": "A strong and bold coffee shot."
@@ -11,7 +11,7 @@
         {
             "id": "2",
             "name": "Latte",
-            "imgSRC": "",
+            "imgSRC": "/img/menu-1.jpg",
             "icon": "",
             "price": 3.5,
             "description": "A smooth blend of espresso and steamed milk."
@@ -19,7 +19,7 @@
         {
             "id": "3",
             "name": "Cappuccino",
-            "imgSRC": "",
+            "imgSRC": "/img/menu-1.jpg",
             "icon": "",
             "price": 3,
             "description": "Espresso with steamed milk and a frothy top."
@@ -27,7 +27,7 @@
         {
             "id": "4",
             "name": "Mocha",
-            "imgSRC": "",
+            "imgSRC": "/img/menu-1.jpg",
             "icon": "",
             "price": 4,
             "description": "A chocolate-flavored variant of a latte."
@@ -35,7 +35,7 @@
         {
             "id": "5",
             "name": "Americano",
-            "imgSRC": "",
+            "imgSRC": "/img/menu-1.jpg",
             "icon": "",
             "price": 2.75,
             "description": "Espresso diluted with hot water."
@@ -43,7 +43,7 @@
         {
             "id": "6",
             "name": "Macchiato",
-            "imgSRC": "",
+            "imgSRC": "/img/menu-1.jpg",
             "icon": "",
             "price": 3.25,
             "description": "Espresso with a small amount of steamed milk."
@@ -51,7 +51,7 @@
         {
             "id": "7",
             "name": "Flat White",
-            "imgSRC": "",
+            "imgSRC": "/img/menu-1.jpg",
             "icon": "",
             "price": 3.75,
             "description": "A velvety blend of espresso and microfoam."
@@ -59,7 +59,7 @@
         {
             "id": "8",
             "name": "Affogato",
-            "imgSRC": "",
+            "imgSRC": "/img/menu-1.jpg",
             "icon": "",
             "price": 4.5,
             "description": "A scoop of vanilla ice cream topped with a shot of espresso."
@@ -67,7 +67,7 @@
         {
             "id": "9",
             "name": "Iced Coffee",
-            "imgSRC": "",
+            "imgSRC": "/img/menu-1.jpg",
             "icon": "",
             "price": 3.5,
             "description": "Chilled coffee served over ice."
@@ -75,7 +75,7 @@
         {
             "id": "10",
             "name": "Cold Brew",
-            "imgSRC": "",
+            "imgSRC": "/img/menu-1.jpg",
             "icon": "",
             "price": 4,
             "description": "Coffee brewed with cold water for a smooth flavor."
