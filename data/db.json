@@ -127,7 +127,7 @@
         {
             "serviceID": 7,
             "serviceTitle": "Takeaway",
-            "imgSRC": "/img/takeaway.webp",
+            "imgSRC": "/img/takeaway.jpg",
             "iconName": "FaCoffee",
             "description": "Order your favorite drinks to go."
         },
