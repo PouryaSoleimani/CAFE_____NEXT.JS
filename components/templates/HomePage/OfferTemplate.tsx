@@ -19,7 +19,7 @@ const OfferTemplate = () => {
             .then(response => {
                 console.info(response);
                 toast.success('Email Succesfully Signed Up !')
-                setTimeout(() => { resetField("email") }, 1000);
+                resetField("email")
             })
             .catch(err => {
                 console.info("ERROR ==>", err);
