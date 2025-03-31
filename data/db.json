@@ -12,21 +12,21 @@
             "name": "Latte",
             "imgSRC": "/img/menu-2.webp",
             "price": 3.5,
-            "description": "A smooth blend of espresso and steamed milk."
+            "description": "A blend of espresso and steamed milk."
         },
         {
             "id": "3",
             "name": "Cappuccino",
             "imgSRC": "/img/menu-3.webp",
             "price": 3,
-            "description": "Espresso with steamed milk and a frothy top."
+            "description": "Espresso with milk and a frothy top."
         },
         {
             "id": "4",
             "name": "Mocha",
             "imgSRC": "/img/menu-4.webp",
             "price": 4,
-            "description": "A chocolate-flavored variant of a latte."
+            "description": "A chocolate-flavored of a latte."
         },
         {
             "id": "5",
@@ -40,21 +40,21 @@
             "name": "Macchiato",
             "imgSRC": "/img/menu-6.webp",
             "price": 3.25,
-            "description": "Espresso with a small amount of steamed milk."
+            "description": "Espresso with a amount of steamed milk."
         },
         {
             "id": "7",
             "name": "Flat White",
             "imgSRC": "/img/menu-7.webp",
             "price": 3.75,
-            "description": "A velvety blend of espresso and microfoam."
+            "description": "A blend of espresso and microfoam."
         },
         {
             "id": "8",
             "name": "Affogato",
             "imgSRC": "/img/menu-8.webp",
             "price": 4.5,
-            "description": "A scoop of vanilla ice cream topped with a shot of espresso."
+            "description": "A scoop of ice cream with a espresso."
         },
         {
             "id": "9",
@@ -68,7 +68,7 @@
             "name": "Cold Brew",
             "imgSRC": "/img/menu-10.webp",
             "price": 4,
-            "description": "Coffee brewed with cold water for a smooth flavor."
+            "description": "Coffee brewed with  smooth flavor."
         },
         {
           "id": "11",
@@ -82,7 +82,7 @@
           "name": "Latte",
           "imgSRC": "/img/menu-3.jpg",
           "price": 3.5,
-          "description": "A smooth blend of espresso and steamed milk."
+          "description": "A smooth blend of espresso and milk."
       }
     ],
     "services": [
