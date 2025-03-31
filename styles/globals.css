@@ -774,6 +774,14 @@ pre code {
   }
 }
 
+.menuITemBox {
+  background: #ffffff14;
+  padding: 1rem 0rem;
+  border-radius: 5px;
+  backdrop-filter: blur(2px);
+  box-shadow: 10px 4px 30px #58555530 ,inset 10px 8px 30px #3d3d3d;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;

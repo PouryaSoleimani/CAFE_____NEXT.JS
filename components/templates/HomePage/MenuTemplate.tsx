@@ -9,10 +9,10 @@ const MenuTemplate = () => {
                     <h4 className="text-[#da9f5b] text-uppercase tracking-widest">Menu &amp; Pricing</h4>
                     <h1 className="display-4 text-white font-bold">Competitive Pricing</h1>
                 </div>
-                <div className="row">
-                    <div className="col-lg-6">
+                <div className="row flex items-center justify-center lg:gap-x-10">
+                    <div className="col-lg-5">
                         <h1 className="mb-5 text-[#da9f5b] font-bold">Hot Coffee</h1>
-                        <div className="row align-items-center mb-5 hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <div className="menuITemBox row align-items-center mb-5 hover:scale-105 transition-transform duration-300 ease-in-out">
                             <div className="col-4 col-sm-3">
                                 <Image className="w-100 rounded-full shadow-lg hover:shadow-[#da9f5b] transition-shadow duration-300" src="/img/menu-1.jpg" alt="pic" width={100} height={100} />
                                 <h5 className="menu-price text-[#da9f5b] font-semibold mt-2">$5</h5>
@@ -24,7 +24,7 @@ const MenuTemplate = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="row align-items-center mb-5 hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <div className="menuITemBox row align-items-center mb-5 hover:scale-105 transition-transform duration-300 ease-in-out">
                             <div className="col-4 col-sm-3">
                                 <Image className="w-100 rounded-full shadow-lg hover:shadow-[#da9f5b] transition-shadow duration-300" src="/img/menu-2.jpg" alt="pic" width={100} height={100} />
                                 <h5 className="menu-price text-[#da9f5b] font-semibold mt-2">$7</h5>
@@ -36,7 +36,7 @@ const MenuTemplate = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="row align-items-center mb-5 hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <div className="menuITemBox row align-items-center mb-5 hover:scale-105 transition-transform duration-300 ease-in-out">
                             <div className="col-4 col-sm-3">
                                 <Image className="w-100 rounded-full shadow-lg hover:shadow-[#da9f5b] transition-shadow duration-300" src="/img/menu-3.jpg" alt="pic" width={100} height={100} />
                                 <h5 className="menu-price text-[#da9f5b] font-semibold mt-2">$9</h5>
@@ -49,9 +49,9 @@ const MenuTemplate = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-5">
                         <h1 className="mb-5 text-[#da9f5b] font-bold">Cold Coffee</h1>
-                        <div className="row align-items-center mb-5 hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <div className="menuITemBox row align-items-center mb-5 hover:scale-105 transition-transform duration-300 ease-in-out">
                             <div className="col-4 col-sm-3">
                                 <Image className="w-100 rounded-full shadow-lg hover:shadow-[#da9f5b] transition-shadow duration-300" src="/img/menu-1.jpg" alt="pic" width={100} height={100} />
                                 <h5 className="menu-price text-[#da9f5b] font-semibold mt-2">$5</h5>
@@ -63,7 +63,7 @@ const MenuTemplate = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="row align-items-center mb-5 hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <div className="menuITemBox row align-items-center mb-5 hover:scale-105 transition-transform duration-300 ease-in-out">
                             <div className="col-4 col-sm-3">
                                 <Image className="w-100 rounded-full shadow-lg hover:shadow-[#da9f5b] transition-shadow duration-300" src="/img/menu-2.jpg" alt="pic" width={100} height={100} />
                                 <h5 className="menu-price text-[#da9f5b] font-semibold mt-2">$7</h5>
@@ -75,7 +75,7 @@ const MenuTemplate = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="row align-items-center mb-5 hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <div className="menuITemBox row align-items-center mb-5 hover:scale-105 transition-transform duration-300 ease-in-out">
                             <div className="col-4 col-sm-3">
                                 <Image className="w-100 rounded-full shadow-lg hover:shadow-[#da9f5b] transition-shadow duration-300" src="/img/menu-3.jpg" alt="pic" width={100} height={100} />
                                 <h5 className="menu-price text-[#da9f5b] font-semibold mt-2">$9</h5>
