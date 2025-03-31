@@ -3,7 +3,7 @@
         {
             "id": "1",
             "name": "Espresso",
-            "imgSRC": "/img/menu-1.webp",
+            "imgSRC": "/img/menu-1.jpg",
             "price": 2.5,
             "description": "A strong and bold coffee shot."
         },
@@ -69,7 +69,21 @@
             "imgSRC": "/img/menu-10.webp",
             "price": 4,
             "description": "Coffee brewed with cold water for a smooth flavor."
-        }
+        },
+        {
+          "id": "11",
+          "name": "Espresso",
+          "imgSRC": "/img/menu-2.jpg",
+          "price": 2.5,
+          "description": "A strong and bold coffee shot."
+      },
+      {
+          "id": "12",
+          "name": "Latte",
+          "imgSRC": "/img/menu-3.jpg",
+          "price": 3.5,
+          "description": "A smooth blend of espresso and steamed milk."
+      }
     ],
     "services": [
         {

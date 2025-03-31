@@ -1,3 +1,4 @@
+import MenuItemCardComponent from '@/components/modules/MenuItem/MenuItemCardComponent'
 import { GetStaticProps } from 'next'
 import Image from 'next/image'
 import React from 'react'
@@ -17,18 +18,7 @@ const MenuTemplate: React.FC<MenuTemplateProps> = ({ menuData }) => {
                 </div>
                 <div className="row flex flex-wrap items-center justify-center lg:gap-x-10">
                     {menuData.map((menuItem: SingleMenuItem) => (
-                        <div key={menuItem.id} className="menuITemBox hover:scale-105 transition-transform duration-300 ease-in-out">
-                            <div className="w-44 h-44 relative mx-auto">
-                                <Image className="w-100 rounded-md shadow-lg hover:shadow-[#da9f5b] transition-shadow duration-300" src={menuItem.imgSRC} alt="pic" width={200} height={200} />
-                                <h5 className="menu-price text-[#da9f5b] font-extrabold mt-2 absolute -top-4 -left-10">${menuItem.price}</h5>
-                            </div>
-                            <div className="">
-                                <h4 className="text-white font-bold" style={{ fontSize: "2.2rem" }}>{menuItem.name}</h4>
-                                <p className="m-0 text-gray-400 w-fit text-2xl font-extralight">
-                                    {menuItem.description}
-                                </p>
-                            </div>
-                        </div>
+                        <MenuItemCardComponent  {...menuItem} />
                     ))}
                 </div>
             </div>
