@@ -19,12 +19,8 @@ const ServicesTemplate: React.FC<ServicesTemplateProps> = ({ data }) => {
                 </div>
                 <div className="row mx-auto">
                     {data?.map((item: singleServiceType) => (
-                        <ServiceItemCardComponent key={item.serviceID} {...item}/>
+                        <ServiceItemCardComponent key={item.serviceID} {...item} />
                     ))}
-                    {/* <ServiceItemCardComponent imageSRC={"/img/service-1.jpg"} iconName={FaTruck} serviceTitle={"Fastest Door Delivery"} />
-                    <ServiceItemCardComponent imageSRC={"/img/service-2.jpg"} iconName={FaCoffee} serviceTitle={"Fresh Coffee Beans"} />
-                    <ServiceItemCardComponent imageSRC={"/img/service-3.jpg"} iconName={FaAward} serviceTitle={"Best Quality Coffee"} />
-                    <ServiceItemCardComponent imageSRC={"/img/service-4.jpg"} iconName={RiCalendarScheduleFill} serviceTitle={"Online Table Booking"} /> */}
                 </div>
             </div>
         </div>

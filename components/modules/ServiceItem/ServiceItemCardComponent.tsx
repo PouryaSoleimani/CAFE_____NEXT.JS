@@ -23,9 +23,9 @@ const IconsArray = [
 ];
 
 const ServiceItemCardComponent: React.FC<ServiceItemCardComponentProps> = ({ serviceID, description, imgSRC, serviceTitle }) => {
-    if(serviceID){
+    if (serviceID) {
         console.info("ID", serviceID);
-    } else{
+    } else {
         console.info("ID NOT FOUND !!!")
     }
 
@@ -46,7 +46,7 @@ const ServiceItemCardComponent: React.FC<ServiceItemCardComponentProps> = ({ ser
                     <div className="col-sm-7 align-baseline">
                         <h4 className="flex items-center gap-3">
                             <span className="service-icon text-[#da9f5b] text-3xl">
-                                {myICON?.icon && <myICON.icon />} {/* Render the icon dynamically */}
+                                {myICON?.icon && <myICON.icon className='w-9 h-9' />} {/* Render the icon dynamically */}
                             </span>
                             {serviceTitle}
                         </h4>
