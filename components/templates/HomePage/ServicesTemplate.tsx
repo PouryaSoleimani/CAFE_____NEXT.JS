@@ -5,8 +5,8 @@ import React from 'react'
 import { FaAward, FaCoffee, FaTruck } from 'react-icons/fa'
 import { RiCalendarScheduleFill } from 'react-icons/ri'
 
-interface ServicesTemplateProps { data: [{ id: number, serviceTitle: string, description: string, imgSRC: string, iconName: React.ElementType }] }
-type singleServiceType = { id: number, serviceTitle: string, description: string, imgSRC: string, iconName: React.ElementType }
+interface ServicesTemplateProps { data: [{ ID: number, serviceTitle: string, description: string, imgSRC: string, iconName: React.ElementType }] }
+type singleServiceType = { ID: number, serviceTitle: string, description: string, imgSRC: string, iconName: React.ElementType }
 
 // COMPONENT ===================================================================================================================================================================
 const ServicesTemplate: React.FC<ServicesTemplateProps> = ({ data }) => {
@@ -19,7 +19,7 @@ const ServicesTemplate: React.FC<ServicesTemplateProps> = ({ data }) => {
                 </div>
                 <div className="row mx-auto">
                     {data?.map((item: singleServiceType) => (
-                        <ServiceItemCardComponent key={item.id} id={item.id} serviceTitle={item.serviceTitle} imgSRC={item.imgSRC} iconName={item.iconName} description={item.description} />
+                        <ServiceItemCardComponent key={item.ID} ID={item.ID} serviceTitle={item.serviceTitle} imgSRC={item.imgSRC} iconName={item.iconName} description={item.description} />
                     ))}
                     {/* <ServiceItemCardComponent imageSRC={"/img/service-1.jpg"} iconName={FaTruck} serviceTitle={"Fastest Door Delivery"} />
                     <ServiceItemCardComponent imageSRC={"/img/service-2.jpg"} iconName={FaCoffee} serviceTitle={"Fresh Coffee Beans"} />

@@ -10,7 +10,7 @@ import SliderTemplate from "@/components/templates/HomePage/SliderTemplate";
 import ServicesTemplate from "@/components/templates/HomePage/ServicesTemplate";
 import { GetStaticProps } from "next";
 
-interface ServicesTemplateProps { data: [{ id: number, serviceTitle: string, description: string, imgSRC: string, iconName: React.ElementType }] }
+interface ServicesTemplateProps { data: [{ ID: number, serviceTitle: string, description: string, imgSRC: string, iconName: React.ElementType }] }
 
 //  COMPONENT ================================================================================================================================================
 const HomePage: React.FC<ServicesTemplateProps> = ({ data }) => {
@@ -299,6 +299,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
   return {
     props: { data: data },
+    revalidate : 432000
   }
 }
 
