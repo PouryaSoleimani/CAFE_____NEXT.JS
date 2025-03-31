@@ -62,7 +62,7 @@ const SliderTemplate = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='h-[100vh]'>
-                    <Image className="w-100 h-[100vh]" src="/img/carousel-7.webp" alt="Image" width={2000} height={2000} loading="lazy" />
+                    <Image className="w-100 h-[100vh]" src="/img/carousel-9.webp" alt="Image" width={2000} height={2000} loading="lazy" />
                     <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h2 className="text-primary font-weight-medium m-0">We Have Been Serving</h2>
                         <h1 className="display-1 text-white m-0">COFFEE</h1>
