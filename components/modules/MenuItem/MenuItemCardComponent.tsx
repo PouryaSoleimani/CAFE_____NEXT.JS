@@ -3,7 +3,7 @@ import React from 'react'
 interface MenuItemProps { id: number, name: string, imgSRC: string, icon: string, price: string, description: string }
 
 // COMPONENT ==============================================================================================================================================
-const MenuItemCardComponen: React.FC<MenuItemProps> = ({ id, name, imgSRC, icon, price, description }) => {
+const MenuItemCardComponent: React.FC<MenuItemProps> = ({ id, name, imgSRC, icon, price, description }) => {
     return (
         <div className="menuITemBox row align-items-center mb-5 hover:scale-105 transition-transform duration-300 ease-in-out">
             <div className="col-4 col-sm-3">
