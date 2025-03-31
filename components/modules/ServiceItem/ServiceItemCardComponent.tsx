@@ -32,7 +32,7 @@ const ServiceItemCardComponent: React.FC<ServiceItemCardComponentProps> = ({ ser
                 <div className="row align-items-center">
                     <div className="col-sm-5">
                         <div className="img-fluid mb-3 mb-sm-0">
-                            <Image src={imgSRC} alt="pic" width={300} height={300} className='h-40' />
+                            <Image src={imgSRC} alt="pic" width={300} height={400} className='h-44' />
                         </div>
                     </div>
                     <div className="col-sm-7 align-baseline">
