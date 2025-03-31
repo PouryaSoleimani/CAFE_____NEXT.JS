@@ -17,12 +17,12 @@ const OfferTemplate = () => {
         axios.post("http://localhost:4000/newsLetterUsers", { data })
             .then(response => {
                 console.info(response);
-                toast.success('✅ Email Succesfully Signed Up !')
+                toast.success('Email Succesfully Signed Up !')
                 setTimeout(() => { resetField("email") }, 1000);
             })
             .catch(err => {
                 console.info("ERROR ==>", err);
-                toast.error("⚠ Unknown Error")
+                toast.error("Unknown Error")
             })
     }
 
