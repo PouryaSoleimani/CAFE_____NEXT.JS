@@ -83,70 +83,70 @@
     ],
     "services": [
         {
-            "id": 1,
+            "serviceID": 1,
             "serviceTitle": "Free Wi-Fi",
             "imgSRC": "/img/service-1.jpg",
             "iconName": "FaCoffee",
             "description": "Enjoy complimentary Wi-Fi while you sip your coffee."
         },
         {
-            "id": 2,
+            "serviceID": 2,
             "serviceTitle": "Outdoor Seating",
             "imgSRC": "/img/service-1.jpg",
             "iconName": "FaCoffee",
             "description": "Relax in our outdoor seating area."
         },
         {
-            "id": 3,
+            "serviceID": 3,
             "serviceTitle": "Live Music",
             "imgSRC": "/img/service-1.jpg",
             "iconName": "FaCoffee",
             "description": "Join us for live music every Friday evening."
         },
         {
-            "id": 4,
+            "serviceID": 4,
             "serviceTitle": "Loyalty Program",
             "imgSRC": "/img/service-1.jpg",
             "iconName": "FaCoffee",
             "description": "Earn points with every purchase for discounts."
         },
         {
-            "id": 5,
+            "serviceID": 5,
             "serviceTitle": "Pet-Friendly",
             "imgSRC": "/img/service-1.jpg",
             "iconName": "FaCoffee",
             "description": "Bring your furry friends along!"
         },
         {
-            "id": 6,
+            "serviceID": 6,
             "serviceTitle": "Fastest Door Delivery",
             "imgSRC": "/img/service-1.jpg",
             "iconName": "FaTruck",
             "description": "Get your favorite drinks delivered to your doorstep."
         },
         {
-            "id": 7,
+            "serviceID": 7,
             "serviceTitle": "Takeaway",
             "imgSRC": "/img/service-1.jpg",
             "iconName": "FaCoffee",
             "description": "Order your favorite drinks to go."
         },
         {
-            "id": 8,
+            "serviceID": 8,
             "serviceTitle": "Fresh Coffee Beans",
             "imgSRC": "/img/service-2.jpg",
             "iconName": "FaCoffee",
             "description": "We sell fresh coffee beans for home brewing."
         },
         {
-            "id": 9,
+            "serviceID": 9,
             "serviceTitle": "Best Quality Coffee",
             "imgSRC": "/img/service-3.jpg",
             "iconName": "FaAward",
             "description": "We sell fresh coffee beans for home brewing."
         },
         {
-            "id": 10,
+            "serviceID": 10,
             "serviceTitle": "Online Table Booking",
             "imgSRC": "/img/service-4.jpg",
             "iconName": "FaScheduler",
