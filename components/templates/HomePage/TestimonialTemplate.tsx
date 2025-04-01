@@ -12,7 +12,7 @@ const TestimonialTemplate = () => {
                     <h4 className="text-primary text-uppercase" style={{ letterSpacing: "5px" }}>Testimonial</h4>
                     <h1 className="display-4">Our Clients Say</h1>
                 </div>
-                <div className="owl-carousel testimonial-carousel">
+                <div className="testimonial-carousel">
                     <div className="testimonial-item">
                         <div className="d-flex align-items-center mb-3">
                             <Image className="/img-fluid" src="/img/testimonial-1.jpg" alt="pic" width={100} height={100} />
