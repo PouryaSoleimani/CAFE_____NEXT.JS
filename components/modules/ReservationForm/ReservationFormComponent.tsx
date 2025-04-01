@@ -2,6 +2,7 @@ import React from 'react'
 import { useForm, SubmitHandler } from "react-hook-form"
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import axios from 'axios';
 
 type Inputs = { name: string, age: string }
 
@@ -23,8 +24,10 @@ const ReservationFormComponent = () => {
     const { register, handleSubmit, watch, formState: { errors }, reset } = useForm<Inputs | any>({ resolver: yupResolver(schema), });
 
     const onSubmit: SubmitHandler<Inputs | any> = (data) => {
+        axios.post("http://localhost:4000/reservations", data)
+            .then(data => console.info("DATA ===>", data))
         reset()
-        console.info(data)
+        // console.info(data)
     }
 
     return (
