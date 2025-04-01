@@ -1,6 +1,4 @@
 import MenuItemCardComponent from '@/components/modules/MenuItem/MenuItemCardComponent'
-import { GetStaticProps } from 'next'
-import Image from 'next/image'
 import React from 'react'
 
 
