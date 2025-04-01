@@ -2419,7 +2419,11 @@ textarea.form-control {
 }
 
 .form-group {
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-text {
