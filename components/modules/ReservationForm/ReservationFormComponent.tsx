@@ -1,26 +1,33 @@
 import React from 'react'
-import { useForm } from 'react-hook-form';
+import { useForm, SubmitHandler } from "react-hook-form"
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
-
+type Inputs = {
+    example: string
+    exampleRequired: string
+}
+// COMPONENT =========================================================================================================================================
 const ReservationFormComponent = () => {
 
     const schema = yup.object().shape({
-        name: yup.string().required(),
-        age: yup.number().required(),
+        example: yup.string().required(),
+        exampleRequired: yup.number().required(),
     }).required();
 
 
-    const { register, handleSubmit, formState: { errors }, } = useForm({ resolver: yupResolver(schema), });
+    const { register, handleSubmit, formState: { errors }, } = useForm<Inputs>({ resolver: yupResolver(schema), });
 
-
+    const onSubmit: SubmitHandler<Inputs> = (data) => {
+        console.log(data)
+    }
 
     return (
         <div className="col-lg-6">
             <div className="text-center p-5" style={{ background: "rgba(51, 33, 29, .8)" }}>
                 <h1 className="text-white mb-4 mt-5">Book Your Table</h1>
-                <form className="mb-5">
+                <form className="mb-5" onSubmit={handleSubmit(onSubmit)}>
+
                     <div className="form-group">
                         <input type="text" className="form-control bg-transparent border-primary p-4" placeholder="Name" required />
                     </div>
@@ -37,6 +44,7 @@ const ReservationFormComponent = () => {
                             <input type="text" className="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker" />
                         </div>
                     </div>
+
                     <div className="form-group">
                         <select className="custom-select bg-transparent border-primary px-4" style={{ height: "49px" }}>
                             <option defaultValue={0}> Person</option>
@@ -50,6 +58,7 @@ const ReservationFormComponent = () => {
                     <div>
                         <button className="btn btn-primary btn-block font-weight-bold py-3" type="submit">Book Now</button>
                     </div>
+
                 </form>
             </div>
         </div>
