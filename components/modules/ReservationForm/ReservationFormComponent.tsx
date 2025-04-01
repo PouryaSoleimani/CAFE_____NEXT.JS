@@ -13,9 +13,9 @@ const ReservationFormComponent = () => {
         .shape({
             name: yup.string().required(),
             email: yup.string().email().required(),
-            date: yup.number().required(),
+            date: yup.date().required(),
             time: yup.number().min(8).max(23).required(),
-                person: yup.string().required()
+            person: yup.string().required()
         })
         .required();
 
@@ -31,32 +31,32 @@ const ReservationFormComponent = () => {
         <div className="col-lg-6">
             <div className="text-center p-5" style={{ background: "rgba(51, 33, 29, .8)" }}>
                 <h1 className="text-white mb-4 mt-5">Book Your Table</h1>
-                <form className="mb-5  flex flex-col gap-y-5" onSubmit={handleSubmit(onSubmit)}>
+                <form className="mb-5  flex flex-col gap-y-3" onSubmit={handleSubmit(onSubmit)}>
 
                     <div className="form-group">
-                        <input type="text" className="form-control bg-transparent border-primary p-4 text-zinc-200" placeholder="Name" {...register('name')} />
+                        <input type="text" className="w-full bg-black border-primary p-4 text-zinc-200" placeholder="Name" {...register('name')} />
                         {errors.name && <span className='text-white bg-red-500/30 px-2 py-1 my-2 w-full'>Invalid Value</span>}
                     </div>
                     <div className="form-group">
-                        <input type="email" className="form-control bg-transparent border-primary p-4 text-zinc-200" placeholder="Email"  {...register('email')} />
+                        <input type="text" className="w-full bg-black border-primary p-4 text-zinc-200" placeholder="Email"  {...register('email')} />
                         {errors.email && <span className='text-white bg-red-500/30 px-2 py-1 my-2 w-full'>Invalid Value</span>}
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control bg-transparent border-primary p-4 text-zinc-200 datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker" {...register("date")} />
+                        <input type="text" className="w-full bg-black border-primary p-4 text-zinc-200 datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker" {...register("date")} />
                         {errors.date && <span className='text-white bg-red-500/30 px-2 py-1 my-2 w-full'>Invalid Value</span>}
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control bg-transparent border-primary p-4 text-zinc-200 datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker" {...register("time")} />
+                        <input type="text" className="w-full bg-black border-primary p-4 text-zinc-200 datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker" {...register("time")} />
                         {errors.time && <span className='text-white bg-red-500/30 px-2 py-1 my-2 w-full'>Time Must be Between 8 and 23</span>}
                     </div>
 
-                    <div className="form-group">
-                        <select className="custom-select bg-black/80 border-primary px-4 text-zinc-200" style={{ height: "49px" }} {...register("person")}>
-                            <option defaultValue={0}> Person</option>
-                            <option value="1">Person 1</option>
-                            <option value="2">Person 2</option>
-                            <option value="3">Person 3</option>
-                            <option value="3">Person 4</option>
+                    <div className="form-group bg-black">
+                        <select className="w-full bg-black/80 border-primary px-4 text-zinc-200" style={{ height: "49px" }} {...register("person")}>
+                            <option defaultValue={0}> Choose People Quantity</option>
+                            <option value="1">1 Person </option>
+                            <option value="2">2 People </option>
+                            <option value="3">3 People </option>
+                            <option value="3">4 People </option>
                         </select>
 
                     </div>
