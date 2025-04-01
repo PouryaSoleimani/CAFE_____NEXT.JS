@@ -26,38 +26,32 @@ const TestimonialTemplate = () => {
                             </div>
                             <p className="m-0">Sed ea amet kasd elitr stet, st</p>
                         </SwiperSlide>
-                        <SwiperSlide className='bg-white w-[10rem]'>
+                        <SwiperSlide className='bg-white w-[10rem] swiper____slide'>
                             <div className="testimonial-item">
-                                <div className="d-flex align-items-center mb-3">
-                                    <Image className="/img-fluid" src="/img/testimonial-2.jpg" alt="pic" width={100} height={100} />
-                                    <div className="ml-3">
-                                        <h4>Client Name</h4>
-                                        <span>Profession</span>
-                                    </div>
+                                <Image className="w-full h-64" src="/img/testimonial-2.jpg" alt="pic" width={800} height={800} />
+                                <div className="ml-3 swiper__contents">
+                                    <h4>Client Name</h4>
+                                    <span>Profession</span>
                                 </div>
                                 <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide className='bg-white w-[10rem]'>
+                        <SwiperSlide className='bg-white w-[10rem] swiper____slide'>
                             <div className="testimonial-item">
-                                <div className="d-flex align-items-center mb-3">
-                                    <Image className="/img-fluid" src="/img/testimonial-3.jpg" alt="pic" width={100} height={100} />
-                                    <div className="ml-3">
-                                        <h4>Client Name</h4>
-                                        <span>Profession</span>
-                                    </div>
+                                <Image className="w-full h-64" src="/img/testimonial-3.jpg" alt="pic" width={800} height={800} />
+                                <div className="ml-3 swiper__contents">
+                                    <h4>Client Name</h4>
+                                    <span>Profession</span>
                                 </div>
                                 <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
                             </div>
                         </SwiperSlide >
-                        <SwiperSlide className='bg-white w-[10rem]'>
+                        <SwiperSlide className='bg-white w-[10rem ] swiper____slide'>
                             <div className="testimonial-item">
-                                <div className="d-flex align-items-center mb-3">
-                                    <Image className="/img-fluid" src="/img/testimonial-4.jpg" alt="pic" width={100} height={100} />
-                                    <div className="ml-3">
-                                        <h4>Client Name</h4>
-                                        <span>Profession</span>
-                                    </div>
+                                <Image className="w-full h-64" src="/img/testimonial-4.jpg" alt="pic" width={800} height={800} />
+                                <div className="ml-3 swiper__contents">
+                                    <h4>Client Name</h4>
+                                    <span>Profession</span>
                                 </div>
                                 <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
                             </div>
