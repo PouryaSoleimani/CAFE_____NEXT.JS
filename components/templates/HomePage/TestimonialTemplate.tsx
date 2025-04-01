@@ -16,21 +16,17 @@ const TestimonialTemplate = () => {
                     <h4 className="text-primary text-uppercase" style={{ letterSpacing: "5px" }}>Testimonial</h4>
                     <h1 className="display-4">Our Clients Say</h1>
                 </div>
-                <div className="testimonial-carousel">
-                    <Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]} className="mySwiper"  >
-                        <SwiperSlide>
-                            <div className="testimonial-item">
-                                <div className="d-flex align-items-center mb-3">
-                                    <Image className="/img-fluid" src="/img/testimonial-1.jpg" alt="pic" width={100} height={100} />
-                                    <div className="ml-3">
-                                        <h4>Client Name</h4>
-                                        <span>Profession</span>
-                                    </div>
-                                </div>
-                                <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
+                <div id="SWIPER___CONTAINER" className='w-screen flex items-center justify-center'>
+                    <Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]} className="mySwiper mx-auto" width={330}  height={200}>
+                        <SwiperSlide className='bg-white w-[10rem]'>
+                            <Image className="" src="/img/testimonial-1.jpg" alt="pic" width={100} height={100} />
+                            <div className="ml-3">
+                                <h4>Client Name</h4>
+                                <span>Profession</span>
                             </div>
+                            <p className="m-0">Sed ea amet kasd elitr stet, st</p>
                         </SwiperSlide>
-                        <SwiperSlide>
+                        <SwiperSlide className='bg-white w-[10rem]'>
                             <div className="testimonial-item">
                                 <div className="d-flex align-items-center mb-3">
                                     <Image className="/img-fluid" src="/img/testimonial-2.jpg" alt="pic" width={100} height={100} />
@@ -42,7 +38,7 @@ const TestimonialTemplate = () => {
                                 <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide>
+                        <SwiperSlide className='bg-white w-[10rem]'>
                             <div className="testimonial-item">
                                 <div className="d-flex align-items-center mb-3">
                                     <Image className="/img-fluid" src="/img/testimonial-3.jpg" alt="pic" width={100} height={100} />
@@ -53,8 +49,8 @@ const TestimonialTemplate = () => {
                                 </div>
                                 <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
                             </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
+                        </SwiperSlide >
+                        <SwiperSlide className='bg-white w-[10rem]'>
                             <div className="testimonial-item">
                                 <div className="d-flex align-items-center mb-3">
                                     <Image className="/img-fluid" src="/img/testimonial-4.jpg" alt="pic" width={100} height={100} />
