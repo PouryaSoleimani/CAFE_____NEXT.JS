@@ -1,5 +1,8 @@
+//  TESTEMONIAL TEMPLATE ================================================================================================================================================================
+import React, { useRef, useState } from 'react';
+import { Virtual, Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image'
-import React from 'react'
 
 const TestimonialTemplate = () => {
     return (
