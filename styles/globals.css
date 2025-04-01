@@ -11085,3 +11085,10 @@ h6,
 .upAndDown {
   animation: bounceUpAndDown 5s ease-in-out infinite;
 }
+
+.mySwiper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
