@@ -68,22 +68,22 @@
             "name": "Cold Brew",
             "imgSRC": "/img/menu-10.webp",
             "price": 4,
-            "description": "Coffee brewed with  smooth flavor."
+            "description": "Coffee brewed with smooth flavor."
         },
         {
-          "id": "11",
-          "name": "Espresso",
-          "imgSRC": "/img/menu-2.jpg",
-          "price": 2.5,
-          "description": "A strong and bold coffee shot."
-      },
-      {
-          "id": "12",
-          "name": "Latte",
-          "imgSRC": "/img/menu-3.jpg",
-          "price": 3.5,
-          "description": "A smooth blend of espresso and milk."
-      }
+            "id": "11",
+            "name": "Espresso",
+            "imgSRC": "/img/menu-2.jpg",
+            "price": 2.5,
+            "description": "A strong and bold coffee shot."
+        },
+        {
+            "id": "12",
+            "name": "Latte",
+            "imgSRC": "/img/menu-3.jpg",
+            "price": 3.5,
+            "description": "A smooth blend of espresso and milk."
+        }
     ],
     "services": [
         {
@@ -197,5 +197,6 @@
         { "id": "9", "username": "icecreamlover", "body": "Perfect summer treat", "productID": 8 },
         { "id": "10", "username": "icedcoffeeenthusiast", "body": "Refreshing and tasty", "productID": 9 },
         { "id": "11", "username": "coldbrewfanatic", "body": "Best cold brew ever!", "productID": 10 }
-    ]
+    ],
+    "reservations": [{ "id": 1, "date": "", "email": "alireza2@gmail.com", "name": "alireza", "person": 1, "time": 0 }]
 }

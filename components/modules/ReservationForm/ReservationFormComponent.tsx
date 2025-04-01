@@ -13,16 +13,19 @@ const ReservationFormComponent = () => {
         .shape({
             name: yup.string().required(),
             email: yup.string().email().required(),
-            date: yup.date().required(),
-            time: yup.number().required(),
-            person: yup.string().required()
+            date: yup.number().required(),
+            time: yup.number().min(8).max(23).required(),
+                person: yup.string().required()
         })
         .required();
 
 
-    const { register, handleSubmit, watch, formState: { errors }, } = useForm<Inputs | any>({ resolver: yupResolver(schema), });
+    const { register, handleSubmit, watch, formState: { errors }, reset } = useForm<Inputs | any>({ resolver: yupResolver(schema), });
 
-    const onSubmit: SubmitHandler<Inputs | any> = (data) => console.info(data)
+    const onSubmit: SubmitHandler<Inputs | any> = (data) => {
+        reset()
+        console.info(data)
+    }
 
     return (
         <div className="col-lg-6">
@@ -44,7 +47,7 @@ const ReservationFormComponent = () => {
                     </div>
                     <div className="form-group">
                         <input type="text" className="form-control bg-transparent border-primary p-4 text-zinc-200 datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker" {...register("time")} />
-                        {errors.time && <span className='text-white bg-red-500/30 px-2 py-1 my-2 w-full'>Invalid Value</span>}
+                        {errors.time && <span className='text-white bg-red-500/30 px-2 py-1 my-2 w-full'>Time Must be Between 8 and 23</span>}
                     </div>
 
                     <div className="form-group">
