@@ -11086,7 +11086,7 @@ h6,
   animation: bounceUpAndDown 5s ease-in-out infinite;
 }
 
-.swiper-slide {
+.swiper____slide {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11099,4 +11099,5 @@ h6,
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content : center;
 }
