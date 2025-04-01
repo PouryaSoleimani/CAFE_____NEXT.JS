@@ -20,7 +20,7 @@ const TestimonialTemplate = () => {
                     <Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]} loop className="mySwiper mx-auto" width={270} height={200}>
                         <SwiperSlide className='bg-white w-[10rem] flex'>
                             <Image className="w-full h-64" src="/img/testimonial-1.jpg" alt="pic" width={800} height={800} />
-                            <div className="ml-3">
+                            <div className="ml-3 swiper__contents">
                                 <h4>Client Name</h4>
                                 <span>Profession</span>
                             </div>
