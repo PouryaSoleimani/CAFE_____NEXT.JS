@@ -26,14 +26,6 @@ const MenuTemplate: React.FC<MenuTemplateProps> = ({ menuData }) => {
     )
 }
 
-export const getStaticProps: GetStaticProps = async (ctx) => {
-    const req = await fetch("http://localhost:4000/menu")
-    const data = await req.json()
-    return {
-        props: { data },
-    }
-}
-
 
 export default MenuTemplate
 
