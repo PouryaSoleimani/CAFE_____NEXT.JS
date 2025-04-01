@@ -16,7 +16,7 @@ const MenuTemplate: React.FC<MenuTemplateProps> = ({ menuData }) => {
                 </div>
                 <div className="row flex flex-wrap items-center justify-center lg:gap-x-10">
                     {menuData.map((menuItem: SingleMenuItem) => (
-                        <MenuItemCardComponent  {...menuItem} />
+                        <MenuItemCardComponent key={menuItem.id}  {...menuItem} />
                     ))}
                 </div>
             </div>
