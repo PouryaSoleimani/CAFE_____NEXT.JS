@@ -6,6 +6,7 @@ const ReservationTemplate = () => {
             <div className="container">
                 <div className="reservation position-relative overlay-top overlay-bottom">
                     <div className="row align-items-center">
+                        {/* LEFT */}
                         <div className="col-lg-6 my-5 my-lg-0">
                             <div className="p-5">
                                 <div className="mb-4">
@@ -21,6 +22,7 @@ const ReservationTemplate = () => {
                                 </ul>
                             </div>
                         </div>
+                        {/* RIGHT */}
                         <div className="col-lg-6">
                             <div className="text-center p-5" style={{ background: "rgba(51, 33, 29, .8)" }}>
                                 <h1 className="text-white mb-4 mt-5">Book Your Table</h1>
