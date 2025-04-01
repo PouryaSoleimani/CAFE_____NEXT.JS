@@ -3,24 +3,23 @@ import { useForm, SubmitHandler } from "react-hook-form"
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
-type Inputs = {
-    example: string
-    exampleRequired: string
-}
+type Inputs = { name: string, age: string }
+
 // COMPONENT =========================================================================================================================================
 const ReservationFormComponent = () => {
 
-    const schema = yup.object().shape({
-        example: yup.string().required(),
-        exampleRequired: yup.number().required(),
-    }).required();
+    const schema = yup
+        .object()
+        .shape({
+            name: yup.string().required(),
+            age: yup.number().required(),
+        })
+        .required();
 
 
-    const { register, handleSubmit, formState: { errors }, } = useForm<Inputs>({ resolver: yupResolver(schema), });
+    const { register, handleSubmit, watch, formState: { errors }, } = useForm<Inputs | any>({ resolver: yupResolver(schema), });
 
-    const onSubmit: SubmitHandler<Inputs> = (data) => {
-        console.log(data)
-    }
+    const onSubmit: SubmitHandler<Inputs | any> = (data) => console.log(data)
 
     return (
         <div className="col-lg-6">
