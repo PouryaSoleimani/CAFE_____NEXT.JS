@@ -1,16 +1,20 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
 
 
 const ReservationFormComponent = () => {
 
+    const schema = yup.object().shape({
+        name: yup.string().required(),
+        age: yup.number().required(),
+    }).required();
 
 
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-    } = useForm();
+    const { register, handleSubmit, formState: { errors }, } = useForm({ resolver: yupResolver(schema), });
+
+
 
     return (
         <div className="col-lg-6">
