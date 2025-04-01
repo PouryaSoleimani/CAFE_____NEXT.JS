@@ -3,6 +3,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import axios from 'axios';
+import toast from 'react-hot-toast';
 
 type Inputs = { name: string, age: string }
 
@@ -14,7 +15,6 @@ const ReservationFormComponent = () => {
         .shape({
             name: yup.string().required(),
             email: yup.string().email().required(),
-            date: yup.date().required(),
             time: yup.number().min(8).max(23).required(),
             person: yup.string().required()
         })
@@ -25,7 +25,9 @@ const ReservationFormComponent = () => {
 
     const onSubmit: SubmitHandler<Inputs | any> = (data) => {
         axios.post("http://localhost:4000/reservations", data)
-            .then(data => console.info("DATA ===>", data))
+            .then(data => {
+                toast.success(`Dear ${data.data.name} ,Your Reservation Submitted Successfully for ${data.data.time} O'Clock and Available for ${data.data.person} People`, { style: { fontSize: "14px" } })
+            })
         reset()
         // console.info(data)
     }
@@ -43,10 +45,6 @@ const ReservationFormComponent = () => {
                     <div className="form-group">
                         <input type="text" className="w-full bg-black border-primary p-4 text-zinc-200" placeholder="Email"  {...register('email')} />
                         {errors.email && <span className='text-white bg-red-500/30 px-2 py-1 my-2 w-full'>Invalid Value</span>}
-                    </div>
-                    <div className="form-group">
-                        <input type="text" className="w-full bg-black border-primary p-4 text-zinc-200 datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker" {...register("date")} />
-                        {errors.date && <span className='text-white bg-red-500/30 px-2 py-1 my-2 w-full'>Invalid Value</span>}
                     </div>
                     <div className="form-group">
                         <input type="text" className="w-full bg-black border-primary p-4 text-zinc-200 datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker" {...register("time")} />
