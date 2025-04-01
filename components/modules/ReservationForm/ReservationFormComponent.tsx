@@ -1,6 +1,17 @@
 import React from 'react'
+import { useForm } from 'react-hook-form';
+
 
 const ReservationFormComponent = () => {
+
+
+
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm();
+
     return (
         <div className="col-lg-6">
             <div className="text-center p-5" style={{ background: "rgba(51, 33, 29, .8)" }}>
