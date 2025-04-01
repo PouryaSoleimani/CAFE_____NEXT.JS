@@ -13,7 +13,9 @@ const ReservationFormComponent = () => {
         .shape({
             name: yup.string().required(),
             email: yup.string().email().required(),
-            date: yup.date().required()
+            date: yup.date().required(),
+            time: yup.number().required(),
+            person: yup.string().required()
         })
         .required();
 
@@ -30,29 +32,34 @@ const ReservationFormComponent = () => {
 
                     <div className="form-group">
                         <input type="text" className="form-control bg-transparent border-primary p-4" placeholder="Name" {...register('name')} />
+                        {errors.name && <span>Invalid Value</span>}
                     </div>
                     <div className="form-group">
                         <input type="email" className="form-control bg-transparent border-primary p-4" placeholder="Email"  {...register('email')} />
+                        {errors.email && <span>Invalid Value</span>}
                     </div>
                     <div className="form-group">
                         <div className="date" id="date" data-target-input="nearest">
                             <input type="text" className="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker" {...register("date")} />
+                            {errors.data && <span>Invalid Value</span>}
                         </div>
                     </div>
                     <div className="form-group">
                         <div className="time" id="time" data-target-input="nearest">
-                            <input type="text" className="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker" />
+                            <input type="text" className="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker" {...register("time")} />
+                            {errors.time && <span>Invalid Value</span>}
                         </div>
                     </div>
 
                     <div className="form-group">
-                        <select className="custom-select bg-transparent border-primary px-4" style={{ height: "49px" }}>
+                        <select className="custom-select bg-transparent border-primary px-4" style={{ height: "49px" }} {...register("person")}>
                             <option defaultValue={0}> Person</option>
                             <option value="1">Person 1</option>
                             <option value="2">Person 2</option>
                             <option value="3">Person 3</option>
                             <option value="3">Person 4</option>
                         </select>
+                        {errors.person && <span>Invalid Value</span>}
                     </div>
 
                     <div>
