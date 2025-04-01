@@ -51,7 +51,7 @@ const ReservationFormComponent = () => {
                     </div>
 
                     <div className="form-group">
-                        <select className="custom-select bg-transparent border-primary px-4 text-zinc-200" style={{ height: "49px" }} {...register("person")}>
+                        <select className="custom-select bg-black/80 border-primary px-4 text-zinc-200" style={{ height: "49px" }} {...register("person")}>
                             <option defaultValue={0}> Person</option>
                             <option value="1">Person 1</option>
                             <option value="2">Person 2</option>
