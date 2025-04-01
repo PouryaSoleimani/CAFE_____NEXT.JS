@@ -3,7 +3,11 @@ import React, { useRef, useState } from 'react';
 import { Virtual, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image'
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+import { EffectCards } from 'swiper/modules';
 
+//  COMPONENT
 const TestimonialTemplate = () => {
     return (
         <div className="container-fluid py-5">
@@ -13,46 +17,56 @@ const TestimonialTemplate = () => {
                     <h1 className="display-4">Our Clients Say</h1>
                 </div>
                 <div className="testimonial-carousel">
-                    <div className="testimonial-item">
-                        <div className="d-flex align-items-center mb-3">
-                            <Image className="/img-fluid" src="/img/testimonial-1.jpg" alt="pic" width={100} height={100} />
-                            <div className="ml-3">
-                                <h4>Client Name</h4>
-                                <span>Profession</span>
+                    <Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]} className="mySwiper"  >
+                        <SwiperSlide>
+                            <div className="testimonial-item">
+                                <div className="d-flex align-items-center mb-3">
+                                    <Image className="/img-fluid" src="/img/testimonial-1.jpg" alt="pic" width={100} height={100} />
+                                    <div className="ml-3">
+                                        <h4>Client Name</h4>
+                                        <span>Profession</span>
+                                    </div>
+                                </div>
+                                <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
                             </div>
-                        </div>
-                        <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
-                    </div>
-                    <div className="testimonial-item">
-                        <div className="d-flex align-items-center mb-3">
-                            <Image className="/img-fluid" src="/img/testimonial-2.jpg" alt="pic" width={100} height={100} />
-                            <div className="ml-3">
-                                <h4>Client Name</h4>
-                                <span>Profession</span>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="testimonial-item">
+                                <div className="d-flex align-items-center mb-3">
+                                    <Image className="/img-fluid" src="/img/testimonial-2.jpg" alt="pic" width={100} height={100} />
+                                    <div className="ml-3">
+                                        <h4>Client Name</h4>
+                                        <span>Profession</span>
+                                    </div>
+                                </div>
+                                <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
                             </div>
-                        </div>
-                        <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
-                    </div>
-                    <div className="testimonial-item">
-                        <div className="d-flex align-items-center mb-3">
-                            <Image className="/img-fluid" src="/img/testimonial-3.jpg" alt="pic" width={100} height={100} />
-                            <div className="ml-3">
-                                <h4>Client Name</h4>
-                                <span>Profession</span>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="testimonial-item">
+                                <div className="d-flex align-items-center mb-3">
+                                    <Image className="/img-fluid" src="/img/testimonial-3.jpg" alt="pic" width={100} height={100} />
+                                    <div className="ml-3">
+                                        <h4>Client Name</h4>
+                                        <span>Profession</span>
+                                    </div>
+                                </div>
+                                <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
                             </div>
-                        </div>
-                        <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
-                    </div>
-                    <div className="testimonial-item">
-                        <div className="d-flex align-items-center mb-3">
-                            <Image className="/img-fluid" src="/img/testimonial-4.jpg" alt="pic" width={100} height={100} />
-                            <div className="ml-3">
-                                <h4>Client Name</h4>
-                                <span>Profession</span>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="testimonial-item">
+                                <div className="d-flex align-items-center mb-3">
+                                    <Image className="/img-fluid" src="/img/testimonial-4.jpg" alt="pic" width={100} height={100} />
+                                    <div className="ml-3">
+                                        <h4>Client Name</h4>
+                                        <span>Profession</span>
+                                    </div>
+                                </div>
+                                <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
                             </div>
-                        </div>
-                        <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
-                    </div>
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
             </div>
         </div>
