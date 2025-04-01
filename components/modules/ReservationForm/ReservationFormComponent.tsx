@@ -12,7 +12,8 @@ const ReservationFormComponent = () => {
         .object()
         .shape({
             name: yup.string().required(),
-            age: yup.number().required(),
+            email: yup.string().email().required(),
+            date: yup.date().required()
         })
         .required();
 
@@ -28,14 +29,14 @@ const ReservationFormComponent = () => {
                 <form className="mb-5" onSubmit={handleSubmit(onSubmit)}>
 
                     <div className="form-group">
-                        <input type="text" className="form-control bg-transparent border-primary p-4" placeholder="Name" required />
+                        <input type="text" className="form-control bg-transparent border-primary p-4" placeholder="Name" {...register('name')} />
                     </div>
                     <div className="form-group">
-                        <input type="email" className="form-control bg-transparent border-primary p-4" placeholder="Email" required />
+                        <input type="email" className="form-control bg-transparent border-primary p-4" placeholder="Email"  {...register('email')} />
                     </div>
                     <div className="form-group">
                         <div className="date" id="date" data-target-input="nearest">
-                            <input type="text" className="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker" />
+                            <input type="text" className="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker" {...register("date")} />
                         </div>
                     </div>
                     <div className="form-group">
