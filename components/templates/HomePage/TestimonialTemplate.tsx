@@ -17,9 +17,9 @@ const TestimonialTemplate = () => {
                     <h1 className="display-4">Our Clients Say</h1>
                 </div>
                 <div id="SWIPER___CONTAINER" className='w-screen flex items-center justify-center'>
-                    <Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]} className="mySwiper mx-auto" width={330} height={200}>
-                        <SwiperSlide className='bg-white w-[10rem]'>
-                            <Image className="w-full h-64" src="/img/testimonial-1.jpg" alt="pic" width={100} height={500} />
+                    <Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]} loop className="mySwiper mx-auto" width={270} height={200}>
+                        <SwiperSlide className='bg-white w-[10rem] flex'>
+                            <Image className="w-full h-64" src="/img/testimonial-1.jpg" alt="pic" width={800} height={800} />
                             <div className="ml-3">
                                 <h4>Client Name</h4>
                                 <span>Profession</span>
