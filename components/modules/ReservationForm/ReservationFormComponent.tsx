@@ -12,12 +12,7 @@ const ReservationFormComponent = () => {
 
     const schema = yup
         .object()
-        .shape({
-            name: yup.string().required(),
-            email: yup.string().email().required(),
-            time: yup.number().min(8).max(23).required(),
-            person: yup.string().required()
-        })
+        .shape({ name: yup.string().required(), email: yup.string().email().required(), time: yup.number().min(8).max(23).required(), person: yup.string().required() })
         .required();
 
 
@@ -26,10 +21,12 @@ const ReservationFormComponent = () => {
     const onSubmit: SubmitHandler<Inputs | any> = (data) => {
         axios.post("http://localhost:4000/reservations", data)
             .then(data => {
-                toast.success(`Dear ${data.data.name} ,Your Reservation Submitted Successfully for ${data.data.time} O'Clock and Available for ${data.data.person} People`, { style: { fontSize: "14px" } })
+                toast.success(`Dear ${data.data.name} ,Your Reservation Submitted Successfully for  Today at ${data.data.time} O'Clock and It's Available for ${data.data.person} People`, { style: { fontSize: "12px", border: "6px solid darkgreen", width: "40rem" }, duration: 4000, removeDelay: 2000, })
+                reset()
+            }).catch(err => {
+                console.info("%c FETCH ERROR", "color:red", err)
+                toast.error("Unknown Error Occured , Please Try Again")
             })
-        reset()
-        // console.info(data)
     }
 
     return (
