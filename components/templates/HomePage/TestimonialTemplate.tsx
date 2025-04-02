@@ -9,6 +9,7 @@ type SingleCommentType = { id: number | string, username: string, body: string, 
 
 //  COMPONENT ===================================================================================================================================================================================
 const TestimonialTemplate: React.FC<commentsProps> = ({ comments }) => {
+
     return (
         <div className="container-fluid py-5">
             <div className="container">
