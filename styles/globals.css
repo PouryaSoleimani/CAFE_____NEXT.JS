@@ -2304,7 +2304,7 @@ pre code {
   color: #bdc1c5;
   background-color: #000000;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #838383;
   border-radius: 0;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   outline: none;
@@ -11102,4 +11102,8 @@ h6,
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.form__text__area {
+  resize: none;
 }

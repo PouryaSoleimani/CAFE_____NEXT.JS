@@ -93,7 +93,7 @@ const ContactUsDetails = () => {
                                     <p className="help-block text-danger"></p>
                                 </div>
                                 <div className="control-group">
-                                    <textarea className="form-control text-white   py-3 px-4" rows={10} id="message" placeholder="Message" required data-validation-required-message="Please enter your message"  {...register("message")}   ></textarea>
+                                    <textarea className="form-control form__text__area text-white   py-3 px-4" rows={10} id="message" placeholder="Message" required data-validation-required-message="Please enter your message"  {...register("message")}   ></textarea>
                                     {errors.message && <p className='text-white bg-red-500/30 px-2 py-1 my-2 w-full'>Invalid Value</p>}
                                     <p className="help-block text-danger"></p>
                                 </div>
@@ -108,8 +108,8 @@ const ContactUsDetails = () => {
 
                 </div>
 
-            </div>
-        </div>
+            </div >
+        </div >
     );
 };
 
