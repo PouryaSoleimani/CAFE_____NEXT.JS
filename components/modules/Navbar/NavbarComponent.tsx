@@ -7,6 +7,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel,
 const NavbarComponent = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [activeRoute, setActiveRoute] = useState("home")
 
     return (
         <div className="container-fluid p-0 nav-bar fixed top-0 left-0 w-full z-50 bg-[rgb(0,0,0)]">
@@ -22,13 +23,13 @@ const NavbarComponent = () => {
                 </button>
                 <div className={`navbar-collapse ${isOpen ? 'show' : ''}`}>
                     <div className="navbar-nav ml-auto p-3 animate__animated  animate__fadeInUp animate__delay-1s">
-                        <Link href="/" className="nav-item nav-link active">Home</Link>
-                        <Link href="/about-us" className="nav-item nav-link">About</Link>
-                        <Link href="/services" className="nav-item nav-link">Services</Link>
-                        <Link href="/menu" className="nav-item nav-link">Menu</Link>
-                        <Link href="/reservation" className="nav-item nav-link">Reservation</Link>
-                        <Link href="/testimonial" className="nav-item nav-link">Testimonial</Link>
-                        <Link href="/contact-us" className="nav-item nav-link">Contact</Link>
+                        <Link href="/" className={`nav-item nav-link ${activeRoute == "home" ? "active" : ""}`} onClick={() => setActiveRoute("home")}>Home</Link>
+                        <Link href="/about-us" className={`nav-item nav-link ${activeRoute == "about" ? "active" : ""}`} onClick={() => setActiveRoute("about")}>About</Link>
+                        <Link href="/services" className={`nav-item nav-link ${activeRoute == "services" ? "active" : ""}`} onClick={() => setActiveRoute("services")}>Services</Link>
+                        <Link href="/menu" className={`nav-item nav-link ${activeRoute == "menu" ? "active" : ""}`} onClick={() => setActiveRoute("menu")}>Menu</Link>
+                        <Link href="/reservation" className={`nav-item nav-link ${activeRoute == "reservation" ? "active" : ""}`} onClick={() => setActiveRoute("reservation")}>Reservation</Link>
+                        <Link href="/testimonial" className={`nav-item nav-link ${activeRoute == "testimonial" ? "active" : ""}`} onClick={() => setActiveRoute("testimonial")}>Testimonial</Link>
+                        <Link href="/contact-us" className={`nav-item nav-link ${activeRoute == "contact" ? "active" : ""}`} onClick={() => setActiveRoute("contact")}>Contact</Link>
                     </div>
                 </div>
             </nav>
