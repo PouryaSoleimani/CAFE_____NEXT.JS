@@ -6,7 +6,6 @@ import Image from 'next/image'
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
-import { GetStaticProps } from 'next';
 interface commentsProps { comments: [{ id: number | string, username: string, body: string, imgSRC: string, productID: string }] }
 type SingleCommentType = { id: number | string, username: string, body: string, imgSRC: string, productID: string }
 
@@ -26,50 +25,12 @@ const TestimonialTemplate: React.FC<commentsProps> = ({ comments }) => {
                             <SwiperSlide className='bg-white w-[10rem] flex swiper____slide rounded-md'>
                                 <Image className="w-full h-2/3 rounded-t-md shadow shadow-amber-50" src={comment.imgSRC} alt="pic" width={800} height={800} />
                                 <div className="swiper__contents px-10 mt-10 text-center whitespace-nowrap">
-                                    <h4>{comment.username}</h4>
+                                    <h4>{comment.username.toUpperCase()}</h4>
                                     <span>{comment.body}</span>
                                 </div>
                                 <p>Sed ea amet kasd elitr stet, st</p>
                             </SwiperSlide>
                         ))}
-                        <SwiperSlide className='bg-white w-[10rem] flex swiper____slide rounded-md'>
-                            <Image className="w-full h-2/3 rounded-t-md shadow shadow-amber-50" src="/img/testimonial-1.jpg" alt="pic" width={800} height={800} />
-                            <div className="swiper__contents px-10 mt-10 text-center whitespace-nowrap">
-                                <h4>Client Name</h4>
-                                <span>Profession</span>
-                            </div>
-                            <p>Sed ea amet kasd elitr stet, st</p>
-                        </SwiperSlide>
-                        <SwiperSlide className='bg-white w-[10rem] swiper____slide'>
-                            <div className="testimonial-item">
-                                <Image className="w-full h-64" src="/img/testimonial-2.jpg" alt="pic" width={800} height={800} />
-                                <div className="ml-3 swiper__contents">
-                                    <h4>Client Name</h4>
-                                    <span>Profession</span>
-                                </div>
-                                <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className='bg-white w-[10rem] swiper____slide'>
-                            <div className="testimonial-item">
-                                <Image className="w-full h-64" src="/img/testimonial-3.jpg" alt="pic" width={800} height={800} />
-                                <div className="ml-3 swiper__contents">
-                                    <h4>Client Name</h4>
-                                    <span>Profession</span>
-                                </div>
-                                <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
-                            </div>
-                        </SwiperSlide >
-                        <SwiperSlide className='bg-white w-[10rem ] swiper____slide'>
-                            <div className="testimonial-item">
-                                <Image className="w-full h-64" src="/img/testimonial-4.jpg" alt="pic" width={800} height={800} />
-                                <div className="ml-3 swiper__contents">
-                                    <h4>Client Name</h4>
-                                    <span>Profession</span>
-                                </div>
-                                <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
-                            </div>
-                        </SwiperSlide>
                     </Swiper>
                 </div>
             </div>
@@ -77,15 +38,6 @@ const TestimonialTemplate: React.FC<commentsProps> = ({ comments }) => {
     )
 }
 
-
-
-export const getStaticProps: GetStaticProps = async (ctx) => {
-    const commentsReq = await fetch("http://localhost:4000/comments")
-    const comments = await commentsReq.json()
-    return {
-        props: { comments },
-    }
-}
 
 
 
