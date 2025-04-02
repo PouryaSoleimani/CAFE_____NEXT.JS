@@ -8,13 +8,13 @@ const FooterComponent = () => {
         <div className="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
             <div className="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
                 <div className="col-lg-3 col-md-6 mb-5">
-                    <h4 className="text-white text-uppercase mb-4" style={{ letterSpacing: "3px" }}>Get In Touch</h4>
+                    <h4 className="text-white text-uppercase mb-4 bg-zinc-600/20 w-fit p-2 rounded-sm" style={{ letterSpacing: "3px" }}>Get In Touch</h4>
                     <p className="flex items-center"><span className="fa fa-map-marker-alt mr-2 "><FaMapMarkerAlt /></span> 123 Street, New York, USA</p>
                     <p className="flex items-center"><span className="fa fa-phone-alt mr-2 "><FaPhone /></span> +012 345 67890</p>
                     <p className="m-0 flex items-center"><span className="fa fa-envelope mr-2 "><FaEnvelope /></span> info@example.com</p>
                 </div>
                 <div className="col-lg-3 col-md-6 mb-5">
-                    <h4 className="text-white text-uppercase mb-4" style={{ letterSpacing: "3px" }}>Follow Us</h4>
+                    <h4 className="text-white text-uppercase mb-4 mt-1 bg-zinc-600/20 w-fit p-2 rounded-sm" style={{ letterSpacing: "3px" }}>Follow Us</h4>
                     <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
                     <div className="d-flex justify-content-start">
                         <Link href="/"><FaTwitter className="w-12 h-12 mx-2  text-white hover:-translate-y-2 duration-200" /> </Link>
@@ -24,7 +24,7 @@ const FooterComponent = () => {
                     </div>
                 </div>
                 <div className="col-lg-3 col-md-6 mb-5">
-                    <h4 className="text-white text-uppercase mb-4" style={{ letterSpacing: "3px" }}>Open Hours</h4>
+                    <h4 className="text-white text-uppercase mb-4  mt-1 bg-zinc-600/20 w-fit p-2 rounded-sm" style={{ letterSpacing: "3px" }}>Open Hours</h4>
                     <div>
                         <h6 className="text-white text-uppercase">Monday - Friday</h6>
                         <p>8.00 AM - 8.00 PM</p>
@@ -33,7 +33,7 @@ const FooterComponent = () => {
                     </div>
                 </div>
                 <div className="col-lg-3 col-md-6 mb-5">
-                    <h4 className="text-white text-uppercase mb-4" style={{ letterSpacing: "3px" }}>Newsletter</h4>
+                    <h4 className="text-white text-uppercase mb-4  mt-1 bg-zinc-600/20 w-fit p-2 rounded-sm" style={{ letterSpacing: "3px" }}>Newsletter</h4>
                     <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
                     <div className="w-100">
                         <div className="input-group">
