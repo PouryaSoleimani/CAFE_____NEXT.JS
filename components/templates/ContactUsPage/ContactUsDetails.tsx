@@ -25,7 +25,7 @@ const ContactUsDetails = () => {
     const onSubmit: SubmitHandler<Inputs | any> = (data) => {
         axios.post("http://localhost:4000/tickets", data)
             .then(data => {
-                toast.success(`Dear ${data.data.name} ,Your Reservation Submitted Successfully for  Today at ${data.data.time} O'Clock and It's Available for ${data.data.person} People`, { style: { fontSize: "12px", border: "6px solid darkgreen", width: "40rem" }, duration: 4000, removeDelay: 2000, })
+                toast.success(`Dear ${data.data.name} Your Ticket has been Submitted Successfully `, { style: { fontSize: "12px", border: "6px solid darkgreen", width: "40rem" }, duration: 4000, removeDelay: 2000, })
                 reset()
             }).catch(err => {
                 console.info("%c FETCH ERROR", "color:red", err)

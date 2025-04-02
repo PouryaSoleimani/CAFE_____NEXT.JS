@@ -10889,12 +10889,10 @@ h6,
 
 .overlay-top::before {
   top: -1px;
-  background: url("/cafe______next.js/public/img/overlay-top.png");
 }
 
 .overlay-bottom::after {
   bottom: -1px;
-  background: url("/cafe______next.js/public/img/overlay-bottom.png");
 }
 
 .carousel-caption {
