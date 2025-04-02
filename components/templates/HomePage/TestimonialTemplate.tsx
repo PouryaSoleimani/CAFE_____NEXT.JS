@@ -19,16 +19,14 @@ const TestimonialTemplate: React.FC<commentsProps> = ({ comments }) => {
                     <h1 className="display-4">Our Clients Say</h1>
                 </div>
                 <div id="SWIPER___CONTAINER" className='flex items-center justify-center w-full px-10 bg-zinc-900/30 py-5 rounded-md border-2 border-zinc-700'>
-                    {/* modules={[EffectCards]}  */}
-                    <Swiper effect={'cards'} grabCursor={true} loop autoplay className="mySwiper mx-auto" width={270} height={200}>
+                    <Swiper effect={'cards'} grabCursor={true} rewind loop scrollbar autoplay className="mySwiper mx-auto" width={300} height={200}>
                         {comments?.map((comment: SingleCommentType) => (
                             <SwiperSlide className='bg-white w-[10rem] flex swiper____slide rounded-md'>
-                                <Image className="w-full h-2/3 rounded-t-md shadow shadow-amber-50" src={comment.imgSRC} alt="pic" width={800} height={800} />
+                                <Image className="w-full h-2/3 rounded-t-md shadow shadow-amber-50" src={comment.imgSRC} alt="pic" width={800} height={800} loading='eager' />
                                 <div className="swiper__contents px-10 mt-10 text-center whitespace-nowrap">
                                     <h4>{comment.username.toUpperCase()}</h4>
-                                    <span>{comment.body}</span>
+                                    <span className='text-xl mt-2 font-semibold'>{comment.body}</span>
                                 </div>
-                                <p>Sed ea amet kasd elitr stet, st</p>
                             </SwiperSlide>
                         ))}
                     </Swiper>
