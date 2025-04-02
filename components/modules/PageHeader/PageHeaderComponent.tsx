@@ -10,7 +10,7 @@ const PageHeaderComponent = (route: any) => {
                 <div className="d-inline-flex mb-lg-5">
                     <Link href="/" className="m-0 text-white flex items-start gap-x-2"><Home className='w-5 h-5' /> HOME PAGE </Link>
                     <p className="m-0 text-white px-2">/</p>
-                    <p className="m-0 text-white flex items-start gap-x-2"><Book className='w-5 h-5 translate-y-0.5' />{String(route.route)}</p>
+                    <p className="m-0 flex items-start gap-x-2 text-[#da9f5b] font-semibold"><Book className='w-5 h-5 translate-y-0.5' />{String(route.route)}</p>
                 </div>
             </div >
         </div >
