@@ -1,8 +1,11 @@
+import PageHeaderComponent from '@/components/modules/PageHeader/PageHeaderComponent'
 import React from 'react'
 
 const ServicesPage = () => {
     return (
-        <div>ServicesPage</div>
+        <>
+            <PageHeaderComponent route="OUR SERVICES" />
+        </>
     )
 }
 
