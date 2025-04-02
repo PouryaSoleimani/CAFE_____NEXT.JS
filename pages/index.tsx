@@ -13,10 +13,14 @@ import MenuTemplate from "@/components/templates/HomePage/MenuTemplate";
 import ReservationTemplate from "@/components/templates/HomePage/ReservationTemplate";
 import TestimonialTemplate from "@/components/templates/HomePage/TestimonialTemplate";
 
-interface ServicesTemplateProps { data: [{ serviceID: number, serviceTitle: string, description: string, imgSRC: string, iconName: React.ElementType }], menuData: [{ id: number, name: string, imgSRC: string, icon: string, price: number | string, description: string }] }
+interface ServicesTemplateProps {
+  data: [{ serviceID: number, serviceTitle: string, description: string, imgSRC: string, iconName: React.ElementType }],
+  menuData: [{ id: number, name: string, imgSRC: string, icon: string, price: number | string, description: string }],
+  comments: [{ id: number | string, username: string, body: string, imgSRC: string, productID: string }]
+}
 
 //  COMPONENT ================================================================================================================================================
-const HomePage: React.FC<ServicesTemplateProps> = ({ data, menuData }) => {
+const HomePage: React.FC<ServicesTemplateProps> = ({ data, menuData , comments }) => {
   return (
     <>
 
@@ -26,7 +30,7 @@ const HomePage: React.FC<ServicesTemplateProps> = ({ data, menuData }) => {
       <OfferTemplate />
       <MenuTemplate menuData={menuData} />
       <ReservationTemplate />
-      <TestimonialTemplate />
+      <TestimonialTemplate comments={comments} />
 
       {/* <!-- Footer Start --> */}
       <div className="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
@@ -90,10 +94,13 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   const menuReq = await fetch("http://localhost:4000/menu")
   const menuData = await menuReq.json()
 
+  const commentsReq = await fetch("http://localhost:4000/comments")
+  const comments = await commentsReq.json()
   return {
     props: {
       data: data,
-      menuData: menuData
+      menuData: menuData,
+      comments: comments
     }, revalidate: 43200
   }
 }

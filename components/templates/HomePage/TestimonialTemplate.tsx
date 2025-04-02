@@ -6,9 +6,12 @@ import Image from 'next/image'
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
+import { GetStaticProps } from 'next';
+interface commentsProps { comments: [{ id: number | string, username: string, body: string, imgSRC: string, productID: string }] }
+type SingleCommentType = { id: number | string, username: string, body: string, imgSRC: string, productID: string }
 
 //  COMPONENT
-const TestimonialTemplate = () => {
+const TestimonialTemplate: React.FC<commentsProps> = ({ comments }) => {
     return (
         <div className="container-fluid py-5">
             <div className="container">
@@ -19,6 +22,16 @@ const TestimonialTemplate = () => {
                 <div id="SWIPER___CONTAINER" className='flex items-center justify-center w-full px-10 bg-zinc-900/30 py-5 rounded-md border-2 border-zinc-700'>
                     {/* modules={[EffectCards]}  */}
                     <Swiper effect={'cards'} grabCursor={true} loop autoplay className="mySwiper mx-auto" width={270} height={200}>
+                        {comments?.map((comment: SingleCommentType) => (
+                            <SwiperSlide className='bg-white w-[10rem] flex swiper____slide rounded-md'>
+                                <Image className="w-full h-2/3 rounded-t-md shadow shadow-amber-50" src={comment.imgSRC} alt="pic" width={800} height={800} />
+                                <div className="swiper__contents px-10 mt-10 text-center whitespace-nowrap">
+                                    <h4>{comment.username}</h4>
+                                    <span>{comment.body}</span>
+                                </div>
+                                <p>Sed ea amet kasd elitr stet, st</p>
+                            </SwiperSlide>
+                        ))}
                         <SwiperSlide className='bg-white w-[10rem] flex swiper____slide rounded-md'>
                             <Image className="w-full h-2/3 rounded-t-md shadow shadow-amber-50" src="/img/testimonial-1.jpg" alt="pic" width={800} height={800} />
                             <div className="swiper__contents px-10 mt-10 text-center whitespace-nowrap">
@@ -63,5 +76,17 @@ const TestimonialTemplate = () => {
         </div>
     )
 }
+
+
+
+export const getStaticProps: GetStaticProps = async (ctx) => {
+    const commentsReq = await fetch("http://localhost:4000/comments")
+    const comments = await commentsReq.json()
+    return {
+        props: { comments },
+    }
+}
+
+
 
 export default TestimonialTemplate
