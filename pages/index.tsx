@@ -1,8 +1,5 @@
 // ^ HOME PAGE =================================================================================================================================================
-import Image from "next/image";
 import Link from "next/link";
-import { FaEnvelope, FaFacebookSquare, FaLinkedin, FaMapMarkerAlt, FaPhone, FaTruck, FaTwitter } from "react-icons/fa";
-import { FaSquareInstagram } from "react-icons/fa6";
 import 'animate.css';
 import AboutUsTemplate from "@/components/templates/HomePage/AboutUsTemplate";
 import SliderTemplate from "@/components/templates/HomePage/SliderTemplate";

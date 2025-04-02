@@ -14,7 +14,7 @@ const MenuTemplate: React.FC<MenuTemplateProps> = ({ menuData }) => {
                     <h1 className="text-[#da9f5b] text-uppercase tracking-widest">Menu &amp; Pricing</h1>
                     <h1 className="display-4 text-white font-bold">Competitive Pricing</h1>
                 </div>
-                <div className="row flex flex-wrap items-center justify-center lg:gap-x-10">
+                <div className="row flex flex-wrap items-center justify-center lg:gap-x-2">
                     {menuData.map((menuItem: SingleMenuItem) => (
                         <MenuItemCardComponent key={menuItem.id}  {...menuItem} />
                     ))}
