@@ -9,6 +9,7 @@ const FooterComponent = () => {
     return (
         <div className="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
             <div className="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+
                 {/* GET IN TOUCH */}
                 <div className="col-lg-3 col-md-6 mb-5">
                     <h4 className="text-white text-uppercase mb-4 bg-zinc-600/20 w-fit p-2 rounded-sm" style={{ letterSpacing: "3px" }}>Get In Touch</h4>
@@ -43,6 +44,7 @@ const FooterComponent = () => {
                     <p>Join Our Newsletter to Get Our News and Offers</p>
                     <FooterForm />
                 </div>
+
             </div>
             <FooterCopyRight />
         </div >
