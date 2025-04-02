@@ -20,7 +20,7 @@ interface ServicesTemplateProps {
 }
 
 //  COMPONENT ================================================================================================================================================
-const HomePage: React.FC<ServicesTemplateProps> = ({ data, menuData , comments }) => {
+const HomePage: React.FC<ServicesTemplateProps> = ({ data, menuData, comments }) => {
   return (
     <>
 
@@ -96,6 +96,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
   const commentsReq = await fetch("http://localhost:4000/comments")
   const comments = await commentsReq.json()
+
   return {
     props: {
       data: data,
