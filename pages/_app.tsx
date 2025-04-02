@@ -1,3 +1,4 @@
+import FooterComponent from "@/components/modules/Footer/FooterComponent";
 import NavbarComponent from "@/components/modules/Navbar/NavbarComponent";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
@@ -9,6 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <NavbarComponent />
       <div className="min:[995px]:pt-[80px] bg-black MAINMAIN">
         <Component {...pageProps} />
+        <FooterComponent />
       </div>
     </main>
   )

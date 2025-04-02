@@ -32,11 +32,6 @@ const HomePage: React.FC<ServicesTemplateProps> = ({ data, menuData, comments })
       <ReservationTemplate />
       <TestimonialTemplate comments={comments} />
 
-      {/* <!-- Footer Start --> */}
-
-      {/* <!-- Footer End --> */}
-
-
       {/* <!-- Back to Top --> */}
       <Link href="/" className="btn btn-lg btn-primary btn-lg-square back-to-top"><span className="fa fa-angle-double-up"></span></Link>
     </>
