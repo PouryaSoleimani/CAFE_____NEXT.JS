@@ -2,7 +2,6 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import 'animate.css';
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@radix-ui/react-dropdown-menu';
 
 const NavbarComponent = () => {
     const [isOpen, setIsOpen] = useState(false);
