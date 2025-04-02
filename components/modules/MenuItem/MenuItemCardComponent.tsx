@@ -4,7 +4,11 @@ interface MenuItemProps { id: number, name: string, imgSRC: string, price: numbe
 
 // COMPONENT ==============================================================================================================================================
 const MenuItemCardComponent: React.FC<MenuItemProps> = ({ id, name, imgSRC, price, description }) => {
+
+
     return (
+
+        
         <div key={id} className="menuITemBox hover:scale-105 transition-transform duration-300 ease-in-out">
             <div className="w-60 h-52 relative mx-auto">
                 <Image className="rounded-md h-52" src={imgSRC} alt="pic" width={200} height={300} />
@@ -17,6 +21,7 @@ const MenuItemCardComponent: React.FC<MenuItemProps> = ({ id, name, imgSRC, pric
                 </p>
             </div>
         </div>
+
     )
 }
 
