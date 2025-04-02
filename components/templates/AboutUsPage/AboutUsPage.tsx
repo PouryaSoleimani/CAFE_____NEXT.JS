@@ -9,4 +9,4 @@ const AboutUsTemplate = () => {
     )
 }
 
-export default AboutUsTemplate
+export default AboutUsTemplate 
