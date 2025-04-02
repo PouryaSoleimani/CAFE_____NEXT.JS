@@ -9,7 +9,7 @@ interface TestimonialPageProps {
 }
 const TestimonialPage: React.FC<TestimonialPageProps> = ({ comments }) => {
     return (
-        <>s
+        <>
             <PageHeaderComponent route={"TESTIMONIAL PAGE"} />
             <TestimonialCommentsTemplate comments={comments} />
         </>
