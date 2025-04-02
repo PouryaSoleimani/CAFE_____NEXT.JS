@@ -1,10 +1,11 @@
-import Image from 'next/image'
-import Link from 'next/link'
+// ^ ABOUT US PAGE ================================================================================================================================================================================
 import React from 'react'
 import AboutUsTemplate from '../HomePage/AboutUsTemplate'
 import PageHeaderComponent from '@/components/modules/PageHeader/PageHeaderComponent'
-import { useRouter } from 'next/router'
 
+
+
+// COMPONENT ====================================================================================================================================================================================
 const AboutUsPage = () => {
 
     return (
