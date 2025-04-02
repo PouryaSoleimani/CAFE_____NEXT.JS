@@ -5,11 +5,16 @@ import React from 'react'
 const AboutUsTemplate = () => {
     return (
         <div className="container-fluid2 py-5 lg:px-10 ">
+
             <div className="container">
+
+                {/* TITLE */}
                 <div className="section-title">
                     <h4 className="text-primary text-uppercase" style={{ letterSpacing: "5px" }}>About Us</h4>
                     <h1 className="display-4">Serving Since 1950</h1>
                 </div>
+
+                {/* MAIN */}
                 <div className="row">
                     <div className="col-lg-4 py-0 py-lg-5">
                         <h1 className="mb-3">Our Story</h1>
@@ -31,7 +36,9 @@ const AboutUsTemplate = () => {
                         <Link href="/" className="btn btn-primary font-weight-bold py-2 px-4 mt-2">Learn More</Link>
                     </div>
                 </div>
+
             </div>
+
         </div >
     )
 }
