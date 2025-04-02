@@ -1,8 +1,12 @@
+import PageHeaderComponent from '@/components/modules/PageHeader/PageHeaderComponent'
 import React from 'react'
 
 const ContactUsPage = () => {
     return (
-        <div>ContactUsPage</div>
+        <>
+            <PageHeaderComponent route={"CONTACT US PAGE"} />
+        
+        </>
     )
 }
 
