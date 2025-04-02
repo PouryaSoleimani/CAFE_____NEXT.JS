@@ -1,8 +1,13 @@
+import PageHeaderComponent from '@/components/modules/PageHeader/PageHeaderComponent'
+import ReservationTemplate from '@/components/templates/HomePage/ReservationTemplate'
 import React from 'react'
 
 const ReservationPage = () => {
     return (
-        <div>ReservationPage</div>
+        <>
+            <PageHeaderComponent route="RESERVATION PAGE" />
+            <ReservationTemplate />
+        </>
     )
 }
 
