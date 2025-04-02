@@ -9,7 +9,7 @@ const AboutUsPage = () => {
 
     return (
         <>
-            <PageHeaderComponent route={"ABOUT US"} />
+            <PageHeaderComponent route={"ABOUT US PAGE"} />
             <AboutUsTemplate />
         </>
     )
