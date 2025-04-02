@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { FaEnvelope, FaFacebookSquare, FaLinkedin, FaMapMarkerAlt, FaPhone, FaTwitter } from 'react-icons/fa'
 import { FaSquareInstagram } from 'react-icons/fa6'
+import FooterForm from './FooterForm'
 
 const FooterComponent = () => {
     return (
@@ -35,14 +36,7 @@ const FooterComponent = () => {
                 <div className="col-lg-3 col-md-6 mb-5">
                     <h4 className="text-white text-uppercase mb-4  mt-1 bg-zinc-600/20 w-fit p-2 rounded-sm" style={{ letterSpacing: "3px" }}>Newsletter</h4>
                     <p>Join Our Newsletter to Get Our News and Offers</p>
-                    <form className="w-100">
-                        <div className="input-group">
-                            <input type="text" className="form-control border-light" style={{ padding: "25px" }} placeholder="Your Email" />
-                            <div className="input-group-append">
-                                <button className="btn btn-primary font-weight-bold px-3">JOIN</button>
-                            </div>
-                        </div>
-                    </form>
+                    <FooterForm />
                 </div>
             </div>
             <div className="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style={{ borderColor: " rgba(256, 256, 256, .1) !important" }}>
