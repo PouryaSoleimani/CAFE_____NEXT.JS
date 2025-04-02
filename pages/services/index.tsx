@@ -1,12 +1,29 @@
-import PageHeaderComponent from '@/components/modules/PageHeader/PageHeaderComponent'
-import React from 'react'
+//^ SERVICES PAGE  ===============================================================================================================================================================
 
-const ServicesPage = () => {
+import PageHeaderComponent from '@/components/modules/PageHeader/PageHeaderComponent'
+import ServicesTemplate from '@/components/templates/HomePage/ServicesTemplate'
+import { GetStaticProps } from 'next'
+import React from 'react'
+interface ServicesPageProps { data: [{ serviceID: number, serviceTitle: string, description: string, imgSRC: string, iconName: React.ElementType }], }
+
+
+// COMPONENT ==================================================================================================================================================================
+const ServicesPage: React.FC<ServicesPageProps> = ({ data }) => {
     return (
         <>
             <PageHeaderComponent route="OUR SERVICES" />
+            <ServicesTemplate data={data} />
         </>
     )
 }
+export const getStaticProps: GetStaticProps = async (ctx) => {
 
+    const request = await fetch("http://localhost:4000/services")
+    const data = await request.json()
+
+    return {
+        props: { data: data, },
+        revalidate: 43200
+    }
+}
 export default ServicesPage
