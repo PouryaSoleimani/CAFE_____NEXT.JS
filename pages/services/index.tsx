@@ -1,5 +1,4 @@
 //^ SERVICES PAGE  ===============================================================================================================================================================
-
 import PageHeaderComponent from '@/components/modules/PageHeader/PageHeaderComponent'
 import ServicesTemplate from '@/components/templates/HomePage/ServicesTemplate'
 import { GetStaticProps } from 'next'
