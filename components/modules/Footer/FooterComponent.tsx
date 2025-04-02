@@ -15,7 +15,7 @@ const FooterComponent = () => {
                 </div>
                 <div className="col-lg-3 col-md-6 mb-5">
                     <h4 className="text-white text-uppercase mb-4 mt-1 bg-zinc-600/20 w-fit p-2 rounded-sm" style={{ letterSpacing: "3px" }}>Follow Us</h4>
-                    <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
+                    <p>Follow us on different Social Medias to keep in touch </p>
                     <div className="d-flex justify-content-start">
                         <Link href="/"><FaTwitter className="w-12 h-12 mx-2  text-white hover:-translate-y-2 duration-200" /> </Link>
                         <Link href="/"><FaFacebookSquare className="w-12 h-12 mx-2  text-white hover:-translate-y-2 duration-200" /> </Link>
