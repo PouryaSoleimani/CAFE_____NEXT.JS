@@ -8,8 +8,8 @@ const MenuItemCardComponent: React.FC<MenuItemProps> = ({ id, name, imgSRC, pric
 
     return (
 
-        
-        <div key={id} className="menuITemBox hover:scale-105 transition-transform duration-300 ease-in-out">
+
+        <div key={id} className="menuITemBox">
             <div className="w-60 h-52 relative mx-auto">
                 <Image className="rounded-md h-52" src={imgSRC} alt="pic" width={200} height={300} />
                 <h5 className="menu-price text-[#da9f5b] font-extrabold mt-2 absolute -top-4 -left-10">${price}</h5>
