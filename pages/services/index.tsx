@@ -16,6 +16,9 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ data }) => {
         </>
     )
 }
+
+
+// GET STATIC PROPS ==================================================================================================================================================================
 export const getStaticProps: GetStaticProps = async (ctx) => {
 
     const request = await fetch("http://localhost:4000/services")
