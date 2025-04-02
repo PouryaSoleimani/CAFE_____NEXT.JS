@@ -78,27 +78,27 @@ const ContactUsDetails = () => {
                             <div id="success"></div>
                             <form name="sentMessage" id="contactForm" noValidate onSubmit={handleSubmit(onSubmit)}>
                                 <div className="control-group">
-                                    <input type="text" className="form-control p-4" id="name" placeholder="Your Name" required data-validation-required-message="Please enter your name" {...register("name")} />
+                                    <input type="text" className="form-control text-white  p-4" id="name" placeholder="Your Name" required data-validation-required-message="Please enter your name" {...register("name")} />
                                     {errors.name && <p className='text-white bg-red-500/30 px-2 py-1 my-2 w-full'>Invalid Value</p>}
                                     <p className="help-block text-danger"></p>
                                 </div>
                                 <div className="control-group">
-                                    <input type="email" className="form-control p-4" id="email" placeholder="Your Email" required data-validation-required-message="Please enter your email"  {...register("email")} />
+                                    <input type="email" className="form-control text-white  p-4" id="email" placeholder="Your Email" required data-validation-required-message="Please enter your email"  {...register("email")} />
                                     {errors.name && <p className='text-white bg-red-500/30 px-2 py-1 my-2 w-full'>Invalid Value</p>}
                                     <p className="help-block text-danger"></p>
                                 </div>
                                 <div className="control-group">
-                                    <input type="text" className="form-control p-4" id="subject" placeholder="Subject" required data-validation-required-message="Please enter a subject" {...register("subject")} />
+                                    <input type="text" className="form-control text-white  p-4" id="subject" placeholder="Subject" required data-validation-required-message="Please enter a subject" {...register("subject")} />
                                     {errors.subject && <p className='text-white bg-red-500/30 px-2 py-1 my-2 w-full'>Invalid Value</p>}
                                     <p className="help-block text-danger"></p>
                                 </div>
                                 <div className="control-group">
-                                    <textarea className="form-control  py-3 px-4" rows={5} id="message" placeholder="Message" required data-validation-required-message="Please enter your message"  {...register("message")}   ></textarea>
+                                    <textarea className="form-control text-white   py-3 px-4" rows={5} id="message" placeholder="Message" required data-validation-required-message="Please enter your message"  {...register("message")}   ></textarea>
                                     {errors.message && <p className='text-white bg-red-500/30 px-2 py-1 my-2 w-full'>Invalid Value</p>}
                                     <p className="help-block text-danger"></p>
                                 </div>
                                 <div>
-                                    <button className="btn btn-primary font-weight-bold py-3 px-5" type="submit" id="sendMessageButton"  >
+                                    <button className="btn btn-primary font-weight-bold py-3 px-5 w-full text-zinc-300" type="submit" id="sendMessageButton"  >
                                         Send Message
                                     </button>
                                 </div>
