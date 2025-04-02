@@ -7,9 +7,9 @@ import FooterCopyRight from './FooterCopyRight'
 import { ArrowUp } from 'lucide-react'
 
 const FooterComponent = () => {
-    function scrollTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' })
-    }
+    function scrollTop() { window.scrollTo({ top: 0, behavior: 'smooth' }) }
+
+    // RETURN ==============================================================================================================================================================
     return (
         <div className="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
             <div className="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
@@ -48,11 +48,13 @@ const FooterComponent = () => {
                     <p>Join Our Newsletter to Get Our News and Offers</p>
                     <FooterForm />
                 </div>
+                {/* SCROLL TO TOP */}
                 <div className='flex items-center justify-end w-full my-0 p-0'>
                     <button className='bg-[#da9f5b] w-16 h-16 flex items-center justify-center hover:bg-amber-950 duration-300 ease-initial' onClick={scrollTop} style={{ borderRadius: "5px" }} >
                         <ArrowUp />
                     </button>
                 </div>
+
             </div>
             <FooterCopyRight />
         </div >
