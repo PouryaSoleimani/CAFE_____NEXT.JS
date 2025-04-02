@@ -7,7 +7,7 @@ import 'swiper/css/effect-cards';
 interface commentsProps { comments: [{ id: number | string, username: string, body: string, imgSRC: string, productID: string }] }
 type SingleCommentType = { id: number | string, username: string, body: string, imgSRC: string, productID: string }
 
-//  COMPONENT
+//  COMPONENT ===================================================================================================================================================================================
 const TestimonialTemplate: React.FC<commentsProps> = ({ comments }) => {
     return (
         <div className="container-fluid py-5">
