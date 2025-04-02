@@ -23,7 +23,6 @@ interface ServicesTemplateProps {
 const HomePage: React.FC<ServicesTemplateProps> = ({ data, menuData, comments }) => {
   return (
     <>
-
       <SliderTemplate />
       <AboutUsTemplate />
       <ServicesTemplate data={data} />

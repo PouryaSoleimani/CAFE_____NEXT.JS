@@ -1,9 +1,10 @@
+import AboutUsPage from '@/components/templates/AboutUsPage/AboutUsPage'
 import React from 'react'
 
-const AboutUsPage = () => {
+const AboutUs = () => {
     return (
-        <h1>ABOUT US PAGE</h1>
+        <AboutUsPage />
     )
 }
 
-export default AboutUsPage
+export default AboutUs
