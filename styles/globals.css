@@ -11092,11 +11092,12 @@ h6,
   align-items: center;
   justify-content: center;
   height: 27rem !important;
+  margin : 0 1rem;
 }
 
 .swiper__contents {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content : center;
+  justify-content: center;
 }
