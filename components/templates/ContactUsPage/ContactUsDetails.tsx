@@ -1,7 +1,41 @@
-import React from 'react';
+import React from 'react'
+import { useForm, SubmitHandler } from "react-hook-form"
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
+import axios from 'axios';
+import toast from 'react-hot-toast';
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 
+
+type Inputs = { name: string, email: string, subject: string, message: string }
+
+
+
 const ContactUsDetails = () => {
+
+    const schema = yup
+        .object()
+        .shape({ name: yup.string().required(), email: yup.string().email().required(), subject: yup.string().required(), message: yup.string().required() })
+        .required();
+
+
+
+    const { register, handleSubmit, formState: { errors }, reset } = useForm<Inputs | any>({ resolver: yupResolver(schema), });
+
+    const onSubmit: SubmitHandler<Inputs | any> = (data) => {
+        axios.post("http://localhost:4000/reservations", data)
+            .then(data => {
+                toast.success(`Dear ${data.data.name} ,Your Reservation Submitted Successfully for  Today at ${data.data.time} O'Clock and It's Available for ${data.data.person} People`, { style: { fontSize: "12px", border: "6px solid darkgreen", width: "40rem" }, duration: 4000, removeDelay: 2000, })
+                reset()
+            }).catch(err => {
+                console.info("%c FETCH ERROR", "color:red", err)
+                toast.error("Unknown Error Occured , Please Try Again")
+            })
+    }
+
+
+
+
     return (
         <div className="container-fluid pt-5">
             <div className="container">
@@ -42,21 +76,25 @@ const ContactUsDetails = () => {
                     <div className="col-md-6 pb-5">
                         <div className="contact-form">
                             <div id="success"></div>
-                            <form name="sentMessage" id="contactForm" noValidate>
+                            <form name="sentMessage" id="contactForm" noValidate onSubmit={handleSubmit(onSubmit)}>
                                 <div className="control-group">
-                                    <input type="text" className="form-control p-4" id="name" placeholder="Your Name" required data-validation-required-message="Please enter your name" />
+                                    <input type="text" className="form-control p-4" id="name" placeholder="Your Name" required data-validation-required-message="Please enter your name" {...register("name")} />
+                                    {errors.name && <span className='text-white bg-red-500/30 px-2 py-1 my-2 w-full'>Invalid Value</span>}
                                     <p className="help-block text-danger"></p>
                                 </div>
                                 <div className="control-group">
-                                    <input type="email" className="form-control p-4" id="email" placeholder="Your Email" required data-validation-required-message="Please enter your email" />
+                                    <input type="email" className="form-control p-4" id="email" placeholder="Your Email" required data-validation-required-message="Please enter your email"  {...register("email")} />
+                                    {errors.name && <span className='text-white bg-red-500/30 px-2 py-1 my-2 w-full'>Invalid Value</span>}
                                     <p className="help-block text-danger"></p>
                                 </div>
                                 <div className="control-group">
-                                    <input type="text" className="form-control p-4" id="subject" placeholder="Subject" required data-validation-required-message="Please enter a subject" />
+                                    <input type="text" className="form-control p-4" id="subject" placeholder="Subject" required data-validation-required-message="Please enter a subject" {...register("subject")} />
+                                    {errors.subject && <span className='text-white bg-red-500/30 px-2 py-1 my-2 w-full'>Invalid Value</span>}
                                     <p className="help-block text-danger"></p>
                                 </div>
                                 <div className="control-group">
-                                    <textarea className="form-control  py-3 px-4" rows={5} id="message" placeholder="Message" required data-validation-required-message="Please enter your message"    ></textarea>
+                                    <textarea className="form-control  py-3 px-4" rows={5} id="message" placeholder="Message" required data-validation-required-message="Please enter your message"  {...register("message")}   ></textarea>
+                                    {errors.message && <span className='text-white bg-red-500/30 px-2 py-1 my-2 w-full'>Invalid Value</span>}
                                     <p className="help-block text-danger"></p>
                                 </div>
                                 <div>

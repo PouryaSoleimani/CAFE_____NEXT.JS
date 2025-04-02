@@ -5,7 +5,7 @@ import * as yup from 'yup';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
-type Inputs = { name: string, age: string }
+type Inputs = { name: string, email: string, time: string, person: string, }
 
 // COMPONENT =========================================================================================================================================
 const ReservationFormComponent = () => {
