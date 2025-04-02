@@ -1,11 +1,9 @@
 //  TESTEMONIAL TEMPLATE ================================================================================================================================================================
-import React, { useRef, useState } from 'react';
-import { Virtual, Navigation, Pagination } from 'swiper/modules';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image'
 import 'swiper/css';
 import 'swiper/css/effect-cards';
-import { EffectCards } from 'swiper/modules';
 interface commentsProps { comments: [{ id: number | string, username: string, body: string, imgSRC: string, productID: string }] }
 type SingleCommentType = { id: number | string, username: string, body: string, imgSRC: string, productID: string }
 
