@@ -35,14 +35,14 @@ const FooterComponent = () => {
                 <div className="col-lg-3 col-md-6 mb-5">
                     <h4 className="text-white text-uppercase mb-4  mt-1 bg-zinc-600/20 w-fit p-2 rounded-sm" style={{ letterSpacing: "3px" }}>Newsletter</h4>
                     <p>Join Our Newsletter to Get Our News and Offers</p>
-                    <div className="w-100">
+                    <form className="w-100">
                         <div className="input-group">
                             <input type="text" className="form-control border-light" style={{ padding: "25px" }} placeholder="Your Email" />
                             <div className="input-group-append">
-                                <button className="btn btn-primary font-weight-bold px-3">Sign Up</button>
+                                <button className="btn btn-primary font-weight-bold px-3">JOIN</button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div className="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style={{ borderColor: " rgba(256, 256, 256, .1) !important" }}>
