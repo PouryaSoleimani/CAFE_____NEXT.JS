@@ -98,11 +98,8 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   const comments = await commentsReq.json()
 
   return {
-    props: {
-      data: data,
-      menuData: menuData,
-      comments: comments
-    }, revalidate: 43200
+    props: { data: data, menuData: menuData, comments: comments },
+    revalidate: 43200
   }
 }
 
