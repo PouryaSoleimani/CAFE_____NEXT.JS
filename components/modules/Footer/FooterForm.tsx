@@ -28,11 +28,12 @@ const FooterForm = () => {
             })
     }
     return (
-        <form className="w-100">
+        <form className="w-100" onSubmit={handleSubmit(onSubmit)}>
             <div className="input-group">
-                <input type="text" className="form-control border-light" style={{ padding: "25px" }} placeholder="Your Email" />
+                <input type="text" className="form-control border-light" style={{ padding: "25px" }} placeholder="Your Email"  {...register("email")} />
+                {errors.email && <span className='bg-red-300 text-red-900 px-3 py-0.5 font-semibold absolute -bottom-7 w-full text-start'>⚠ Email is not Valid ... </span>}
                 <div className="input-group-append">
-                    <button className="btn btn-primary font-weight-bold px-3">JOIN</button>
+                    <button className="btn btn-primary font-weight-bold px-3" type="submit">JOIN</button>
                 </div>
             </div>
         </form>
