@@ -5,7 +5,7 @@ import React from 'react'
 const PageHeaderComponent = (route: any) => {
     return (
         <div className="container-fluid page-header mb-5 position-relative text-center">
-            <div className="flex flex-col items-center justify-center lg:flex-row pt-0 pt-lg-5" style={{ minHeight: "400px" }}>
+            <div className="flex flex-col items-center justify-center  pt-0 pt-lg-5" style={{ minHeight: "400px" }}>
                 <h1 className="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">{String(route.route)}</h1>
                 <div className="d-inline-flex mb-lg-5">
                     <Link href="/" className="m-0 text-white flex items-start gap-x-2"><Home className='w-5 h-5' /> HOME PAGE </Link>
