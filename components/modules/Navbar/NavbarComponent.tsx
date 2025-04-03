@@ -10,10 +10,16 @@ const NavbarComponent = () => {
     const [activeRoute, setActiveRoute] = useState("home")
     const [search, setSearch] = useState("")
     const router = useRouter()
-    function searchHandlerClick() {
-        router.push(`/search?query=${search}`)
-    }
 
+    function searchHandlerClick() { router.push(`/search?query=${search}`) 
+}
+    function searchHandlerEnter(event: React.KeyboardEvent<HTMLInputElement>) {
+        if (event.key == "Enter") {
+            router.push(`/search?query=${search}`)
+        } else {
+            return
+        }
+    }
     return (
         <div className="container-fluid p-0 nav-bar fixed top-0 left-0 w-full z-50 bg-[rgb(0,0,0)]">
             <div className="bg-overlay"></div>
@@ -23,7 +29,7 @@ const NavbarComponent = () => {
                 </Link>
                 {/* SEARCH INPUT */}
                 <div className='w-full px-10 flex'>
-                    <input type="search" name="" id="navbarSearchInput" className='bg-zinc-900 p-2 w-full outline-none border-none focus:outline-none text-white text-xl' value={search} onChange={event => setSearch(event.target.value)} />
+                    <input type="search" name="" id="navbarSearchInput" className='bg-zinc-900 p-2 w-full outline-none border-none focus:outline-none text-white text-xl' value={search} onChange={event => setSearch(event.target.value)} onKeyDown={event => searchHandlerEnter(event)} />
                     <button className='bg-[#da9f5b] px-2 py-2 '><Search className='text-zinc-600' onClick={searchHandlerClick} /></button>
                 </div>
                 <button type="button" className="navbar-toggler" onClick={() => setIsOpen(!isOpen)}>
