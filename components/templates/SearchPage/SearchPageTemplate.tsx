@@ -19,17 +19,18 @@ const SearchPageTemplate: React.FC<SearchPageInterface> = ({ menuData }) => {
     const [searchedMenu, setSearchedMenu] = useState(menuData);
 
     useEffect(() => {
-        if (query) { 
+        if (query) {
             console.info("Query:", query);
             const filteredMenu = menuData.filter((item) =>
                 item.name.trim().toLowerCase().includes((query as string).trim().toLowerCase())
             );
             setSearchedMenu(filteredMenu);
         }
-    }, [query, menuData]); // Add menuData as a dependency to avoid stale data
+    }, [query, menuData]);
 
     function backHandler() { router.back(); }
 
+    // RETURN _______________________________________________________________________________________________________________________________________________________________________________
     return (
         <>
             <div className="container-fluid pt-5">
