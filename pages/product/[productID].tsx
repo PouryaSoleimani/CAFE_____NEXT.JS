@@ -1,10 +1,14 @@
 
-import React from 'react'
+// ^ SINGLE PRODUCT DETAILS PAGE ================================================================================================================================
+import React from 'react';
 import SingleProductDetailsPageTemplate from '@/components/templates/SingleProductDetailsPage/SingleProductDetailsPage'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import SingleProductDetailsComponent from '@/components/modules/SingleProductDetails/SingleProductDetailsComponent'
 interface SingleProductDetailsPageTemplateProps { singleProduct: { id: number, name: string, imageSRC: string, price: number | string, description: string } }
 
+
+
+//  COMPONENT  _________________________________________________________________________________________________________________________________________
 const SingleProductDetailsPage: React.FC<SingleProductDetailsPageTemplateProps> = ({ singleProduct }) => {
     return (
         <>
