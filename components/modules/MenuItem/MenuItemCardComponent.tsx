@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 interface MenuItemProps { id: number, name: string, imgSRC: string, price: number | string, description: string }
 
@@ -8,7 +9,7 @@ const MenuItemCardComponent: React.FC<MenuItemProps> = ({ id, name, imgSRC, pric
 
     return (
 
-        <div key={id} className="menuITemBox">
+        <Link href={`/product/${id}`} key={id} className="menuITemBox">
             <div className="w-60 h-52 relative mx-auto">
                 <Image className="rounded-md h-52" src={imgSRC} alt="pic" width={400} height={300} />
                 <h5 className="menu-price text-[#da9f5b] font-extrabold mt-2 absolute -top-4 -left-8 px-2">${price}</h5>
@@ -19,7 +20,7 @@ const MenuItemCardComponent: React.FC<MenuItemProps> = ({ id, name, imgSRC, pric
                     {description}
                 </p>
             </div>
-        </div>
+        </Link>
 
     )
 }
