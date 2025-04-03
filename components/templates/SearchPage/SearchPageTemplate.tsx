@@ -6,28 +6,30 @@ import { ArrowLeft } from 'lucide-react'
 import { useRouter } from 'next/router'
 
 
-interface SearchPageInterface { query: any, menuData: { id: number, name: string, imgSRC: string, price: number | string, description: string }[] }
+interface SearchPageInterface { menuData: { id: number, name: string, imgSRC: string, price: number | string, description: string }[] }
 type SingleMenuItem = { id: number, name: string, imgSRC: string, price: number | string, description: string }
 
 
 // COMPONENT ===============================================================================================================================================================================
-const SearchPageTemplate: React.FC<SearchPageInterface> = ({ query, menuData }) => {
+const SearchPageTemplate: React.FC<SearchPageInterface> = ({ menuData }) => {
 
     const router = useRouter()
+    const query = router.query.query
 
     const [searchedMenu, setSearchedMenu] = useState(menuData)
 
     useEffect(() => {
         console.info(query)
-        const filteredMenu = searchedMenu.filter(item => { return item.name.trim().toLowerCase().includes(query?.trim().toLowerCase()) })
+        const filteredMenu = searchedMenu.filter(item => { return item.name.trim().toLowerCase().includes((query as string).trim().toLowerCase()) })
         setSearchedMenu(filteredMenu)
     }, [])
+
     function backHandler() {
         router.back()
     }
 
-    
-    // RETURN
+
+    // RETURN __________________________________________________________________________________________________________________________________________________________________
     return (
         <>
             <div className="container-fluid pt-5">
@@ -37,7 +39,10 @@ const SearchPageTemplate: React.FC<SearchPageInterface> = ({ query, menuData }) 
                         <h1 className="display-4 text-white font-bold">Of <span>"{query}"</span></h1>
                     </div>
                     <div className="row flex flex-wrap items-center justify-center lg:gap-x-5">
-                        {searchedMenu.length ? (
+                        {searchedMenu?.map((menuItem: SingleMenuItem) => (
+                            <MenuItemCardComponent key={menuItem.id}  {...menuItem} />
+                        ))}
+                        {/* {searchedMenu.length > 0 ? (
                             searchedMenu?.map((menuItem: SingleMenuItem) => (
                                 <MenuItemCardComponent key={menuItem.id}  {...menuItem} />
                             ))
@@ -47,7 +52,7 @@ const SearchPageTemplate: React.FC<SearchPageInterface> = ({ query, menuData }) 
                                 <button className='flex items-center justify-center gap-x-5 px-5 bg-black p-4 text-white border text-3xl font-black hover:bg-zinc-900 duration-300' onClick={backHandler}><ArrowLeft /> BACK </button>
                             </div>
 
-                        }
+                        } */}
                     </div>
                 </div>
             </div>
@@ -60,14 +65,12 @@ const SearchPageTemplate: React.FC<SearchPageInterface> = ({ query, menuData }) 
 // GET STATIC PROPS   =========================================================================================================================================================================
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-    const query = ctx?.params?.query
-    console.log(ctx, query)
 
     const menuReq = await fetch("http://localhost:4000/menu")
     const menuData = await menuReq.json()
 
     return {
-        props: { query, menuData },
+        props: { menuData },
     }
 }
 

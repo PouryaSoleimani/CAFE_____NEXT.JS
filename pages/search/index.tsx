@@ -17,7 +17,7 @@ const SearchPage: React.FC<SearchPageInterface> = ({ menuData }) => {
     return (
         <>
             <PageHeaderComponent route={"SEARCH PAGE"} />
-            <SearchPageTemplate query={query} menuData={menuData} />
+            <SearchPageTemplate menuData={menuData} />
         </>
     )
 }

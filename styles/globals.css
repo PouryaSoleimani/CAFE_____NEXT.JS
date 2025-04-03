@@ -10986,8 +10986,7 @@ h6,
 .page-header,
 .offer,
 .footer {
-  background: linear-gradient(rgba(51, 33, 29, 0.381), rgba(51, 33, 29, 0.422)),url("/img/bg.jpg") no-repeat center center;
-  background-position: top;
+  background: linear-gradient(rgba(51, 33, 29, 0.381), rgba(51, 33, 29, 0.422));
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: blur(5px);
