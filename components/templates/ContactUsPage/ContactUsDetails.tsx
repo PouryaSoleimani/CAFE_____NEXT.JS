@@ -46,7 +46,7 @@ const ContactUsDetails = () => {
                     <h1 className="display-4">Feel Free To Contact</h1>
                 </div>
 
-                {/* INFORMATION ROW */}
+                {/* INFORMATIONS ROW */}
                 <div className="row px-3 pb-2 mb-4 flex items-center justify-center gap-x-5">
                     <div className="col-sm-3 text-center mb-3 bg-zinc-500/10 backdrop-blur-xs  py-4 w-fit rounded-md hover:bg-zinc-500/20 duration-300 ease-in-out">
                         <i className="fa fa-2x fa-map-marker-alt mb-3 text-primary"><FaMapMarkerAlt className='text-red-900 w-16 h-16 mx-auto mb-4' /></i>
