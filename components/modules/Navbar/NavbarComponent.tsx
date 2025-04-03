@@ -11,15 +11,21 @@ const NavbarComponent = () => {
     const [search, setSearch] = useState("")
     const router = useRouter()
 
-    function searchHandlerClick() { router.push(`/search?query=${search}`) 
-}
+    function searchHandlerClick() {
+        router.push(`/search?query=${search}`);
+        setSearch("")
+    }
+
     function searchHandlerEnter(event: React.KeyboardEvent<HTMLInputElement>) {
         if (event.key == "Enter") {
             router.push(`/search?query=${search}`)
+            setSearch("")
         } else {
             return
         }
     }
+    
+    // RETURN _______________________________________________________________________________________________________________________________________________________________________________
     return (
         <div className="container-fluid p-0 nav-bar fixed top-0 left-0 w-full z-50 bg-[rgb(0,0,0)]">
             <div className="bg-overlay"></div>
