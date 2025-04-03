@@ -17,7 +17,7 @@ const SingleProductDetailsPageTemplate: React.FC<SingleProductDetailsPageTemplat
     return (
         <>
             <PageHeaderComponent route={"SINGLE PRODUCT DETAILS"} />
-            {/* <SingleProductDetailsComponent singleProduct={singleProduct} /> */}
+            <SingleProductDetailsComponent singleProduct={singleProduct} />
         </>
     )
 }
