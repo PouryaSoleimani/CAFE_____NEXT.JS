@@ -25,7 +25,7 @@ const SearchPageTemplate: React.FC<SearchPageInterface> = ({ menuData }) => {
                 item.name.trim().toLowerCase().includes((query as string).trim().toLowerCase())
             );
             setSearchedMenu(filteredMenu);
-        } 
+        }
     }, [query, menuData]);
 
 
@@ -36,7 +36,7 @@ const SearchPageTemplate: React.FC<SearchPageInterface> = ({ menuData }) => {
         <>
             <div className="container-fluid pt-5">
                 <div className="container">
- 
+
                     {/* TITLE */}
                     <div className="section-title text-center">
                         <h1 className="text-[#da9f5b] text-uppercase tracking-widest">Search Results</h1>
