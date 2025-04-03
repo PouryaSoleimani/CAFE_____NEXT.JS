@@ -26,6 +26,7 @@ const SingleProductDetailsComponent: React.FC<SingleProductDetailsPageTemplatePr
                     </div>
                     <h1 className='text-white underline decoration-amber-800'>{singleProduct.name}</h1>
                     <h3 className='bg-black px-3 py-1 text-white rounded-sm'>PRICE : ${singleProduct.price}</h3>
+                    <p className='text-xl text-zinc-500'>{singleProduct.description}</p>
                 </div>
 
             ) : (
