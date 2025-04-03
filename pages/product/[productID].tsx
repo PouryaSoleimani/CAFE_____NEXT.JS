@@ -29,9 +29,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 // GET STATIC PROPS ______________________________________________________________________________________________________________________________________
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-    const productID = ctx?.params?.query;
+    const productID = ctx?.params?.productID;
 
-    const request = await fetch(`http://localhost:4000/menu/${productID}`)
+    const request = await fetch(`http://localhost:4000/menu/${productID.toString()}`)
     const singleProduct = await request.json()
 
 
