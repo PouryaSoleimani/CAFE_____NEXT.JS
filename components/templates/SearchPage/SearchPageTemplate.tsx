@@ -19,7 +19,7 @@ const SearchPageTemplate: React.FC<SearchPageInterface> = ({ menuData }) => {
     const [searchedMenu, setSearchedMenu] = useState(menuData);
 
     useEffect(() => {
-        if (query) { 
+        if (query) {
             console.info("Query:", query);
             const filteredMenu = menuData.filter((item) =>
                 item.name.trim().toLowerCase().includes((query as string).trim().toLowerCase())
