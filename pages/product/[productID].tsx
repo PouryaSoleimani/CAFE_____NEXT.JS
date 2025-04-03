@@ -3,8 +3,9 @@
 import React from 'react';
 import SingleProductDetailsPageTemplate from '@/components/templates/SingleProductDetailsPage/SingleProductDetailsPage'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import SingleProductDetailsComponent from '@/components/modules/SingleProductDetails/SingleProductDetailsComponent'
-interface SingleProductDetailsPageTemplateProps { singleProduct: { id: number, name: string, imageSRC: string, price: number | string, description: string } }
+
+
+interface SingleProductDetailsPageTemplateProps { singleProduct: { id: number, name: string, imgSRC: string, price: number | string, description: string } }
 
 
 
@@ -20,22 +21,27 @@ const SingleProductDetailsPage: React.FC<SingleProductDetailsPageTemplateProps> 
 
 // GET STATIC PATHS ______________________________________________________________________________________________________________________________________
 export const getStaticPaths: GetStaticPaths = async () => {
+
     const request = await fetch(`http://localhost:4000/menu`)
     const allProducts = await request.json()
+
     const paths = allProducts.map((item: any) => ({
         params: { productID: item.id.toString() }
     }))
+
     return {
         paths,
-        fallback: false,
+        fallback: "blocking",
     }
 }
+
+
 // GET STATIC PROPS ______________________________________________________________________________________________________________________________________
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const productID = ctx?.params?.productID;
 
-    const request = await fetch(`http://localhost:4000/menu/${productID.toString()}`)
+    const request = await fetch(`http://localhost:4000/menu/${productID?.toString()}`)
     const singleProduct = await request.json()
 
 
