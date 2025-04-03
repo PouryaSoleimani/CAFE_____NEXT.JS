@@ -5,7 +5,7 @@ import SingleProductDetailsPageTemplate from '@/components/templates/SingleProdu
 import { GetStaticPaths, GetStaticProps } from 'next'
 
 
-interface SingleProductDetailsPageTemplateProps { singleProduct: { id: number, name: string, imgSRC: string, price: number | string, description: string } }
+interface SingleProductDetailsPageTemplateProps { singleProduct: { id: number, name: string, imgSRC: string, price: number | string, description: string , rate: number } }
 
 
 
