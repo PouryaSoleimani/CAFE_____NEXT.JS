@@ -5,84 +5,96 @@
             "name": "Espresso",
             "imgSRC": "/img/menu-1.jpg",
             "price": 2.5,
-            "description": "A strong and bold coffee shot."
+            "description": "A strong and bold coffee shot.",
+            "rate": 5
         },
         {
             "id": "2",
             "name": "Latte",
             "imgSRC": "/img/menu-2.webp",
             "price": 3.5,
-            "description": "A blend of espresso and steamed milk."
+            "description": "A blend of espresso and steamed milk.",
+            "rate": 4
         },
         {
             "id": "3",
             "name": "Cappuccino",
             "imgSRC": "/img/menu-3.webp",
             "price": 3,
-            "description": "Espresso with milk and a frothy top."
+            "description": "Espresso with milk and a frothy top.",
+            "rate": 3
         },
         {
             "id": "4",
             "name": "Mocha",
             "imgSRC": "/img/menu-4.webp",
             "price": 4,
-            "description": "A chocolate-flavored of a latte."
+            "description": "A chocolate-flavored of a latte.",
+            "rate": 5
         },
         {
             "id": "5",
             "name": "Americano",
             "imgSRC": "/img/menu-5.webp",
             "price": 2.75,
-            "description": "Espresso diluted with hot water."
+            "description": "Espresso diluted with hot water.",
+            "rate": 5
         },
         {
             "id": "6",
             "name": "Macchiato",
             "imgSRC": "/img/menu-6.webp",
             "price": 3.25,
-            "description": "Espresso with a amount of steamed milk."
+            "description": "Espresso with a amount of steamed milk.",
+            "rate": 5
         },
         {
             "id": "7",
             "name": "Flat White",
             "imgSRC": "/img/menu-7.webp",
             "price": 3.75,
-            "description": "A blend of espresso and microfoam."
+            "description": "A blend of espresso and microfoam.",
+            "rate": 4
         },
         {
             "id": "8",
             "name": "Affogato",
             "imgSRC": "/img/menu-8.webp",
             "price": 4.5,
-            "description": "A scoop of ice cream with a espresso."
+            "description": "A scoop of ice cream with a espresso.",
+            "rate": 5
         },
         {
             "id": "9",
             "name": "Iced Coffee",
             "imgSRC": "/img/menu-9.webp",
             "price": 3.5,
-            "description": "Chilled coffee served over ice."
+            "description": "Chilled coffee served over ice.",
+            "rate": 3
         },
         {
             "id": "10",
             "name": "Cold Brew",
             "imgSRC": "/img/menu-10.webp",
             "price": 4,
-            "description": "Coffee brewed with smooth flavor."
+            "description": "Coffee brewed with smooth flavor.",
+            "rate": 5
         },
         {
             "id": "11",
             "name": "Espresso",
             "imgSRC": "/img/menu-2.jpg",
             "price": 2.5,
-            "description": "A strong and bold coffee shot."
+            "description": "A strong and bold coffee shot.",
+            "rate": 4
         },
         {
             "id": "12",
             "name": "Latte",
             "imgSRC": "/img/menu-3.jpg",
             "price": 3.5,
-            "description": "A smooth blend of espresso and milk."
+            "description": "A smooth blend of espresso and milk.",
+            "rate": 4
         }
     ],
     "services": [

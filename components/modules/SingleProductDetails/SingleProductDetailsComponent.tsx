@@ -14,8 +14,9 @@ const SingleProductDetailsComponent: React.FC<SingleProductDetailsPageTemplatePr
             {singleProduct ? (
 
                 <div className='bg-zinc-700/30 p-5 rounded-sm flex flex-col items-center gap-y-5 justify-center border border-zinc-600'>
-                    <Image src={singleProduct?.imgSRC} width={400} height={600} alt='pic' />
-                    <h1>ITEM</h1>
+                    <Image src={singleProduct?.imgSRC} width={300} height={600} alt='pic' />
+                    <h1 className='text-white underline decoration-amber-800'>{singleProduct.name}</h1>
+                    <h3 className='bg-black px-3 py-1 text-white rounded-sm'>${singleProduct.price}</h3>
                 </div>
 
             ) : (
