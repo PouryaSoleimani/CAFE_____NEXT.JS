@@ -1,9 +1,9 @@
-import { ArrowLeft, Star, StarIcon } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import React from 'react'
 import { BiStar } from 'react-icons/bi'
-import { RiShieldStarFill, RiStarFill, RiStarSFill } from 'react-icons/ri'
+import { RiStarFill } from 'react-icons/ri'
 
 
 interface SingleProductDetailsPageTemplateProps { singleProduct: { id: number, name: string, imgSRC: string, price: number | string, description: string, rate: number } }
