@@ -28,7 +28,7 @@ const SearchPageTemplate: React.FC<SearchPageInterface> = ({ menuData }) => {
         }
     }, [query, menuData]);
 
-    function backHandler() { router.back(); }
+
     function backToMenuHandler() { router.push("/menu") }
 
     // RETURN _______________________________________________________________________________________________________________________________________________________________________________
