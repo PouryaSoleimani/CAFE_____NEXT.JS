@@ -4,7 +4,7 @@ import { NextPage, GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
 import React from 'react'
 
-interface SingleProductDetailsPageTemplateProps { singleProduct: { id: number, name: string, imgSRC: string, price: number | string, description: string ,  rate: number } }
+interface SingleProductDetailsPageTemplateProps { singleProduct: { id: number, name: string, imgSRC: string, price: number | string, description: string, rate: number } }
 
 const SingleProductDetailsPageTemplate: React.FC<SingleProductDetailsPageTemplateProps> = ({ singleProduct }) => {
 
