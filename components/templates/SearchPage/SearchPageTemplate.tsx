@@ -1,5 +1,5 @@
 //^ SEARCH TEMPLATE COMPONENT  ===============================================================================================================================================================
-import { GetStaticProps } from 'next'
+import { GetServerSideProps, GetStaticProps } from 'next'
 import React, { useEffect, useState } from 'react'
 import MenuItemCardComponent from '@/components/modules/MenuItem/MenuItemCardComponent'
 import { ArrowLeft } from 'lucide-react'
@@ -71,7 +71,7 @@ const SearchPageTemplate: React.FC<SearchPageInterface> = ({ menuData }) => {
 
 // GET STATIC PROPS   =========================================================================================================================================================================
 
-export const getStaticProps: GetStaticProps = async (ctx) => {
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
     const menuReq = await fetch("http://localhost:4000/menu")
     const menuData = await menuReq.json()
