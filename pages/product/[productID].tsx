@@ -1,16 +1,11 @@
-import PageHeaderComponent from '@/components/modules/PageHeader/PageHeaderComponent'
-import { useRouter } from 'next/router'
+
 import React from 'react'
+import SingleProductDetailsPageTemplate from '@/components/templates/SingleProductDetailsPage/SingleProductDetailsPage'
+
 
 const SingleProductDetailsPage = () => {
-    const router = useRouter()
-    const ID = router.query.productID
-    console.info("PRODUCT ID ===> ", ID)
-
-
-    // RETURN ______________________________________________________________________________________________________________________________________
     return (
-        <PageHeaderComponent route={"SINGLE PRODUCT DETAILS"} />
+        <SingleProductDetailsPageTemplate />
     )
 }
 
