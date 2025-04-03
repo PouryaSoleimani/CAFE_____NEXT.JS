@@ -22,7 +22,7 @@ const SearchPageTemplate: React.FC<SearchPageInterface> = ({ menuData }) => {
         console.info(query)
         const filteredMenu = searchedMenu.filter(item => { return item.name.trim().toLowerCase().includes((query as string).trim().toLowerCase()) })
         setSearchedMenu(filteredMenu)
-    }, [])
+    }, [query])
 
     function backHandler() {
         router.back()
