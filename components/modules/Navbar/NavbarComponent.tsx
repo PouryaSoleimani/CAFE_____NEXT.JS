@@ -2,10 +2,17 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import 'animate.css';
+import { Search } from 'lucide-react';
+import { useRouter } from 'next/router';
 
 const NavbarComponent = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [activeRoute, setActiveRoute] = useState("home")
+    const [search, setSearch] = useState("")
+    const router = useRouter()
+    function searchHandlerClick() {
+        router.push(`/search?query=${search}`)
+    }
 
     return (
         <div className="container-fluid p-0 nav-bar fixed top-0 left-0 w-full z-50 bg-[rgb(0,0,0)]">
@@ -14,6 +21,11 @@ const NavbarComponent = () => {
                 <Link href="/" className="navbar-brand px-lg-4 m-0 flex">
                     <h1 className="m-0 display-4 text-uppercase text-white hover:text-[#da9f5b] animate__animated  animate__fadeInUp">Next-Coffee</h1>
                 </Link>
+                {/* SEARCH INPUT */}
+                <div className='w-full px-10 flex'>
+                    <input type="search" name="" id="navbarSearchInput" className='bg-zinc-900 p-2 w-full outline-none border-none focus:outline-none text-white text-xl' value={search} onChange={event => setSearch(event.target.value)} />
+                    <button className='bg-[#da9f5b] px-2 py-2 '><Search className='text-zinc-600' onClick={searchHandlerClick} /></button>
+                </div>
                 <button type="button" className="navbar-toggler" onClick={() => setIsOpen(!isOpen)}>
                     <span className="navbar-toggler-icon">
                         <GiHamburgerMenu className="w-6 h-6 m-auto translate-y-1" />
