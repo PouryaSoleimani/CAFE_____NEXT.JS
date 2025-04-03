@@ -1,4 +1,4 @@
-// SEARCH TEMPLATE COMPONENT  ===============================================================================================================================================================
+//^ SEARCH TEMPLATE COMPONENT  ===============================================================================================================================================================
 import { GetStaticProps } from 'next'
 import React, { useEffect, useState } from 'react'
 import MenuItemCardComponent from '@/components/modules/MenuItem/MenuItemCardComponent'
@@ -12,13 +12,14 @@ type SingleMenuItem = { id: number, name: string, imgSRC: string, price: number 
 
 // COMPONENT ===============================================================================================================================================================================
 const SearchPageTemplate: React.FC<SearchPageInterface> = ({ menuData }) => {
+
     const router = useRouter();
     const query = router.query.query;
 
     const [searchedMenu, setSearchedMenu] = useState(menuData);
 
     useEffect(() => {
-        if (query) { // Ensure query is defined before filtering
+        if (query) { 
             console.info("Query:", query);
             const filteredMenu = menuData.filter((item) =>
                 item.name.trim().toLowerCase().includes((query as string).trim().toLowerCase())
