@@ -3,7 +3,7 @@ import SearchPageTemplate from '@/components/templates/SearchPage/SearchPageTemp
 import { GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
 import React from 'react'
-interface SearchPageInterface { query: string | string[] | undefined, menuData: [{ id: number, name: string, imgSRC: string, price: number | string, description: string }] }
+interface SearchPageInterface { query: any, menuData: [{ id: number, name: string, imgSRC: string, price: number | string, description: string }] }
 
 
 

@@ -1,15 +1,23 @@
+// SEARCH TEMPLATE COMPONENT  ===============================================================================================================================================================
 import { GetStaticProps } from 'next'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import MenuItemCardComponent from '@/components/modules/MenuItem/MenuItemCardComponent'
 
 
-interface SearchPageInterface { query: string | string[] | undefined, menuData: [{ id: number, name: string, imgSRC: string, price: number | string, description: string }] }
+interface SearchPageInterface { query: any, menuData: { id: number, name: string, imgSRC: string, price: number | string, description: string }[] }
 type SingleMenuItem = { id: number, name: string, imgSRC: string, price: number | string, description: string }
 
 
-// COMPONENT ===============================================================================================================================================================
+// COMPONENT ===============================================================================================================================================================================
 const SearchPageTemplate: React.FC<SearchPageInterface> = ({ query, menuData }) => {
+    const [searchedMenu, setSearchedMenu] = useState(menuData)
 
+    useEffect(() => {
+        const filteredMenu = searchedMenu.filter(item => { return item.name.includes(query) })
+        setSearchedMenu(filteredMenu)
+    }, [])
+
+    // RETURN
     return (
         <>
             <div className='text-white '>{query}</div>
@@ -20,7 +28,7 @@ const SearchPageTemplate: React.FC<SearchPageInterface> = ({ query, menuData }) 
                         <h1 className="display-4 text-white font-bold">Of <span>"{query}"</span></h1>
                     </div>
                     <div className="row flex flex-wrap items-center justify-center lg:gap-x-5">
-                        {menuData?.map((menuItem: SingleMenuItem) => (
+                        {searchedMenu?.map((menuItem: SingleMenuItem) => (
                             <MenuItemCardComponent key={menuItem.id}  {...menuItem} />
                         ))}
                     </div>
@@ -32,7 +40,7 @@ const SearchPageTemplate: React.FC<SearchPageInterface> = ({ query, menuData }) 
 
 
 
-// GET STATIC PROPS   ===============================================================================================================================================================
+// GET STATIC PROPS   =========================================================================================================================================================================
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const query = ctx?.params?.query
