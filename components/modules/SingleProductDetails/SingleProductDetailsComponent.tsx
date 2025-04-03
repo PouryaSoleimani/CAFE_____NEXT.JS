@@ -21,7 +21,7 @@ const SingleProductDetailsComponent: React.FC<SingleProductDetailsPageTemplatePr
             {singleProduct ? (
                 <div className='flex flex-col items-center justify-center gap-y-2'>
                     <div className='bg-zinc-800/50 p-5 rounded-sm flex flex-col items-center gap-y-5 justify-center border border-zinc-600'>
-                        <Image src={singleProduct?.imgSRC} width={300} height={600} alt='pic' />
+                        <Image src={singleProduct?.imgSRC} width={300} height={700} alt='pic' />
                         <div className='flex gap-x-1'>
                             {Array.from({ length: singleProduct.rate }, (_, i) => (<span key={i}><RiStarFill className='text-2xl text-yellow-400' /></span>))}
                             {Array.from({ length: 5 - singleProduct.rate }, (_, i) => (<span key={i}><BiStar className='text-2xl text-yellow-400' /></span>))}
