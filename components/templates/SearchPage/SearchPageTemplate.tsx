@@ -27,9 +27,7 @@ const SearchPageTemplate: React.FC<SearchPageInterface> = ({ menuData }) => {
         }
     }, [query, menuData]); // Add menuData as a dependency to avoid stale data
 
-    function backHandler() {
-        router.back();
-    }
+    function backHandler() { router.back(); }
 
     return (
         <>
