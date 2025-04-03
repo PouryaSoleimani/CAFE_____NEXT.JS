@@ -1,5 +1,5 @@
 //^ SEARCH TEMPLATE COMPONENT  ===============================================================================================================================================================
-import { GetServerSideProps, GetStaticProps } from 'next'
+import { GetServerSideProps } from 'next'
 import React, { useEffect, useState } from 'react'
 import MenuItemCardComponent from '@/components/modules/MenuItem/MenuItemCardComponent'
 import { ArrowLeft } from 'lucide-react'
