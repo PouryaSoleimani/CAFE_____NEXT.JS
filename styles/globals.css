@@ -786,9 +786,9 @@ pre code {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
-  width: 28rem;
+  width: 22rem;
   text-align: center;
-  row-gap: 1.5rem;
+  gap: 1rem;
   transition: all 200ms ease-in-out;
 }
 
