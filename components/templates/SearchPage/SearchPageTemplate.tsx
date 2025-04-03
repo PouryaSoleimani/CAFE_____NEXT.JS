@@ -55,9 +55,6 @@ const SearchPageTemplate: React.FC<SearchPageInterface> = ({ menuData }) => {
                                     <p className="w-full text-3xl font-bold bg-red-950 p-5 rounded-md text-center text-white">
                                         NO PRODUCT FOUND
                                     </p>
-                                    <button className="flex items-center justify-center gap-x-5 px-5 bg-black p-4 text-white border text-3xl font-black hover:bg-zinc-900 duration-300" onClick={backHandler}  >
-                                        <ArrowLeft /> BACK
-                                    </button>
                                 </div>
                             )}
                         </div>
