@@ -16,7 +16,7 @@ const MenuItemCardComponent: React.FC<MenuItemProps> = ({ id, name, imgSRC, pric
             </div>
             <div className="">
                 <h4 className="text-white font-bold" style={{ fontSize: "2.2rem" }}>{name}</h4>
-                <p className="m-0 text-gray-400 w-fit text-2xl font-extralight whitespace-nowrap">
+                <p className="m-0 text-gray-400 w-fit text-xl tracking-tight font-thin whitespace-nowrap">
                     {description}
                 </p>
             </div>
