@@ -1,6 +1,5 @@
 import PageHeaderComponent from '@/components/modules/PageHeader/PageHeaderComponent'
 import SingleProductDetailsComponent from '@/components/modules/SingleProductDetails/SingleProductDetailsComponent'
-import { GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
 import React from 'react'
 
