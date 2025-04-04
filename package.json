@@ -5,6 +5,7 @@
     "scripts": {
         "dev": "next dev --turbopack",
         "build": "next build",
+        "start" : "next start",
         "server": "json-server --watch data/db.json -p 4000",
         "lint": "next lint"
     },
