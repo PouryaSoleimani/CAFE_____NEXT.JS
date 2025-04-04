@@ -9,9 +9,9 @@ const MenuItemCardComponent: React.FC<MenuItemProps> = ({ id, name, imgSRC, pric
 
     return (
 
-        <Link href={`/product/${id}`} key={id} className="menuITemBox">
-            <div className="w-70 h-52 relative mx-auto">
-                <Image className="rounded-md w-72 h-52" src={imgSRC} alt="pic" width={500} height={300} />
+        <Link href={`/product/${id}`} key={id} className="menuITemBox m-2">
+            <div className="w-full h-full relative">
+                <Image className="rounded-md w-full  h-48" src={imgSRC} alt="pic" width={280} height={180} />
                 <h5 className="menu-price text-[#da9f5b] font-extrabold mt-2 absolute -top-4 -left-8 px-2">${price}</h5>
             </div>
             <div className="">
