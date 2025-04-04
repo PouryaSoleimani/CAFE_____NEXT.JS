@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import 'animate.css';
 import { Search } from 'lucide-react';
 import { useRouter } from 'next/router';
+import NavbarDropDown from './NavbarDropDown';
 
 const NavbarComponent = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -50,8 +51,9 @@ const NavbarComponent = () => {
                         <Link href="/services" className={`nav-item nav-link ${activeRoute == "services" ? "active" : ""}`} onClick={() => setActiveRoute("services")}>Services</Link>
                         <Link href="/menu" className={`nav-item nav-link ${activeRoute == "menu" ? "active" : ""}`} onClick={() => setActiveRoute("menu")}>Menu</Link>
                         <Link href="/reservation" className={`nav-item nav-link ${activeRoute == "reservation" ? "active" : ""}`} onClick={() => setActiveRoute("reservation")}>Reservation</Link>
-                        <Link href="/testimonial" className={`nav-item nav-link ${activeRoute == "testimonial" ? "active" : ""}`} onClick={() => setActiveRoute("testimonial")}>Testimonial</Link>
-                        <Link href="/contact-us" className={`nav-item nav-link ${activeRoute == "contact" ? "active" : ""}`} onClick={() => setActiveRoute("contact")}>Contact</Link>
+                        <NavbarDropDown />
+                        {/* <Link href="/testimonial" className={`nav-item nav-link ${activeRoute == "testimonial" ? "active" : ""}`} onClick={() => setActiveRoute("testimonial")}>Testimonial</Link>
+                        <Link href="/contact-us" className={`nav-item nav-link ${activeRoute == "contact" ? "active" : ""}`} onClick={() => setActiveRoute("contact")}>Contact</Link> */}
                     </div>
                 </div>
             </nav>
