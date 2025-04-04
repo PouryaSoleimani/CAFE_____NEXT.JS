@@ -28,15 +28,15 @@ const ServiceItemCardComponent: React.FC<ServiceItemCardComponentProps> = ({ ser
 
     return (
         <div className="col-lg-6 mb-5 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
-            <div className="bg-dark rounded p-2 lg:p-4 flex items-center justify-center h-full">
+            <div className="bg-dark rounded-sm p-3 lg:p-4 flex items-center justify-center h-full">
                 <div className="row flex flex-col items-center justify-center gap-4">
-                    <div className="col-sm-5">
-                        <div className="img-fluid mb-3 mb-sm-0">
-                            <Image src={imgSRC} alt="pic" width={500} height={400} className='h-40 mt-2' />
+                    <div className="w-full">
+                        <div className="w-full mb-3 mb-sm-0">
+                            <Image src={imgSRC} alt="pic" width={700} height={800} className='w-full h-1/2 mt-2' />
                         </div>
                     </div>
-                    <div className="col-sm-7 ">
-                        <h4 className="flex items-center tracking-tighter -translate-x-5 lg:-translate-x-0 whitespace-nowrap gap-x-2">
+                    <div className="w-full  ">
+                        <h4 className="flex items-center tracking-tighter translate-x-0 lg:-translate-x-0 whitespace-nowrap gap-x-2">
                             <span className="service-icon text-[#da9f5b] text-3xl p-2 m-0">
                                 {myICON?.icon && <myICON.icon className='w-8 h-8' />} {/* Render the icon dynamically */}
                             </span>
