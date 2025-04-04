@@ -3,7 +3,7 @@ import React from 'react'
 const ReservationInfosComponent = () => {
     return (
         <div className="col-lg-6 my-5 my-lg-0">
-            <div className="p-5">
+            <div className="p-1 lg:p-5">
                 <div className="mb-4">
                     <h1 className="display-3 text-primary">30% OFF</h1>
                     <h1 className="text-white">For Online Reservation</h1>
