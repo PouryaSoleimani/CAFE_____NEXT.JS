@@ -45,7 +45,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 // GET STATIC PROPS
-export const getStaticProps = async (ctx: GetStaticPropsContext<{ productID: string }>) => {
+export const getStaticProps: GetStaticProps = async (ctx) => {
     const productID = ctx.params?.productID;
 
     if (!productID) {
