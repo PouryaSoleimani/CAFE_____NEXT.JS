@@ -44,6 +44,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
     };
 };
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
 // GET STATIC PROPS
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const productID = ctx.params?.productID;
@@ -54,12 +56,26 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
         };
     }
 
-    const request = await fetch(`http://localhost:4000/menu/${productID}`);
-    const singleProduct: Product | null = await request.json();
+    try {
+        const request = await fetch(`${API_URL}/menu/${productID}`);
+        
+        if (!request.ok) {
+            return {
+                notFound: true,
+            };
+        }
 
-    return {
-        props: { singleProduct },
-    };
+        const singleProduct: Product | null = await request.json();
+
+        return {
+            props: { singleProduct },
+        };
+    } catch (error) {
+        console.error("Error fetching product:", error);
+        return {
+            notFound: true,
+        };
+    }
 };
 
 export default SingleProductDetailsPage;
