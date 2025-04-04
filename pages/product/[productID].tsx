@@ -1,7 +1,7 @@
 // ^ SINGLE PRODUCT DETAILS PAGE ================================================================================================================================
 import React from 'react';
 import SingleProductDetailsPageTemplate from '@/components/templates/SingleProductDetailsPage/SingleProductDetailsPage';
-import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 
 interface Product {
     id: number;
@@ -58,7 +58,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
     try {
         const request = await fetch(`${API_URL}/menu/${productID}`);
-        
+
         if (!request.ok) {
             return {
                 notFound: true,
