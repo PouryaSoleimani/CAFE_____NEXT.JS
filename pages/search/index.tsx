@@ -27,7 +27,7 @@ const SearchPage: React.FC<SearchPageInterface> = ({ menuData }) => {
 export const getStaticProps: GetStaticProps = async (ctx) => {
 
 
-    const menuReq = await fetch("https://cafe-server-5u3w.onrender.com//menu")
+    const menuReq = await fetch("https://cafe-server-5u3w.onrender.com/menu")
     const menuData = await menuReq.json()
 
     return {

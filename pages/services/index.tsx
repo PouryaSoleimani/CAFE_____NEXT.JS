@@ -20,7 +20,7 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ data }) => {
 // GET STATIC PROPS ==================================================================================================================================================================
 export const getStaticProps: GetStaticProps = async (ctx) => {
 
-    const request = await fetch("https://cafe-server-5u3w.onrender.com//services")
+    const request = await fetch("https://cafe-server-5u3w.onrender.com/services")
     const data = await request.json()
 
     return {

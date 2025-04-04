@@ -73,7 +73,7 @@ const SearchPageTemplate: React.FC<SearchPageInterface> = ({ menuData }) => {
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
-    const menuReq = await fetch("https://cafe-server-5u3w.onrender.com//menu")
+    const menuReq = await fetch("https://cafe-server-5u3w.onrender.com/menu")
     const menuData = await menuReq.json()
 
     return {

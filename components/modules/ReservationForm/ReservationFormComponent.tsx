@@ -19,7 +19,7 @@ const ReservationFormComponent = () => {
     const { register, handleSubmit, watch, formState: { errors }, reset } = useForm<Inputs | any>({ resolver: yupResolver(schema), });
 
     const onSubmit: SubmitHandler<Inputs | any> = (data) => {
-        axios.post("https://cafe-server-5u3w.onrender.com//reservations", data)
+        axios.post("https://cafe-server-5u3w.onrender.com/reservations", data)
             .then(data => {
                 toast.success(`Dear ${data.data.name} ,Your Reservation Submitted Successfully for  Today at ${data.data.time} O'Clock and It's Available for ${data.data.person} People`, { style: { fontSize: "12px", border: "6px solid darkgreen", width: "40rem" }, duration: 4000, removeDelay: 2000, })
                 reset()

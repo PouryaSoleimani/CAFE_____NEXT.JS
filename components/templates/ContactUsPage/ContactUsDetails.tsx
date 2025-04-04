@@ -23,7 +23,7 @@ const ContactUsDetails = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm<Inputs | any>({ resolver: yupResolver(schema), });
 
     const onSubmit: SubmitHandler<Inputs | any> = (data) => {
-        axios.post("https://cafe-server-5u3w.onrender.com//tickets", data)
+        axios.post("https://cafe-server-5u3w.onrender.com/tickets", data)
             .then(data => {
                 toast.success(`Dear ${data.data.name} Your Ticket has been Submitted Successfully `, { style: { fontSize: "12px", border: "6px solid darkgreen", width: "40rem" }, duration: 4000, removeDelay: 2000, })
                 reset()
