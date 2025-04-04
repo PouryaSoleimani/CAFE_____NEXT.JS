@@ -27,24 +27,24 @@ const NavbarComponent = () => {
 
     // RETURN _______________________________________________________________________________________________________________________________________________________________________________
     return (
-        <div className="container-fluid p-0 nav-bar fixed top-0 left-0 w-full z-50 bg-[rgb(0,0,0)]">
+        <div className="container-fluid p-0 nav-bar fixed top-0 left-0 w-full z-50 bg-[rgb(0,0,0)] gap-y-5">
             <div className="bg-overlay"></div>
-            <nav className="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <nav className="navbar navbar-expand-lg bg-none navbar-dark py-3 gap-y-5">
                 <Link href="/" className="navbar-brand px-lg-4 m-0 flex">
                     <h1 className="m-0 display-4 text-uppercase text-white hover:text-[#da9f5b] animate__animated  animate__fadeInUp hover:scale-105 duration-300 ease-in">Next-Coffee</h1>
                 </Link>
                 {/* SEARCH INPUT */}
-                <div className='w-full px-10 flex'>
+                <div className='w-full lg:px-10 flex'>
                     <input type="search" name="" id="navbarSearchInput" className='bg-zinc-900 p-2 w-full outline-none border-none focus:outline-none text-white text-xl' value={search} onChange={event => setSearch(event.target.value)} onKeyDown={event => searchHandlerEnter(event)} />
                     <button className='bg-[#da9f5b] px-2 py-2 hover:bg-[#ffd29f] '><Search className='text-zinc-600' onClick={searchHandlerClick} /></button>
                 </div>
-                <button type="button" className="navbar-toggler" onClick={() => setIsOpen(!isOpen)}>
-                    <span className="navbar-toggler-icon">
+                <button type="button" className="navbar-toggler relative flex items-center justify-end w-full" onClick={() => setIsOpen(!isOpen)}>
+                    <span className="navbar-toggler-icon absolute right-1 translate-y-[-20%]">
                         <GiHamburgerMenu className="w-6 h-6 m-auto translate-y-1" />
                     </span>
                 </button>
                 <div className={`navbar-collapse ${isOpen ? 'show' : ''}`}>
-                    <div className="navbar-nav ml-auto p-3 animate__animated  animate__fadeInUp animate__delay-1s">
+                    <div className="navbar-nav ml-auto p-3 ">
                         <Link href="/" className={`nav-item nav-link ${activeRoute == "home" ? "active" : ""}`} onClick={() => setActiveRoute("home")}>Home</Link>
                         <Link href="/about-us" className={`nav-item nav-link ${activeRoute == "about" ? "active" : ""}`} onClick={() => setActiveRoute("about")}>About</Link>
                         <Link href="/services" className={`nav-item nav-link ${activeRoute == "services" ? "active" : ""}`} onClick={() => setActiveRoute("services")}>Services</Link>

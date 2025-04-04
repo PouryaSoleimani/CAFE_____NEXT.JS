@@ -28,8 +28,8 @@ const ServiceItemCardComponent: React.FC<ServiceItemCardComponentProps> = ({ ser
 
     return (
         <div className="col-lg-6 mb-5 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
-            <div className="bg-dark rounded p-4 d-flex flex-column justify-content-center align-items-center h-100">
-                <div className="row align-items-center">
+            <div className="bg-dark rounded p-2 lg:p-4 flex items-center justify-center h-full">
+                <div className="row flex flex-col items-center justify-center gap-4">
                     <div className="col-sm-5">
                         <div className="img-fluid mb-3 mb-sm-0">
                             <Image src={imgSRC} alt="pic" width={300} height={400} className='h-44' />
