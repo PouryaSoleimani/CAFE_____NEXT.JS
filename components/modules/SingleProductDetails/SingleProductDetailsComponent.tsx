@@ -15,7 +15,7 @@ const SingleProductDetailsComponent: React.FC<SingleProductDetailsPageTemplatePr
     const router = useRouter()
     function backToMenuHandler() { router.push("/menu") }
 
-    // RETURN ____________________________________________________________________________________________________________________________________________________________
+    // RETURN _____________________________________________________________________________________________________________________________________________________________
     return (
         <div id='SINGLE___PRODUCT___CONTAINER' className='w-full h-full flex items-center justify-center'>
             {singleProduct ? (
