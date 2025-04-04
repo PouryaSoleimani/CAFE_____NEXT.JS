@@ -1,8 +1,14 @@
-@import "tailwindcss";
-@import "tailwindcss/preflight";
+/* @import "tailwindcss"; */
+
+@tailwind base;
+
+@tailwind components;
+
 @tailwind utilities;
+
 @import "tw-animate-css";
-@plugin "flowbite/plugin";
+
+
 /*---break---*/
 @custom-variant dark (&:is(.dark *));
 
@@ -4641,6 +4647,10 @@ input[type="button"].btn-block {
 	padding-left: 0;
 	margin-bottom: 0;
 	list-style: none;
+	flex-wrap: wrap;
+	flex-shrink: 1;
+	align-items: end;
+	justify-content: end;
 }
 
 .navbar-nav .nav-link {
@@ -4961,7 +4971,7 @@ input[type="button"].btn-block {
 
 .navbar-light .navbar-toggler {
 	color: rgba(0, 0, 0, 0.5);
-	border-color: rgba(0, 0, 0, 0.1);
+	border: none;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -5012,7 +5022,7 @@ input[type="button"].btn-block {
 
 .navbar-dark .navbar-toggler {
 	color: rgba(255, 255, 255, 0.5);
-	border-color: rgba(255, 255, 255, 0.1);
+	border: none;
 }
 
 .navbar-dark .navbar-toggler-icon {
