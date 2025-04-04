@@ -801,8 +801,14 @@ pre code {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 auto;
-	padding: 0 1rem;
+	padding: 0 0rem;
 	width: 100%;
+}
+
+@media only screen and (min-width:768px) {
+	.row {
+		padding: 0 1rem;
+	}
 }
 
 .no-gutters {
