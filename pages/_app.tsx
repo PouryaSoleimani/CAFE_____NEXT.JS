@@ -7,7 +7,7 @@ import { Toaster } from 'react-hot-toast'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className="relative min-h-screen w-full MAIN">
+    <main className="relative min-h-screen w-full w-screen MAIN">
       <Toaster position="top-right" reverseOrder={true} />
       <NavbarComponent />
       <div className="min:[995px]:pt-[80px] bg-black MAINMAIN">
