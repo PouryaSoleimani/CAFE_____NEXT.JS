@@ -27,7 +27,7 @@ const ServiceItemCardComponent: React.FC<ServiceItemCardComponentProps> = ({ ser
     const myICON = IconsArray.find((item) => item.id === serviceID);
 
     return (
-        <div className="col-lg-6 mb-5 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
+        <div className="col-lg-4 mb-5 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
             <div className="bg-dark rounded-sm p-3 lg:p-4 flex items-center justify-center h-full">
                 <div className="row flex flex-col items-center justify-center gap-4">
                     <div className="w-full">
