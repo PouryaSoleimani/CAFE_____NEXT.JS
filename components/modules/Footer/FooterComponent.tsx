@@ -12,7 +12,7 @@ const FooterComponent = () => {
     // RETURN ==============================================================================================================================================================
     return (
         <div className="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
-            <div className="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+            <div className="px-2 row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
 
                 {/* GET IN TOUCH */}
                 <div className="col-lg-3 col-md-6 mb-5">
