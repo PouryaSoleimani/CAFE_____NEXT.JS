@@ -35,7 +35,7 @@ const NavbarComponent = () => {
                     <h1 className="m-0 display-4 text-uppercase text-white hover:text-[#da9f5b] animate__animated  animate__fadeInUp hover:scale-105 duration-300 ease-in">Next-Coffee</h1>
                 </Link>
                 {/* SEARCH INPUT */}
-                <div className='w-full lg:px-10 hidden 2xl:flex'>
+                <div className='w-full lg:px-10 hidden 2xl:flex w-full lg:w-1/2 xl:w-1/3'>
                     <input type="search" name="" id="navbarSearchInput" className='bg-zinc-900 p-2 w-full outline-none border-none focus:outline-none text-white text-xl' value={search} onChange={event => setSearch(event.target.value)} onKeyDown={event => searchHandlerEnter(event)} />
                     <button className='bg-[#da9f5b] px-2 py-2 hover:bg-[#ffd29f] '><Search className='text-zinc-600' onClick={searchHandlerClick} /></button>
                 </div>

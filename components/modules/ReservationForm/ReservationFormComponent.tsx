@@ -31,7 +31,7 @@ const ReservationFormComponent = () => {
 
     return (
         <div className="col-lg-6">
-            <div className="text-center p-2 lg:p-5 mb-5" style={{ background: "rgba(51, 33, 29, .8)" }}>
+            <div className="text-center p-2 lg:p-5 my-5" style={{ background: "rgba(51, 33, 29, .8)" }}>
                 <h1 className="text-white mb-4 mt-5">Book Your Table</h1>
                 <form className="mb-5  flex flex-col gap-y-3" onSubmit={handleSubmit(onSubmit)}>
 
