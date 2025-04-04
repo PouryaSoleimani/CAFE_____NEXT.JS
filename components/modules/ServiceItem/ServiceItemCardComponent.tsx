@@ -32,11 +32,11 @@ const ServiceItemCardComponent: React.FC<ServiceItemCardComponentProps> = ({ ser
                 <div className="row flex flex-col items-center justify-center gap-4">
                     <div className="col-sm-5">
                         <div className="img-fluid mb-3 mb-sm-0">
-                            <Image src={imgSRC} alt="pic" width={300} height={400} className='h-44' />
+                            <Image src={imgSRC} alt="pic" width={500} height={400} className='h-40 mt-2' />
                         </div>
                     </div>
-                    <div className="col-sm-7 align-baseline">
-                        <h4 className="flex items-center whitespace-nowrap gap-x-2">
+                    <div className="col-sm-7 ">
+                        <h4 className="flex items-center tracking-tighter -translate-x-5 lg:-translate-x-0 whitespace-nowrap gap-x-2">
                             <span className="service-icon text-[#da9f5b] text-3xl p-2 m-0">
                                 {myICON?.icon && <myICON.icon className='w-8 h-8' />} {/* Render the icon dynamically */}
                             </span>
