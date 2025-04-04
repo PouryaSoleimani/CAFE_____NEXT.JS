@@ -51,7 +51,7 @@ const FooterComponent = () => {
                 {/* SCROLL TO TOP */}
                 <div className='flex items-center justify-end w-full my-0 p-0'>
                     <button className='bg-[#da9f5b] w-16 h-16 flex items-center justify-center hover:bg-amber-950 duration-300 ease-initial' onClick={scrollTop} style={{ borderRadius: "5px" }} >
-                        <ArrowUp />
+                        <ArrowUp className='text-black font-black' />
                     </button>
                 </div>
 
