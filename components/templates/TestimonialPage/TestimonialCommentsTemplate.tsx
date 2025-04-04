@@ -17,7 +17,7 @@ const TestimonialCommentsTemplate: React.FC<commentsProps> = ({ comments }) => {
                     <h4 className="text-primary text-uppercase" style={{ letterSpacing: "5px" }}>Testimonial</h4>
                     <h1 className="display-4">What Do Our Clients Say</h1>
                 </div>
-                <div id="SWIPER___CONTAINER" className='flex items-center justify-center w-full px-10 bg-zinc-900/30 py-5 rounded-md border-2 border-zinc-700'>
+                <div id="SWIPER___CONTAINER" className='flex items-center justify-center w-full px-2 lg:px-10 bg-zinc-900/30 py-5 rounded-md border-2 border-zinc-700'>
                     <Swiper grabCursor={true} rewind loop scrollbar autoplay className="mySwiper mx-auto" width={300} height={270}>
                         {comments?.map((comment: SingleCommentType) => (
                             <SwiperSlide key={comment.id} className='bg-zinc-900/70 w-[10rem] flex swiper____slide rounded-md'>

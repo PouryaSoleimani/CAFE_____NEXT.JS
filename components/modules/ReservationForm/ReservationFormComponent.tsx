@@ -31,7 +31,7 @@ const ReservationFormComponent = () => {
 
     return (
         <div className="col-lg-6">
-            <div className="text-center p-5" style={{ background: "rgba(51, 33, 29, .8)" }}>
+            <div className="text-center p-2 lg:p-5 mb-5" style={{ background: "rgba(51, 33, 29, .8)" }}>
                 <h1 className="text-white mb-4 mt-5">Book Your Table</h1>
                 <form className="mb-5  flex flex-col gap-y-3" onSubmit={handleSubmit(onSubmit)}>
 
@@ -60,7 +60,7 @@ const ReservationFormComponent = () => {
                     </div>
 
                     <div className='mt-5'>
-                        <button className="btn btn-primary btn-block font-weight-bold py-3" type="submit">Book Now</button>
+                        <button className="btn btn-primary btn-block font-weight-bold py-3 w-[90%] lg:w-full" type="submit">Book Now</button>
                     </div>
 
                 </form>
