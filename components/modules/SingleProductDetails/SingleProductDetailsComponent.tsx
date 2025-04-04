@@ -18,6 +18,7 @@ const SingleProductDetailsComponent: React.FC<SingleProductDetailsPageTemplatePr
     // RETURN _____________________________________________________________________________________________________________________________________________________________
     return (
         <div id='SINGLE___PRODUCT___CONTAINER' className='w-full h-full flex items-center justify-center'>
+
             {singleProduct ? (
                 <div className='flex flex-col items-center justify-center gap-y-2'>
                     <div className='bg-zinc-800/50 p-5 rounded-sm flex flex-col items-center gap-y-5 justify-center border border-zinc-600'>
@@ -47,7 +48,7 @@ const SingleProductDetailsComponent: React.FC<SingleProductDetailsPageTemplatePr
                 <div className='w-full h-full flex items-center justify-center'>
                     <h1>LOADING ...</h1>
                 </div>
-                
+
             )}
         </div>
     )
