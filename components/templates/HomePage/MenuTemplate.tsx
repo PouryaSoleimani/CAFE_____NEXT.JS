@@ -7,7 +7,9 @@ type SingleMenuItem = { id: number, name: string, imgSRC: string, price: number 
 
 // COMPONENT ===============================================================================================================================================================================
 const MenuTemplate: React.FC<MenuTemplateProps> = ({ menuData }) => {
+
     return (
+
         <div className="container-fluid pt-5">
             <div className="container">
                 <div className="section-title text-center mb-5">
