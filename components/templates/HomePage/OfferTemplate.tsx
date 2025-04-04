@@ -15,7 +15,7 @@ const OfferTemplate = () => {
     const { register, handleSubmit, formState: { errors }, resetField } = useForm<Inputs>({ resolver: yupResolver(schema), })
 
     const onSubmit: SubmitHandler<Inputs> = (data) => {
-        axios.post("http://localhost:4000/newsLetterUsers", { data })
+        axios.post("https://cafe-server-5u3w.onrender.com//newsLetterUsers", { data })
             .then(response => {
                 console.info(response);
                 toast.success('Email Succesfully Signed Up !')

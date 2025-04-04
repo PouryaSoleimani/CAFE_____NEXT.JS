@@ -36,13 +36,13 @@ const HomePage: React.FC<ServicesTemplateProps> = ({ data, menuData, comments })
 // GET STATIC PROPS =================================================================================================================
 export const getStaticProps: GetStaticProps = async (ctx) => {
 
-  const request = await fetch("http://localhost:4000/services")
+  const request = await fetch("https://cafe-server-5u3w.onrender.com//services")
   const data = await request.json()
 
-  const menuReq = await fetch("http://localhost:4000/menu")
+  const menuReq = await fetch("https://cafe-server-5u3w.onrender.com//menu")
   const menuData = await menuReq.json()
 
-  const commentsReq = await fetch("http://localhost:4000/comments")
+  const commentsReq = await fetch("https://cafe-server-5u3w.onrender.com//comments")
   const comments = await commentsReq.json()
 
   return {

@@ -31,7 +31,7 @@ const SingleProductDetailsPage: React.FC<SingleProductDetailsPageTemplateProps> 
 
 // GET STATIC PATHS
 export const getStaticPaths: GetStaticPaths = async () => {
-    const request = await fetch(`http://localhost:4000/menu`);
+    const request = await fetch(`https://cafe-server-5u3w.onrender.com//menu`);
     const allProducts: Product[] = await request.json();
 
     const paths = allProducts.map((item) => ({

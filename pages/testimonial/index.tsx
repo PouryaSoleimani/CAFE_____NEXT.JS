@@ -17,7 +17,7 @@ const TestimonialPage: React.FC<TestimonialPageProps> = ({ comments }) => {
 }
 // GET STATIC PROPS =================================================================================================================
 export const getStaticProps: GetStaticProps = async (ctx) => {
-    const commentsReq = await fetch("http://localhost:4000/comments")
+    const commentsReq = await fetch("https://cafe-server-5u3w.onrender.com//comments")
     const comments = await commentsReq.json()
 
     return {
